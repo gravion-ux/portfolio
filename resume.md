@@ -1,74 +1,64 @@
-# Priyanshu Kumar Thakur (Gravion)
+# Priyanshu Kumar Thakur
 
-📧 priyanshukumarthakur937@gmail.com  
-🌐 https://gravionshieldx.com  
-🔗 LinkedIn: https://www.linkedin.com/in/priyanshu-kumar-thakur-4126443a4  
-📍 India | Remote / Hybrid (Delhi NCR)
+🔗 LinkedIn: https://www.linkedin.com/in/priyanshu-kumar-thakur-4126443a
+🔗 GitHub: https://github.com/gravion-ux
 
 ---
 
-## Professional Summary
+## Professional summary
 
-Security Engineer with 2+ years of hands-on experience in web and API security, vulnerability assessment, and penetration testing. Experienced in identifying real-world OWASP Top 10 issues including IDOR, XSS, and authentication flaws. Strong security-first mindset with the ability to collaborate with developers and provide actionable remediation guidance.
+Security engineer with hands-on experience in web and API security,
+vulnerability assessment, and authorized penetration testing. Experienced
+in identifying real-world OWASP Top 10 issues including IDOR, XSS, and
+authentication flaws. Strong security-first mindset with the ability to
+collaborate with developers and provide actionable remediation guidance.
 
 ---
 
-## Core Skills
+## Core skills
 
-- Web Application Security (OWASP Top 10)
-- API Security Testing (OWASP API Top 10)
-- Manual Penetration Testing & Vulnerability Assessment
+- Web application security (OWASP Top 10)
+- API security testing (OWASP API Top 10)
+- Manual penetration testing & vulnerability assessment
 - Burp Suite, API testing, request manipulation
 - Security reporting & risk analysis
 
----
+## Technical skills
 
-## Technical Skills
-
-- Python & JavaScript (automation & scripting)
+- Node.js and Python (automation & scripting)
 - Security automation scripts
-- Shell scripting & Linux
+- Bash & Linux
 - Git & version control
-- LLM-based tools, chatbots & automation
+- HTTP / TLS / JSON parsing
 - Small to mid-scale system design
 
 ---
 
 ## Experience
 
-### Freelance Security Researcher  
-**Mar 2024 – Present**
+### Security engineer / independent researcher
 
 - Tested real-world web applications & APIs
 - Identified and responsibly disclosed vulnerabilities
 - Provided detailed reports with impact & remediation
-- Supported manual QA & functional testing
-- Assisted clients with security hardening
-
----
+- Built and published security automation tooling
 
 ## Projects
 
-- **web-security-labs** – OWASP vulnerable labs with payloads & fixes  
-- **api-security-testing** – Automated BOLA & auth testing scripts  
-- **security-automation-scripts** – Recon & validation tooling  
-- **llm-security-bot** – AI-assisted security analysis tools  
+- **webapp-security-toolkit** — authorized-only web/API security
+  assessment toolkit with header analysis, TLS posture, and structured
+  findings. 44-test suite.
+- **web-security-labs** — four OWASP-style labs (IDOR, XSS,
+  broken-auth, logic-flaw) with vulnerable and secure variants and a
+  22-test regression suite.
+- **api-security-testing** — read-only BOLA / cross-tenant detector
+  and rate-limit probe, with a local mock API. 18-test suite.
 
----
+## Roles I'm targeting
 
-## Additional Capabilities
-
-- Manual QA / Software Testing
-- Documentation & reporting
-- Data entry & backend support
-- Customer support (remote – voice & non-voice)
-- Website development & source-code writing
-
----
-
-## Open Roles
-
-- Cyber Security Analyst
+- Cybersecurity Engineer
 - Application Security Engineer
-- Junior Security Analyst
-- Freelance Security Consultant
+- Penetration Tester
+- Security Automation Engineer
+
+📍 India — open to remote and hybrid (Delhi NCR) roles.
