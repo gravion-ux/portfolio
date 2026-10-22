@@ -1,7 +1,7 @@
 # Portfolio – Priyanshu Kumar Thakur
 
 🔐 Cybersecurity Engineer | Application Security | Security Automation
-🔗 LinkedIn: https://www.linkedin.com/in/priyanshu-kumar-thakur-4126443a
+🔗 LinkedIn: https://www.linkedin.com/in/priyanshu-kumar-thakur-4126443a4
 
 ---
 
