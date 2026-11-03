@@ -1,7 +1,7 @@
 # Portfolio – Priyanshu Kumar Thakur
 
 🔐 Cybersecurity Engineer | Application Security | Security Automation
-🔗 LinkedIn: https://www.linkedin.com/in/priyanshu-kumar-thakur-4126443a4
+🔗 LinkedIn: https://www.linkedin.com/in/priyanshukumarthakur
 
 ---
 
@@ -14,9 +14,10 @@ flaws (BOLA / IDOR), authentication and session-handling weaknesses,
 injection, and unsafe business logic — then writing reports that
 engineers can act on.
 
-I work on the engineering side as well: small, focused security tools in
-**Node.js** and **Python** that I publish as open-source so other
-security engineers can run them locally.
+I work on the engineering side as well: small, focused security tools and
+developer tooling in **Node.js** and **Python** that I publish as open-source
+so other engineers can run them locally. Everything here is zero-runtime-
+dependency and test-covered.
 
 ---
 
@@ -27,6 +28,8 @@ security engineers can run them locally.
 - Manual penetration testing & vulnerability assessment
 - Burp Suite, request manipulation, API testing
 - Security reporting with impact & remediation
+- Supply-chain auditing for agent skill packages and dependencies
+- Data-quality auditing for agent memory stores and preference datasets
 
 ## ⚙️ Technical skills
 
@@ -39,6 +42,8 @@ security engineers can run them locally.
 
 ## 📂 Featured repositories
 
+**Security tooling**
+
 - **webapp-security-toolkit** — authorized-only web/API security
   assessment toolkit (header analysis, TLS posture, scope enforcement,
   structured findings). 44-test suite, MIT licensed.
@@ -50,6 +55,36 @@ security engineers can run them locally.
 - **security-automation-scripts** — small Node.js / Bash utilities.
 - **llm-security-bot** — pattern-based static analyzer for code,
   configs, and log lines.
+
+**Developer tooling**
+
+- **skill-supply-chain-auditor** — audits agent skill packages for
+  prompt injection, unsafe shell, obfuscated payloads, embedded secrets
+  and unpinned dependencies. 34 rules, redacted reports, CLI. 125 tests.
+- **memorytrust** — audits an agent's memory store for unverified, stale,
+  contradictory and sensitive content and scores how much of it can be
+  trusted. 16 trust rules. 117 tests.
+- **preference-data-doctor** — diagnoses and repairs preference datasets:
+  duplicates, contradictions, class imbalance, format drift, leaked
+  secrets. 18 rules. 147 tests.
+- **local-slm-eval-kit** — evaluates a local model against a fixed 10-task
+  suite with 6 scorers and diffable reports. 113 tests.
+- **gravion-harness** — scoped, auditable security-testing harness with a
+  hash-chained audit log. 127 tests.
+- **gravion-context-bridge** — VS Code extension for privacy-conscious
+  Markdown handoffs, with secret redaction built in. 66 tests.
+- **project-aegis** — multi-agent system core: task lifecycle, persistent
+  memory, provider abstraction, default-deny tool registry, budgets and
+  recovery. 294-test suite.
+
+**Open-source collaboration**
+
+- **xerj-ipv6-rate-limit-fix** — my contribution to
+  [xerj-org/xerj](https://github.com/xerj-org/xerj), the open-source
+  AI-native search engine: a fix for the Corpus Hub rate limiter, which
+  bucketed compressed IPv6 addresses by their first four colon-separated
+  fields instead of their /64. Open upstream as
+  [xerj-org/xerj#2872](https://github.com/xerj-org/xerj/pull/2872).
 
 ## 🎯 Roles I'm targeting
 
