@@ -71,7 +71,7 @@ dependency and test-covered.
   suite with 6 scorers and diffable reports. 113 tests.
 - **gravion-harness** — scoped, auditable security-testing harness with a
   hash-chained audit log. 127 tests.
-- **gravion-context-bridge** — VS Code extension for privacy-conscious
+- **context-bridge** — VS Code extension for privacy-conscious
   Markdown handoffs, with secret redaction built in. 66 tests.
 - **project-aegis** — multi-agent system core: task lifecycle, persistent
   memory, provider abstraction, default-deny tool registry, budgets and
