@@ -2,6 +2,7 @@
 
 🔐 Cybersecurity Engineer | Application Security | Security Automation
 🔗 LinkedIn: https://www.linkedin.com/in/priyanshukumarthakur
+🔗 Fiverr: https://www.fiverr.com/ig_priyanshu
 
 ---
 
