@@ -2,6 +2,7 @@
 
 🔗 LinkedIn: https://www.linkedin.com/in/priyanshukumarthakur
 🔗 GitHub: https://github.com/gravion-ux
+🔗 Fiverr: https://www.fiverr.com/ig_priyanshu
 
 ---
 
