@@ -76,6 +76,7 @@ and contributes fixes upstream to the projects I use.
 - **project-aegis** — multi-agent system core: task lifecycle, persistent
   memory, provider abstraction, default-deny tool registry, budgets and
   recovery. 294-test suite.
+- **iamosaic** — offline cloud-IAM policy review and permission-relationship visualization data. Parses normalized IAM policy JSON, flags wildcard actions and resources, emits relationship edges, gives least-privilege remediation hints. Python 3.11+, zero runtime dependencies, MIT. 9-test suite.
 - **xerj-ipv6-rate-limit-fix** — contribution to
   [xerj-org/xerj](https://github.com/xerj-org/xerj): fixed the Corpus Hub
   rate limiter, which bucketed compressed IPv6 addresses by their first
