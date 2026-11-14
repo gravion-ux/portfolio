@@ -22,7 +22,7 @@ Security engineer building open-source tools for AppSec, detection engineering a
 ## 2. Introduction
 
 ```
-I build small, dependency-light security tools that teams can run offline and in CI — vulnerability triage with EPSS and KEV prioritisation, Sigma rule conformance testing, and tamper-evident engagement evidence ledgers.
+I build small, dependency-light security tools that teams run in their own pipeline — vulnerability triage with EPSS and KEV prioritization, Sigma rule conformance testing, and tamper-evident engagement evidence ledgers.
 
 The six tools featured below are MIT licensed, carry a working CI pipeline, and ship with real test suites — 129, 187 and 115 tests for the three flagship tools alone, measured by running them. Sponsorship pays for the time that goes into the parts nobody sees: triage, CI maintenance, issue response, security review of my own dependencies, and the next release.
 
@@ -38,9 +38,9 @@ measured test count.
 
 | Repository | Stars | Test cases | How the count was obtained |
 | --- | --- | --- | --- |
-| `fixqueue` | 0 | 129 | `npm test` on a fresh clone |
-| `rulebench` | 0 | 187 | `pytest` on a fresh clone |
-| `opsledger` | 0 | 115 | `npm test` on a fresh clone |
+| `fixqueue` | 1 | 129 | `npm test` on a fresh clone |
+| `rulebench` | 1 | 187 | `pytest` on a fresh clone |
+| `opsledger` | 1 | 115 | `npm test` on a fresh clone |
 | `iamosiac` | 11 | 39 | `pytest` on a fresh clone |
 | `violet-trace` | 1 | 34 | `pytest` on a fresh clone |
 | `accessweave` | 1 | 33 | `pytest` on a fresh clone |
@@ -105,7 +105,7 @@ Thanks for sponsoring. Sponsorship pays for maintenance, triage and the next rel
 2. Open `https://github.com/sponsors` and click **Get sponsored**.
 3. Choose the personal account `gravion-ux`.
 4. Enter contact information.
-5. **Choose the payout method.** This is the step that cannot be edited later.
+5. **Choose the payout method.** This choice is part of the signup.
    - **Direct bank account.** The region of the bank account must match the region of
      residence, so an Indian resident needs an Indian bank account. This is the
      simpler route for an individual.
