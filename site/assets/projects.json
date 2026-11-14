@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05",
+  "generated": "2026-11-14",
   "owner": "gravion-ux",
   "featured": [
     "fixqueue",
@@ -34,7 +34,7 @@
   "projects": [
     {
       "name": "context-bridge",
-      "description": "Create privacy-conscious Markdown handoffs that carry an AI-assisted coding session forward.",
+      "description": "A VS Code extension that writes privacy-conscious Markdown handoffs, with secret redaction built in.",
       "language": "JavaScript",
       "stars": 1,
       "category": "ai-security",
@@ -58,7 +58,7 @@
     },
     {
       "name": "gravion-harness",
-      "description": "Sandboxed LLM command-execution harness with scope/deny lists, risk-tiered audit chain, and zero runtime dependencies.",
+      "description": "A scoped, auditable security-testing harness with a hash-chained audit log.",
       "language": "JavaScript",
       "stars": 1,
       "category": "ai-security",
@@ -82,7 +82,7 @@
     },
     {
       "name": "gravion-trainner",
-      "description": "Evaluate AI models against a JSONL dataset through OpenAI-compatible chat endpoints and report heuristic quality coverage. Standard-library-only runner. Not model retraining.",
+      "description": "Model quality evaluation starter for OpenAI-compatible chat-completions endpoints.",
       "language": "Python",
       "stars": 1,
       "category": "ai-security",
@@ -106,7 +106,7 @@
     },
     {
       "name": "llm-security-bot",
-      "description": "AI-powered security analysis tool using LLMs for code, log, and configuration review.",
+      "description": "Pattern-based static analysis for code, configs, log lines and LLM input — deterministic, so the output is a triage list, not proof of exploitability.",
       "language": "JavaScript",
       "stars": 3,
       "category": "ai-security",
@@ -130,7 +130,7 @@
     },
     {
       "name": "local-slm-eval-kit",
-      "description": "Evaluate small language models against a task suite with redaction, timeouts, and JSON/Markdown reports. Zero runtime dependencies.",
+      "description": "Evaluates a local model against a fixed task suite with redaction, timeouts and diffable reports.",
       "language": "JavaScript",
       "stars": 1,
       "category": "ai-security",
@@ -154,7 +154,7 @@
     },
     {
       "name": "memorytrust",
-      "description": "Audits AI agent memory stores for unverified, stale, contradictory, sensitive and injection-shaped content, and scores how much can be trusted.",
+      "description": "Audits an agent memory store for unverified, stale, contradictory and sensitive content and scores how much can be trusted.",
       "language": "JavaScript",
       "stars": 1,
       "category": "ai-security",
@@ -178,7 +178,7 @@
     },
     {
       "name": "preference-data-doctor",
-      "description": "Diagnoses and repairs preference datasets for LLM personalisation: duplicates, contradictions, class imbalance, format drift, and leaked secrets.",
+      "description": "Diagnoses and repairs preference datasets: duplicates, contradictions, class imbalance, format drift, leaked secrets.",
       "language": "JavaScript",
       "stars": 1,
       "category": "ai-security",
@@ -202,7 +202,7 @@
     },
     {
       "name": "skill-supply-chain-auditor",
-      "description": "Audits npm package dependency graphs for leaked tokens, typosquatting, and supply-chain risk. Zero runtime dependencies.",
+      "description": "Audits agent skill packages for prompt injection, unsafe shell, obfuscated payloads, embedded secrets, unpinned dependencies.",
       "language": "JavaScript",
       "stars": 1,
       "category": "ai-security",
@@ -226,7 +226,7 @@
     },
     {
       "name": "xerj-ipv6-rate-limit-fix",
-      "description": "Patch for xerj-org/xerj Corpus Hub: rate-limit bucket keys must use the IPv6 /64 prefix, not the first four IPv6 fields.",
+      "description": "A contribution to xerj-org/xerj fixing the Corpus Hub rate limiter to bucket compressed IPv6 addresses by their /64. Open upstream as xerj-org/xerj#2872.",
       "language": "JavaScript",
       "stars": 1,
       "category": "contribution",
@@ -250,7 +250,7 @@
     },
     {
       "name": "catalog-forge",
-      "description": "Catalog Forge - crawl any shop's catalog (products, images, prices, variants) and serve it as your own storefront, with a separate admin panel for editing the catalog and prices. FastAPI + SQLite + React/TypeScript.",
+      "description": "Crawls a shop catalog and serves it as a storefront.",
       "language": "Other",
       "stars": 1,
       "category": "other",
@@ -274,7 +274,7 @@
     },
     {
       "name": "TRISHUL",
-      "description": "TRISHUL - an AI-powered authorized security testing platform with a real tool integration layer (httpx, Nuclei, ffuf, Nmap), ten functional agents, local and provider AI editions, and an evidence-based verification engine.",
+      "description": "Authorized-scope, AI-powered security testing platform with real tool integration behind scope gates and an AI policy boundary.",
       "language": "Python",
       "stars": 1,
       "category": "platform",
@@ -298,7 +298,7 @@
     },
     {
       "name": "aegis",
-      "description": "Project AEGIS — multi-agent AI system core. Task lifecycle, persistent memory, provider abstraction, default-deny tool registry, budgets, specialist agents, orchestrator, cancellation and checkpoint/resume. 294 tests, zero runtime dependencies, MIT.",
+      "description": "Multi-agent system core: task lifecycle, persistent memory, provider abstraction, default-deny tool registry, budgets and recovery.",
       "language": "JavaScript",
       "stars": 1,
       "category": "platform",
@@ -322,7 +322,7 @@
     },
     {
       "name": "agent-browser",
-      "description": "Visible Playwright browser starter with an explicit domain allow-list and explicit stop conditions for challenges, logins and access denials. No CAPTCHA or anti-bot bypass.",
+      "description": "Visible Playwright browser starter with an explicit domain allow-list and explicit stop conditions.",
       "language": "JavaScript",
       "stars": 1,
       "category": "platform",
@@ -346,7 +346,7 @@
     },
     {
       "name": "api-security-testing",
-      "description": "Automated and manual API security testing focused on OWASP API Top 10",
+      "description": "Read-only BOLA and cross-tenant detector with a rate-limit probe, backed by a local mock API for reproducible demos.",
       "language": "JavaScript",
       "stars": 1,
       "category": "platform",
@@ -370,7 +370,7 @@
     },
     {
       "name": "localshare",
-      "description": "Share a local development server through Cloudflare Quick or Named Tunnels. Node.js CLI with loopback-only origins, email allow-lists, a demo app and VPS deployment examples. MVP foundation, not a production service.",
+      "description": "Shares a local development server through Cloudflare tunnels, with loopback-only origins.",
       "language": "JavaScript",
       "stars": 1,
       "category": "platform",
@@ -394,7 +394,7 @@
     },
     {
       "name": "privacyflow",
-      "description": "Validate authorised WireGuard profiles and plan safe VPN rotation workflows. Python standard-library-only validator and dry-run planner. Does not yet change live routes or enforce a kill switch.",
+      "description": "Validates authorized WireGuard profiles and plans safe VPN rotation workflows.",
       "language": "Python",
       "stars": 1,
       "category": "platform",
@@ -418,7 +418,7 @@
     },
     {
       "name": "rasgulla-ai",
-      "description": "A local-first AI-assisted security research workbench for code understanding, safe test generation, and reproducible debugging.",
+      "description": "A local-first AI-assisted security research workbench for code understanding and safe test generation.",
       "language": "Python",
       "stars": 1,
       "category": "platform",
@@ -442,7 +442,7 @@
     },
     {
       "name": "security-automation-scripts",
-      "description": "Security automation scripts for reconnaissance, validation, and security testing.",
+      "description": "Small Node.js and Bash utilities: header analysis, TLS configuration check, log parsing helpers.",
       "language": "JavaScript",
       "stars": 1,
       "category": "platform",
@@ -466,7 +466,7 @@
     },
     {
       "name": "web-security-labs",
-      "description": "Hands-on OWASP Top 10 web security labs with vulnerable code, payloads, and remediation notes.",
+      "description": "Four OWASP-style labs (IDOR, XSS, broken-auth, logic-flaw), each with a vulnerable and a secure variant, loopback-only by design.",
       "language": "JavaScript",
       "stars": 1,
       "category": "platform",
@@ -490,7 +490,7 @@
     },
     {
       "name": "webapp-security-toolkit",
-      "description": "Authorized-only web application and API security assessment toolkit with header analysis, TLS posture checks, scope enforcement, and structured findings reporting.",
+      "description": "Authorized-only web and API security assessment toolkit: header analysis, TLS posture, scope enforcement, structured findings.",
       "language": "Other",
       "stars": 1,
       "category": "platform",
@@ -562,7 +562,7 @@
     },
     {
       "name": "fixqueue",
-      "description": "Merge SARIF, Trivy, Grype and OSV scanner output into one deduplicated, EPSS/KEV-prioritized fix queue.",
+      "description": "Merge SARIF, Trivy, Grype and OSV scanner output into one deduplicated, EPSS and KEV prioritized fix queue.",
       "language": "JavaScript",
       "stars": 1,
       "category": "red-team",
@@ -610,7 +610,7 @@
     },
     {
       "name": "iamosiac",
-      "description": "IAMosaic — offline cloud-IAM policy review and permission-relationship visualization data.",
+      "description": "Offline cloud-IAM policy review and permission-relationship visualization data, with least-privilege remediation hints.",
       "language": "Python",
       "stars": 11,
       "category": "red-team",
@@ -658,7 +658,7 @@
     },
     {
       "name": "quanta-sentry",
-      "description": "Cryptographic inventory and post-quantum migration-readiness reporting from source/configuration evidence.",
+      "description": "Cryptographic inventory and post-quantum migration-readiness reporting from source and configuration evidence.",
       "language": "Python",
       "stars": 1,
       "category": "red-team",
@@ -706,7 +706,7 @@
     },
     {
       "name": "secret-sniper",
-      "description": "Gravion Secret Sniper - leaked credential detection with live verification. By Priyanshu Kumar Thakur (@pkt_143).",
+      "description": "Leaked credential detection with live verification.",
       "language": "Python",
       "stars": 1,
       "category": "red-team",

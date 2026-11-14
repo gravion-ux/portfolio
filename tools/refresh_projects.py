@@ -1,9 +1,11 @@
 """Regenerate site/assets/projects.json from the live GitHub API.
 
-Every number in the generated file comes from a live API call, except test
-counts, which are read from tests/verified-tests.json. That file records the
-counts measured by actually running each repository's own suite, together with
-the date and the command used. Nothing here is estimated.
+Star counts, languages, topics and URLs come from a live API call. Test counts
+come from tools/verified-tests.json, which records the counts measured by
+actually running each repository's own suite, together with the date and the
+command used. Descriptions come from tools/project-descriptions.json, the one
+canonical description per project that every published surface uses. Nothing
+here is estimated.
 
 Usage:
     python tools/refresh_projects.py            # write site/assets/projects.json
@@ -16,10 +18,12 @@ import subprocess
 import sys
 import urllib.error
 import urllib.request
+from datetime import datetime, timezone
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "site" / "assets" / "projects.json"
 TESTS_FILE = ROOT / "tools" / "verified-tests.json"
+DESCRIPTIONS_FILE = ROOT / "tools" / "project-descriptions.json"
 
 OWNER = "gravion-ux"
 API = "https://api.github.com"
@@ -73,27 +77,21 @@ CATEGORY_LABEL = {
 # is MIT licensed, has a CI workflow, and has a measured test count.
 FEATURED = ["fixqueue", "rulebench", "opsledger", "iamosiac", "violet-trace", "accessweave"]
 
-# The site contains no ampersand character at all. Two live GitHub descriptions
-# contain one. Each is replaced here with wording that stays accurate rather
-# than silently mangled.
-DESCRIPTION_OVERRIDE = {
-    "rulebench": ("Sigma rule conformance harness: run rules against events, lint them, "
-                  "and measure coverage against the MITRE knowledge base."),
-}
-
-# Replacements applied to every description after the override above. The
-# MITRE technique name is spelled with an ampersand; the override rewrites
-# that sentence so the generic pass never has to break a word.
-DESCRIPTION_REPLACEMENTS = [
-    (" & ", " and "),
-]
+# The site contains no ampersand character at all, so the canonical descriptions
+# must not contain one either. The one description that used to carry an
+# ampersand, rulebench, is written out in full here.
 
 
-def sanitize(text):
-    """Remove every ampersand from a description without losing meaning."""
-    for old, new in DESCRIPTION_REPLACEMENTS:
-        text = text.replace(old, new)
-    return text.replace("&", " and ")
+def load_descriptions():
+    """The one canonical description per project, shared by every surface."""
+    data = json.loads(DESCRIPTIONS_FILE.read_text(encoding="utf-8"))
+    descriptions = {k: v for k, v in data.items() if not k.startswith("_")}
+    for name, text in descriptions.items():
+        if "&" in text:
+            raise SystemExit(
+                "canonical description for %s contains an ampersand; the site "
+                "must stay free of ampersand characters" % name)
+    return descriptions
 
 
 def token():
@@ -130,6 +128,7 @@ def build():
     tok = token()
     repos = api("/users/%s/repos?per_page=100&type=owner&sort=full_name" % OWNER, tok)
     tests = load_tests()
+    descriptions = load_descriptions()
 
     projects = []
     for repo in repos:
@@ -138,11 +137,13 @@ def build():
             continue
         if name not in CATEGORY:
             continue
+        if name not in descriptions:
+            raise SystemExit(
+                "no canonical description for %s; add it to tools/project-descriptions.json" % name)
         record = tests.get(name, {})
-        description = DESCRIPTION_OVERRIDE.get(name) or repo.get("description") or ""
         projects.append({
             "name": name,
-            "description": sanitize(description),
+            "description": descriptions[name],
             "language": repo.get("language") or "Other",
             "stars": repo.get("stargazers_count", 0),
             "category": CATEGORY[name],
@@ -156,9 +157,7 @@ def build():
 
     projects.sort(key=lambda p: (p["category"], p["name"]))
     return {
-        "generated": subprocess.run(
-            ["git", "-C", str(ROOT), "log", "-1", "--format=%cd", "--date=short"],
-            capture_output=True, text=True).stdout.strip(),
+        "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "owner": OWNER,
         "featured": FEATURED,
         "categories": [
@@ -182,8 +181,12 @@ def main():
         if not OUT.exists():
             print("missing %s" % OUT)
             return 1
-        current = OUT.read_text(encoding="utf-8")
-        if current != payload:
+        current = json.loads(OUT.read_text(encoding="utf-8"))
+        # The generation date records when the snapshot was taken, so it is not
+        # part of the staleness comparison. Everything else must match.
+        current.pop("generated", None)
+        data.pop("generated", None)
+        if current != data:
             print("projects.json is stale")
             return 1
         print("projects.json is up to date")
