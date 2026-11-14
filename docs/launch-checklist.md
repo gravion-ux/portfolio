@@ -8,11 +8,11 @@ happens to you.
 
 ## Before anything goes public
 
-- [ ] Profile README rewritten and pushed.
-- [ ] Portfolio README, resume and LICENSE pushed.
-- [ ] The site deployed to `https://gravion-ux.github.io/portfolio` and loading over
+- [x] Profile README rewritten and pushed.
+- [x] Portfolio README, resume and LICENSE pushed.
+- [x] The site deployed to `https://gravion-ux.github.io/portfolio` and loading over
       HTTPS.
-- [ ] GitHub profile metadata updated: bio, website, location, company.
+- [x] GitHub profile metadata updated: bio, website, location, company.
 - [ ] GitHub Sponsors profile published with all nine tiers.
 - [ ] The sponsor link checked from a logged-out browser — it should reach the
       published Sponsors page.
@@ -97,11 +97,18 @@ cross-links point at finished pages.
 The Sponsor tier promises a name in all three flagship READMEs. Put that promise in
 writing before anyone signs up for it.
 
-- [ ] `fixqueue/README.md` — sponsor slot.
-- [ ] `rulebench/README.md` — sponsor slot.
-- [ ] `opsledger/README.md` — sponsor slot.
+- [x] `fixqueue/README.md` — sponsor slot.
+- [x] `rulebench/README.md` — sponsor slot.
+- [x] `opsledger/README.md` — sponsor slot.
 
 Keep the slot small and at the bottom. It should read as a fact, not a banner.
+
+Also done, for the same reason — the Sponsor button has to be reachable from the
+pages people already land on:
+
+- [x] `.github/FUNDING.yml` on all six featured repositories.
+- [x] A current-sponsors section on the site support page.
+- [x] A sponsors section in the profile README.
 
 ---
 

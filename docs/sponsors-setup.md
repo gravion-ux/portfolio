@@ -94,7 +94,7 @@ The same text for every tier. GitHub shows it after payment and in the welcome
 email.
 
 ```
-Thanks for sponsoring. Sponsorship pays for maintenance, triage and the next release of the tools listed on this page. Your name appears in the supporters list at the $5 tier and above. If you want a roadmap item funded, a bug fixed, or a question answered, reply to the sponsorship email and it reaches me directly. No questions asked about the amount — cancel any time from your GitHub Sponsors dashboard.
+Thanks for sponsoring. Sponsorship pays for maintenance, triage and the next release of the tools listed on this page. If you sponsor a monthly tier at $5 or above, your name appears in the supporters list. If you want a roadmap item funded, a bug fixed, or a question answered, reply to the sponsorship email and it reaches me directly. No questions asked about the amount — cancel any time from your GitHub Sponsors dashboard.
 ```
 
 ---
