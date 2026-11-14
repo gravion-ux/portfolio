@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Gravion Security</title>
+<meta name="description" content="All 30 authored open-source security projects by Priyanshu Kumar Thakur, with measured test counts, language and live star counts.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Gravion <span>Security</span></a>
+    <nav class="primary" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <p class="eyebrow">The work</p>
+    <h1>All 30 authored projects</h1>
+    <p class="lede">
+      Everything below is authored work published under the MIT licence. Test counts
+      are the number each repository's own suite reports, measured by running it on a
+      fresh clone. Star counts come from the live GitHub API at build time.
+    </p>
+
+    <ul class="filters" role="group" aria-label="Filter projects by category">
+      <li><button type="button" data-filter="all" aria-pressed="true">All</button></li>
+      <li><button type="button" data-filter="red-team" aria-pressed="false">Red-team and detection</button></li>
+      <li><button type="button" data-filter="ai-security" aria-pressed="false">AI and agent security</button></li>
+      <li><button type="button" data-filter="platform" aria-pressed="false">Assessment and platform</button></li>
+      <li><button type="button" data-filter="contribution" aria-pressed="false">Upstream contribution</button></li>
+      <li><button type="button" data-filter="other" aria-pressed="false">Other</button></li>
+    </ul>
+
+    <p class="muted small"><span id="project-count">Loading projects</span></p>
+
+    <ul class="card-grid" id="project-grid">
+      <li class="card">
+        <h3>Loading</h3>
+        <p>The project list loads from assets/projects.json. If it does not appear, the full list is below.</p>
+      </li>
+    </ul>
+
+    <noscript>
+      <div class="fallback">
+        <h2>Full project list</h2>
+        <p class="muted">JavaScript is off, so here is the same list as plain text.</p>
+
+        <h3>Red-team and detection engineering</h3>
+        <ul>
+          <li><a href="https://github.com/gravion-ux/fixqueue" rel="noopener noreferrer">fixqueue</a> — Merge SARIF, Trivy, Grype and OSV scanner output into one deduplicated, EPSS and KEV prioritised fix queue. 129 tests.</li>
+          <li><a href="https://github.com/gravion-ux/rulebench" rel="noopener noreferrer">rulebench</a> — Sigma rule conformance harness: run rules against events, lint them, and measure coverage against the MITRE knowledge base. 187 tests.</li>
+          <li><a href="https://github.com/gravion-ux/opsledger" rel="noopener noreferrer">opsledger</a> — Tamper-evident evidence ledger for red-team engagements: hash-chained events and a signed manifest. 115 tests.</li>
+          <li><a href="https://github.com/gravion-ux/violet-trace" rel="noopener noreferrer">violet-trace</a> — A safe purple-team validation harness for defensive telemetry and detection-rule tests. 34 tests.</li>
+          <li><a href="https://github.com/gravion-ux/accessweave" rel="noopener noreferrer">accessweave</a> — Offline identity-relationship and directory-permission review from explicitly exported inventory data. 33 tests.</li>
+          <li><a href="https://github.com/gravion-ux/iamosiac" rel="noopener noreferrer">iamosiac</a> — Offline cloud-IAM policy review and permission-relationship visualisation data with least-privilege remediation hints. 39 tests.</li>
+          <li><a href="https://github.com/gravion-ux/fuzzharbor" rel="noopener noreferrer">fuzzharbor</a> — A reproducible local fuzzing campaign manager and crash triage toolkit. 21 tests.</li>
+          <li><a href="https://github.com/gravion-ux/secret-sniper" rel="noopener noreferrer">secret-sniper</a> — Leaked credential detection with live verification. 69 selftest checks.</li>
+          <li><a href="https://github.com/gravion-ux/quanta-sentry" rel="noopener noreferrer">quanta-sentry</a> — Cryptographic inventory and post-quantum migration-readiness reporting from source and configuration evidence. 26 tests.</li>
+          <li><a href="https://github.com/gravion-ux/cipherbench" rel="noopener noreferrer">cipherbench</a> — A benchmark and interoperability test harness specification for vetted post-quantum cryptographic providers. 29 tests.</li>
+        </ul>
+
+        <h3>AI and agent security</h3>
+        <ul>
+          <li><a href="https://github.com/gravion-ux/memorytrust" rel="noopener noreferrer">memorytrust</a> — Audits an agent memory store for unverified, stale, contradictory and sensitive content and scores how much can be trusted. 112 tests.</li>
+          <li><a href="https://github.com/gravion-ux/preference-data-doctor" rel="noopener noreferrer">preference-data-doctor</a> — Diagnoses and repairs preference datasets: duplicates, contradictions, class imbalance, format drift and leaked secrets. 147 tests.</li>
+          <li><a href="https://github.com/gravion-ux/skill-supply-chain-auditor" rel="noopener noreferrer">skill-supply-chain-auditor</a> — Audits agent skill packages for prompt injection, unsafe shell, obfuscated payloads, embedded secrets and unpinned dependencies. 125 tests.</li>
+          <li><a href="https://github.com/gravion-ux/local-slm-eval-kit" rel="noopener noreferrer">local-slm-eval-kit</a> — Evaluates a local model against a fixed task suite with redaction, timeouts and diffable reports. 108 tests.</li>
+          <li><a href="https://github.com/gravion-ux/llm-security-bot" rel="noopener noreferrer">llm-security-bot</a> — Pattern-based static analysis for code, configs, log lines and LLM input. 20 tests.</li>
+          <li><a href="https://github.com/gravion-ux/gravion-harness" rel="noopener noreferrer">gravion-harness</a> — A scoped, auditable security-testing harness with a hash-chained audit log. 127 tests.</li>
+          <li><a href="https://github.com/gravion-ux/context-bridge" rel="noopener noreferrer">context-bridge</a> — A VS Code extension that writes privacy-conscious Markdown handoffs with secret redaction built in. 66 tests.</li>
+          <li><a href="https://github.com/gravion-ux/gravion-trainner" rel="noopener noreferrer">gravion-trainner</a> — Model quality evaluation starter for OpenAI-compatible chat-completions endpoints. 27 tests.</li>
+        </ul>
+
+        <h3>Assessment, automation and platform</h3>
+        <ul>
+          <li><a href="https://github.com/gravion-ux/TRISHUL" rel="noopener noreferrer">TRISHUL</a> — An authorized-scope, AI-powered security testing platform with real tool integration. 118 tests.</li>
+          <li><a href="https://github.com/gravion-ux/webapp-security-toolkit" rel="noopener noreferrer">webapp-security-toolkit</a> — Authorized-only web and API security assessment toolkit with scope enforcement and structured findings. 44 tests.</li>
+          <li><a href="https://github.com/gravion-ux/web-security-labs" rel="noopener noreferrer">web-security-labs</a> — Four OWASP-style labs with vulnerable and secure variants, loopback-only by design. 22 checks across 4 labs.</li>
+          <li><a href="https://github.com/gravion-ux/api-security-testing" rel="noopener noreferrer">api-security-testing</a> — Read-only BOLA and cross-tenant detector with a rate-limit probe and local mock API. 18 tests.</li>
+          <li><a href="https://github.com/gravion-ux/security-automation-scripts" rel="noopener noreferrer">security-automation-scripts</a> — Small Node.js and Bash utilities for reconnaissance, validation and security testing. 22 tests.</li>
+          <li><a href="https://github.com/gravion-ux/agent-browser" rel="noopener noreferrer">agent-browser</a> — Visible Playwright browser starter with an explicit domain allow-list and stop conditions. 43 tests.</li>
+          <li><a href="https://github.com/gravion-ux/privacyflow" rel="noopener noreferrer">privacyflow</a> — Validates authorised WireGuard profiles and plans safe VPN rotation workflows. 38 tests.</li>
+          <li><a href="https://github.com/gravion-ux/localshare" rel="noopener noreferrer">localshare</a> — Shares a local development server through Cloudflare tunnels with loopback-only origins. 40 tests.</li>
+          <li><a href="https://github.com/gravion-ux/rasgulla-ai" rel="noopener noreferrer">rasgulla-ai</a> — A local-first AI-assisted security research workbench for code understanding and safe test generation. 50 tests.</li>
+          <li><a href="https://github.com/gravion-ux/aegis" rel="noopener noreferrer">aegis</a> — Multi-agent system core: task lifecycle, persistent memory, provider abstraction, default-deny tool registry, budgets and recovery. 294 tests.</li>
+        </ul>
+
+        <h3>Upstream contribution</h3>
+        <ul>
+          <li><a href="https://github.com/gravion-ux/xerj-ipv6-rate-limit-fix" rel="noopener noreferrer">xerj-ipv6-rate-limit-fix</a> — A contribution to xerj-org/xerj fixing the Corpus Hub rate limiter to bucket compressed IPv6 addresses by their /64. Open upstream as <a href="https://github.com/xerj-org/xerj/pull/2872" rel="noopener noreferrer">xerj-org/xerj#2872</a>.</li>
+        </ul>
+
+        <h3>Other</h3>
+        <ul>
+          <li><a href="https://github.com/gravion-ux/catalog-forge" rel="noopener noreferrer">catalog-forge</a> — Crawls a shop catalogue and serves it as a storefront.</li>
+        </ul>
+      </div>
+    </noscript>
+
+    <div class="note">
+      <strong>Not listed here on purpose.</strong> The GitHub profile repository, the
+      portfolio website repository and a fork of another maintainer's project are not
+      authored projects, so they are not presented as work of this account.
+    </div>
+
+    <p class="muted small">
+      Want one of these built for your stack, or maintained for your team?
+      <a href="services.html">See the services</a> or
+      <a href="support.html">sponsor the tools</a>.
+    </p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Priyanshu Kumar Thakur (Gravion) — security engineer, India.</p>
+    <p>
+      <a href="https://github.com/gravion-ux" rel="noopener noreferrer">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/priyanshukumarthakur" rel="noopener noreferrer">LinkedIn</a> ·
+      <a href="https://www.fiverr.com/ig_priyanshu" rel="noopener noreferrer">Fiverr</a> ·
+      <a href="https://github.com/sponsors/gravion-ux" rel="noopener noreferrer">Sponsor</a>
+    </p>
+    <p>All 30 published projects are MIT licensed. No telemetry, no tracking, no accounts.</p>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>

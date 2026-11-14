@@ -1,0 +1,199 @@
+"""Regenerate site/assets/projects.json from the live GitHub API.
+
+Every number in the generated file comes from a live API call, except test
+counts, which are read from tests/verified-tests.json. That file records the
+counts measured by actually running each repository's own suite, together with
+the date and the command used. Nothing here is estimated.
+
+Usage:
+    python tools/refresh_projects.py            # write site/assets/projects.json
+    python tools/refresh_projects.py --check    # exit 1 if the file is stale
+"""
+import argparse
+import json
+import pathlib
+import subprocess
+import sys
+import urllib.error
+import urllib.request
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+OUT = ROOT / "site" / "assets" / "projects.json"
+TESTS_FILE = ROOT / "tools" / "verified-tests.json"
+
+OWNER = "gravion-ux"
+API = "https://api.github.com"
+
+# Authored projects only. The profile repo, the portfolio repo and forks of
+# other people's projects are not projects of this account.
+EXCLUDE = {"gravion-ux", "portfolio"}
+
+CATEGORY = {
+    "fixqueue": "red-team",
+    "rulebench": "red-team",
+    "opsledger": "red-team",
+    "violet-trace": "red-team",
+    "accessweave": "red-team",
+    "iamosiac": "red-team",
+    "fuzzharbor": "red-team",
+    "secret-sniper": "red-team",
+    "quanta-sentry": "red-team",
+    "cipherbench": "red-team",
+    "memorytrust": "ai-security",
+    "preference-data-doctor": "ai-security",
+    "skill-supply-chain-auditor": "ai-security",
+    "local-slm-eval-kit": "ai-security",
+    "llm-security-bot": "ai-security",
+    "gravion-harness": "ai-security",
+    "context-bridge": "ai-security",
+    "gravion-trainner": "ai-security",
+    "TRISHUL": "platform",
+    "webapp-security-toolkit": "platform",
+    "web-security-labs": "platform",
+    "api-security-testing": "platform",
+    "security-automation-scripts": "platform",
+    "agent-browser": "platform",
+    "privacyflow": "platform",
+    "localshare": "platform",
+    "rasgulla-ai": "platform",
+    "aegis": "platform",
+    "xerj-ipv6-rate-limit-fix": "contribution",
+    "catalog-forge": "other",
+}
+
+CATEGORY_LABEL = {
+    "red-team": "Red-team and detection engineering",
+    "ai-security": "AI and agent security",
+    "platform": "Assessment, automation and platform",
+    "contribution": "Upstream contribution",
+    "other": "Other",
+}
+
+# Repositories shown on the home page and featured on GitHub Sponsors. Each one
+# is MIT licensed, has a CI workflow, and has a measured test count.
+FEATURED = ["fixqueue", "rulebench", "opsledger", "iamosiac", "violet-trace", "accessweave"]
+
+# The site contains no ampersand character at all. Two live GitHub descriptions
+# contain one. Each is replaced here with wording that stays accurate rather
+# than silently mangled.
+DESCRIPTION_OVERRIDE = {
+    "rulebench": ("Sigma rule conformance harness: run rules against events, lint them, "
+                  "and measure coverage against the MITRE knowledge base."),
+}
+
+# Replacements applied to every description after the override above. The
+# MITRE technique name is spelled with an ampersand; the override rewrites
+# that sentence so the generic pass never has to break a word.
+DESCRIPTION_REPLACEMENTS = [
+    (" & ", " and "),
+]
+
+
+def sanitize(text):
+    """Remove every ampersand from a description without losing meaning."""
+    for old, new in DESCRIPTION_REPLACEMENTS:
+        text = text.replace(old, new)
+    return text.replace("&", " and ")
+
+
+def token():
+    """Read a GitHub token from the git credential helper without printing it."""
+    proc = subprocess.run(
+        ["git", "credential", "fill"],
+        input="protocol=https\nhost=github.com\n\n",
+        capture_output=True,
+        text=True,
+        timeout=60,
+    )
+    for line in proc.stdout.splitlines():
+        if line.startswith("password="):
+            return line.split("=", 1)[1].strip()
+    return ""
+
+
+def api(path, tok):
+    headers = {"Accept": "application/vnd.github+json", "User-Agent": "gravion-portfolio"}
+    if tok:
+        headers["Authorization"] = "Bearer " + tok
+    req = urllib.request.Request(API + path, headers=headers)
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        return json.loads(resp.read().decode("utf-8"))
+
+
+def load_tests():
+    if not TESTS_FILE.exists():
+        return {}
+    return json.loads(TESTS_FILE.read_text(encoding="utf-8"))
+
+
+def build():
+    tok = token()
+    repos = api("/users/%s/repos?per_page=100&type=owner&sort=full_name" % OWNER, tok)
+    tests = load_tests()
+
+    projects = []
+    for repo in repos:
+        name = repo["name"]
+        if name in EXCLUDE or repo.get("fork"):
+            continue
+        if name not in CATEGORY:
+            continue
+        record = tests.get(name, {})
+        description = DESCRIPTION_OVERRIDE.get(name) or repo.get("description") or ""
+        projects.append({
+            "name": name,
+            "description": sanitize(description),
+            "language": repo.get("language") or "Other",
+            "stars": repo.get("stargazers_count", 0),
+            "category": CATEGORY[name],
+            "categoryLabel": CATEGORY_LABEL[CATEGORY[name]],
+            "topics": sorted(repo.get("topics") or []),
+            "url": repo.get("html_url"),
+            "testCount": record.get("tests"),
+            "testSource": record.get("source"),
+            "featured": name in FEATURED,
+        })
+
+    projects.sort(key=lambda p: (p["category"], p["name"]))
+    return {
+        "generated": subprocess.run(
+            ["git", "-C", str(ROOT), "log", "-1", "--format=%cd", "--date=short"],
+            capture_output=True, text=True).stdout.strip(),
+        "owner": OWNER,
+        "featured": FEATURED,
+        "categories": [
+            {"id": key, "label": CATEGORY_LABEL[key]}
+            for key in ("red-team", "ai-security", "platform", "contribution", "other")
+        ],
+        "projects": projects,
+    }
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--check", action="store_true",
+                        help="exit 1 when the checked-in file differs from a fresh build")
+    args = parser.parse_args()
+
+    data = build()
+    payload = json.dumps(data, indent=2, ensure_ascii=False) + "\n"
+
+    if args.check:
+        if not OUT.exists():
+            print("missing %s" % OUT)
+            return 1
+        current = OUT.read_text(encoding="utf-8")
+        if current != payload:
+            print("projects.json is stale")
+            return 1
+        print("projects.json is up to date")
+        return 0
+
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    OUT.write_text(payload, encoding="utf-8", newline="\n")
+    print("wrote %s (%d projects)" % (OUT, len(data["projects"])))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

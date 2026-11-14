@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services — Gravion Security</title>
+<meta name="description" content="Web and API security assessments, secure code review with threat modelling, and security automation builds. Published starting prices, scope confirmed after a short call.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Gravion <span>Security</span></a>
+    <nav class="primary" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html" aria-current="page">Services</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <p class="eyebrow">Paid work</p>
+    <h1>Security services with published starting prices</h1>
+    <p class="lede">
+      Three packages, priced from a floor rather than hidden behind a quote form.
+      The scope is agreed in writing before any testing starts, and nothing outside
+      that scope is touched.
+    </p>
+
+    <div class="cta-row">
+      <a class="btn btn-primary" href="contact.html">Start an enquiry</a>
+      <a class="btn btn-secondary" href="support.html">Or sponsor the open-source tools</a>
+    </div>
+
+    <h2>1. Web and API Security Assessment</h2>
+    <p><span class="price">from $500</span></p>
+    <div class="table-wrap">
+      <table>
+        <tbody>
+          <tr><th scope="row">Scope</th><td>An agreed list of targets, confirmed in writing before work starts.</td></tr>
+          <tr><th scope="row">Coverage</th><td>OWASP Top 10 and OWASP API Top 10, with emphasis on authorization and cross-tenant flaws, broken authentication and session handling, injection, and rate limiting.</td></tr>
+          <tr><th scope="row">Duration</th><td>Five business days.</td></tr>
+          <tr><th scope="row">Deliverable</th><td>A findings report with impact, reproduction steps and remediation guidance for each finding, plus a retest of critical findings.</td></tr>
+          <tr><th scope="row">Boundaries</th><td>No testing outside the agreed scope. Scope guards refuse private, loopback and link-local targets by default.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>2. Secure Code Review and Threat Modelling</h2>
+    <p><span class="price">from $300</span></p>
+    <div class="table-wrap">
+      <table>
+        <tbody>
+          <tr><th scope="row">Scope</th><td>Up to two pull requests, or one service.</td></tr>
+          <tr><th scope="row">Focus</th><td>Access control, session handling, input validation and injection paths, with a short threat model of the changed surface.</td></tr>
+          <tr><th scope="row">Duration</th><td>Three business days.</td></tr>
+          <tr><th scope="row">Deliverable</th><td>Inline findings with severity and concrete fix suggestions, plus a written summary of the threat model.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>3. Security Automation Build</h2>
+    <p><span class="price">from $800</span></p>
+    <div class="table-wrap">
+      <table>
+        <tbody>
+          <tr><th scope="row">Scope</th><td>One small CI-friendly tool for your stack: scanner triage, a dependency gate, log normalisation, or detection-rule linting.</td></tr>
+          <tr><th scope="row">Duration</th><td>Two to three weeks.</td></tr>
+          <tr><th scope="row">Deliverable</th><td>A repository with a test suite, a CI pipeline and documentation, delivered with a working demo and a clean run.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Also available, quoted on scope</h2>
+    <ul>
+      <li>Detection-rule review and coverage analysis.</li>
+      <li>Cloud IAM and permission review.</li>
+      <li>Post-quantum migration-readiness inventory.</li>
+    </ul>
+
+    <h2>How an engagement runs</h2>
+    <ol>
+      <li><strong>Scoping.</strong> You send the targets or the diff. I confirm what is in scope and what is out, in writing.</li>
+      <li><strong>Authorization.</strong> Written confirmation that you own the targets or are authorized to test them. Testing does not begin before that exists.</li>
+      <li><strong>Execution.</strong> Read the code path first, reproduce with the smallest possible proof, and stay inside the scope list.</li>
+      <li><strong>Reporting.</strong> Findings with impact, reproduction steps and remediation guidance, structured so engineering teams can route them without re-formatting.</li>
+      <li><strong>Retest.</strong> Critical findings are retested after fixes land.</li>
+    </ol>
+
+    <h2>Frequently asked</h2>
+
+    <h3>Do you need a signed agreement?</h3>
+    <p>
+      A written scope and authorization statement is required. A full services agreement
+      is fine too, and confidentiality terms can be included without changing the price.
+    </p>
+
+    <h3>Will you test production?</h3>
+    <p>
+      Only with explicit written authorization naming the production targets, and only
+      within the agreed scope. Rate limits and safety guards are configurable.
+    </p>
+
+    <h3>What if the scope changes mid-engagement?</h3>
+    <p>
+      Additional targets are quoted before they are touched. The published starting
+      prices apply to the scope described on this page.
+    </p>
+
+    <h3>Do you work remotely?</h3>
+    <p>
+      Yes. Engagements are run remotely for clients in any location, with a short
+      scoping call to confirm the target list and constraints.
+    </p>
+
+    <div class="note">
+      <strong>Looking for the free tools instead?</strong>
+      <a href="support.html">Sponsorship tiers</a> fund the maintenance of the
+      open-source projects. Sponsoring does not require buying a service.
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Priyanshu Kumar Thakur (Gravion) — security engineer, India.</p>
+    <p>
+      <a href="https://github.com/gravion-ux" rel="noopener noreferrer">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/priyanshukumarthakur" rel="noopener noreferrer">LinkedIn</a> ·
+      <a href="https://www.fiverr.com/ig_priyanshu" rel="noopener noreferrer">Fiverr</a> ·
+      <a href="https://github.com/sponsors/gravion-ux" rel="noopener noreferrer">Sponsor</a>
+    </p>
+    <p>All 30 published projects are MIT licensed. No telemetry, no tracking, no accounts.</p>
+  </div>
+</footer>
+
+</body>
+</html>

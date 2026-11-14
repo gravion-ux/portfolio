@@ -3,18 +3,19 @@
 🔗 LinkedIn: https://www.linkedin.com/in/priyanshukumarthakur
 🔗 GitHub: https://github.com/gravion-ux
 🔗 Fiverr: https://www.fiverr.com/ig_priyanshu
+🔗 Portfolio: https://gravion-ux.github.io/portfolio
 
 ---
 
 ## Professional summary
 
-Security engineer with hands-on experience in web and API security,
-vulnerability assessment, and authorized penetration testing. Experienced
-in identifying real-world OWASP Top 10 issues including IDOR, XSS, and
-authentication flaws. Strong security-first mindset with the ability to
-collaborate with developers and provide actionable remediation guidance.
-Also builds and maintains dependency-light open-source tooling in Node.js,
-and contributes fixes upstream to the projects I use.
+Security engineer with hands-on experience in web and API security, vulnerability
+assessment, and authorized penetration testing. Experienced in identifying real-world
+OWASP Top 10 issues including IDOR, XSS, and authentication flaws. Strong
+security-first mindset with the ability to collaborate with developers and provide
+actionable remediation guidance. Also builds and maintains dependency-light
+open-source security tooling in Node.js and Python — 30 published projects, all MIT
+licensed — and contributes fixes upstream to the projects I use.
 
 ---
 
@@ -22,20 +23,22 @@ and contributes fixes upstream to the projects I use.
 
 - Web application security (OWASP Top 10)
 - API security testing (OWASP API Top 10)
-- Manual penetration testing & vulnerability assessment
+- Manual penetration testing and vulnerability assessment
 - Burp Suite, API testing, request manipulation
-- Security reporting & risk analysis
+- Security reporting and risk analysis
 - Supply-chain auditing (agent skill packages, dependencies)
 - Data-quality auditing (agent memory stores, preference datasets)
+- Detection-rule conformance and coverage measurement
 
 ## Technical skills
 
-- Node.js and Python (automation & scripting)
+- Node.js and Python (automation and scripting)
 - Security automation scripts
-- Bash & Linux
-- Git & version control
+- Bash and Linux
+- Git and version control
 - HTTP / TLS / JSON parsing
 - Small to mid-scale system design
+- CI pipeline design and test automation
 
 ---
 
@@ -43,45 +46,71 @@ and contributes fixes upstream to the projects I use.
 
 ### Security engineer / independent researcher
 
-- Tested real-world web applications & APIs
+- Tested real-world web applications and APIs
 - Identified and responsibly disclosed vulnerabilities
-- Provided detailed reports with impact & remediation
-- Built and published security automation tooling
+- Provided detailed reports with impact and remediation
+- Built and published 30 MIT licensed security and developer tools
+- Fixed the Corpus Hub IPv6 rate limiter upstream in xerj-org/xerj
 
-## Projects
+---
 
-- **webapp-security-toolkit** — authorized-only web/API security
-  assessment toolkit with header analysis, TLS posture, and structured
-  findings. 44-test suite.
-- **web-security-labs** — four OWASP-style labs (IDOR, XSS,
-  broken-auth, logic-flaw) with vulnerable and secure variants and a
-  22-test regression suite.
-- **api-security-testing** — read-only BOLA / cross-tenant detector
-  and rate-limit probe, with a local mock API. 18-test suite.
-- **skill-supply-chain-auditor** — audits agent skill packages for
-  prompt injection, unsafe shell, obfuscated payloads, embedded secrets
-  and unpinned dependencies. 34 rules, redacted reports, CLI. 125 tests.
-- **memorytrust** — audits an agent's memory store for unverified, stale,
-  contradictory and sensitive content and scores how much of it can be
-  trusted. 16 trust rules. 117 tests.
+## Selected projects
+
+- **webapp-security-toolkit** — authorized-only web and API security assessment
+  toolkit with header analysis, TLS posture, scope enforcement and structured
+  findings. 44 tests.
+- **web-security-labs** — four OWASP-style labs (IDOR, XSS, broken-auth,
+  logic-flaw) with vulnerable and secure variants, loopback-only by design.
+  22 checks across 4 labs.
+- **api-security-testing** — read-only BOLA and cross-tenant detector with a
+  rate-limit probe and a local mock API. 18 tests.
+- **skill-supply-chain-auditor** — audits agent skill packages for prompt
+  injection, unsafe shell, obfuscated payloads, embedded secrets and unpinned
+  dependencies. 34 rules, redacted reports, CLI. 125 tests.
+- **memorytrust** — audits an agent memory store for unverified, stale,
+  contradictory and sensitive content and scores how much of it can be trusted.
+  16 trust rules. 112 tests.
 - **preference-data-doctor** — diagnoses and repairs preference datasets:
-  duplicates, contradictions, class imbalance, format drift, leaked
-  secrets. 18 rules. 147 tests.
-- **local-slm-eval-kit** — evaluates a local model against a fixed 10-task
-  suite with 6 scorers and diffable reports. 113 tests.
+  duplicates, contradictions, class imbalance, format drift, leaked secrets.
+  18 rules. 147 tests.
+- **local-slm-eval-kit** — evaluates a local model against a fixed 10-task suite
+  with 6 scorers and diffable reports. 108 tests.
 - **gravion-harness** — scoped, auditable security-testing harness with a
   hash-chained audit log. 127 tests.
-- **context-bridge** — VS Code extension for privacy-conscious
-  Markdown handoffs, with secret redaction built in. 66 tests.
-- **project-aegis** — multi-agent system core: task lifecycle, persistent
-  memory, provider abstraction, default-deny tool registry, budgets and
-  recovery. 294-test suite.
-- **iamosaic** — offline cloud-IAM policy review and permission-relationship visualization data. Parses normalized IAM policy JSON, flags wildcard actions and resources, emits relationship edges, gives least-privilege remediation hints. Python 3.11+, zero runtime dependencies, MIT. 9-test suite.
+- **context-bridge** — VS Code extension for privacy-conscious Markdown handoffs,
+  with secret redaction built in. 66 tests.
+- **aegis** — multi-agent system core: task lifecycle, persistent memory,
+  provider abstraction, default-deny tool registry, budgets and recovery.
+  294 tests.
+- **iamosiac** — offline cloud-IAM policy review and permission-relationship
+  visualization data. Parses normalized IAM policy JSON, flags wildcard actions
+  and resources, emits relationship edges, gives least-privilege remediation
+  hints. Python 3.11+, zero runtime dependencies, MIT. 39 tests.
+- **fixqueue** — merges SARIF, Trivy, Grype and OSV scanner output into one
+  deduplicated, EPSS and KEV prioritized fix queue. 129 tests.
+- **rulebench** — Sigma rule conformance harness: runs rules against events,
+  lints them, and measures coverage against the MITRE knowledge base. 187 tests.
+- **opsledger** — tamper-evident evidence ledger for red-team engagements:
+  hash-chained events and a signed manifest. 115 tests.
 - **xerj-ipv6-rate-limit-fix** — contribution to
   [xerj-org/xerj](https://github.com/xerj-org/xerj): fixed the Corpus Hub
-  rate limiter, which bucketed compressed IPv6 addresses by their first
-  four colon-separated fields instead of their /64. Open upstream as
+  rate limiter, which bucketed compressed IPv6 addresses by their first four
+  colon-separated fields instead of their /64. Open upstream as
   [xerj-org/xerj#2872](https://github.com/xerj-org/xerj/pull/2872).
+
+---
+
+## Services
+
+- **Web and API security assessment** — from $500. Agreed target list, OWASP Top 10
+  and OWASP API Top 10 coverage, five business days, findings report with impact,
+  reproduction steps and remediation guidance, plus retest of critical findings.
+- **Secure code review and threat modelling** — from $300. Up to two pull requests or
+  one service, three business days, inline findings and a written threat model.
+- **Security automation build** — from $800. One CI-friendly tool with a test suite,
+  a CI pipeline and documentation, delivered with a working demo.
+
+---
 
 ## Roles I'm targeting
 
