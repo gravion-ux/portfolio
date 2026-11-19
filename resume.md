@@ -4,6 +4,7 @@
 🔗 GitHub: https://github.com/gravion-ux
 🔗 Fiverr: https://www.fiverr.com/ig_priyanshu
 🔗 Portfolio: https://gravion-ux.github.io/portfolio
+🔗 Sponsor: https://github.com/sponsors/gravion-ux
 
 ---
 
@@ -109,6 +110,21 @@ licensed — and contributes fixes upstream to the projects I use.
   one service, three business days, inline findings and a written threat model.
 - **Security automation build** — from $800. One CI-friendly tool with a test suite,
   a CI pipeline and documentation, delivered with a working demo.
+
+---
+
+## Support my open-source work
+
+All 30 published projects are MIT licensed and free to use. Sponsorship keeps
+them maintained: issue triage, test runs, dependency review, and the next
+release. It buys time on the parts nobody sees, not features for one company.
+
+- **Monthly** — Supporter $5, Sponsor $25, Partner $100, Anchor $500, Executive $1,000
+- **One time** — Fix a bug $50, Fund a feature $250, Fund a release $1,000, Fund a roadmap quarter $2,500
+- **Custom amounts** — from $5
+
+Sponsor at https://github.com/sponsors/gravion-ux, or read the full breakdown at
+https://gravion-ux.github.io/portfolio/support.html
 
 ---
 

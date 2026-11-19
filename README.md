@@ -34,7 +34,7 @@ modern applications. I contribute bug fixes upstream to the projects I use.
 | Test cases across 28 projects | 2,103 collected, 2,097 passing, 6 skipped, 0 failing | Each repository's own suite, run on a fresh clone on 2026-11-11 |
 | The three flagship tools | 129 + 187 + 115 = 431 tests | `fixqueue`, `rulebench`, `opsledger` |
 | MIT licensed | 30 of 30 | Every `LICENSE` file fetched and compared against the canonical MIT text |
-| Repositories with a CI workflow | 22 of 30 | The `.github/workflows` directory of each repository |
+| Repositories with a CI workflow | 23 of 30 | The `.github/workflows` directory of each repository |
 | Node tools with zero runtime dependencies | 15 of 16 | `package.json` of each repository |
 | Python tools with zero runtime dependencies | 9 of 12 | `pyproject.toml` and `requirements.txt` of each repository |
 

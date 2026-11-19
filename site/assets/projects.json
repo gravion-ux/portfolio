@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-14",
+  "generated": "2026-11-19",
   "owner": "gravion-ux",
   "featured": [
     "fixqueue",
@@ -251,7 +251,7 @@
     {
       "name": "catalog-forge",
       "description": "Crawls a shop catalog and serves it as a storefront.",
-      "language": "Other",
+      "language": "Python",
       "stars": 1,
       "category": "other",
       "categoryLabel": "Other",
@@ -491,7 +491,7 @@
     {
       "name": "webapp-security-toolkit",
       "description": "Authorized-only web and API security assessment toolkit: header analysis, TLS posture, scope enforcement, structured findings.",
-      "language": "Other",
+      "language": "JavaScript",
       "stars": 1,
       "category": "platform",
       "categoryLabel": "Assessment, automation and platform",
