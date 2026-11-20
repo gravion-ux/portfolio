@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GRAVION — Priyanshu Kumar Thakur | Penetration Tester & Open-Source Security Tools</title>
-<meta name="description" content="Priyanshu Kumar Thakur (Gravion) — penetration tester and offensive security analyst. 34 open-source security tools, 2,300+ automated tests, bug bounty researcher with a verified Patchstack report. Web & API security, WordPress security, LLM security.">
+<meta name="description" content="Priyanshu Kumar Thakur (Gravion) — penetration tester and offensive security analyst. 34 open-source security tools, 2,300+ automated tests, bug bounty researcher and builder of Gravion AI, a modular AI platform. Web & API security, WordPress security, LLM security.">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0a0a0a">
 <meta property="og:title" content="GRAVION — Priyanshu Kumar Thakur">
@@ -76,12 +76,12 @@
         <span class="stat-label">automated tests, measured by running them</span>
       </li>
       <li class="stat glass">
-        <span class="stat-value"><span class="count" data-count="4">0</span></span>
-        <span class="stat-label">flagship tools — WP, LLM, MCP &amp; JWT security</span>
+        <span class="stat-value"><span class="count" data-count="5">0</span></span>
+        <span class="stat-label">flagship builds — AI platform, WP, LLM, MCP &amp; JWT</span>
       </li>
       <li class="stat glass">
         <span class="stat-value"><span class="count" data-count="1">0</span></span>
-        <span class="stat-label">verified Patchstack report filed — Nov 2026, in review</span>
+        <span class="stat-label">Patchstack report filed — Nov 2026, lab-verified</span>
       </li>
     </ul>
   </div>
@@ -111,8 +111,10 @@
           from WordPress CVE hunting to LLM red-teaming and MCP config auditing — and I contribute
           fixes upstream to the projects I use, including merged pull requests to
           <a href="https://github.com/xerj-org/xerj" rel="noopener noreferrer">xerj-org/xerj</a>.
-          In November 2026 my first verified bug-bounty report — a sensitive-data exposure in a major
-          WordPress events plugin — was filed with <strong>Patchstack</strong> and is in review.
+          In November 2026 my first bug-bounty report — a sensitive-data exposure in a major
+          WordPress events plugin, verified in a local lab and dedupe-checked — was filed with
+          <strong>Patchstack</strong>. My current flagship build is <strong>Gravion AI</strong>, a
+          modular AI platform that startups can adopt instead of starting from scratch.
         </p>
         <p>
           In 2026 I also completed a research internship at <strong>azmth</strong> on post-quantum
@@ -137,10 +139,10 @@
           <pre class="terminal-body">$ whoami
 gravion — penetration tester, Delhi (remote)
 $ ls arsenal/
-wp-cve-hunter  llm-redteam-kit  mcp-shield  jwt-auditor  +30 more
+gravion-ai  wp-cve-hunter  llm-redteam-kit  mcp-shield  jwt-auditor  +30 more
 $ ./status --now
 [sentra-byte] offensive security — active
-[patchstack]  report #1 filed — in review
+[patchstack]  report filed Nov 2026 — lab-verified
 $ echo $MODE
 proof_not_promises</pre>
         </noscript>
@@ -153,10 +155,19 @@ proof_not_promises</pre>
 <section class="section section-alt" id="arsenal">
   <div class="wrap">
     <p class="section-tag reveal">// 02 — the arsenal</p>
-    <h2 class="section-title reveal">Four flagships. <span class="lime">Forged in engagements.</span></h2>
-    <p class="section-lede reveal">The newest tools, built for the attack surfaces that matter now — WordPress, LLMs, MCP servers and JWTs. Every one is open source, CI-tested and free to run.</p>
+    <h2 class="section-title reveal">Five flagships. <span class="lime">Forged in engagements.</span></h2>
+    <p class="section-lede reveal">Led by Gravion AI — the modular AI platform — alongside the newest tools, built for the attack surfaces that matter now: WordPress, LLMs, MCP servers and JWTs. Every one is open source, CI-tested and free to run.</p>
 
     <ul class="flagship-grid">
+      <li class="flag-card glass tilt reveal" data-tilt>
+        <div class="flag-head">
+          <span class="flag-tag">AI platform · flagship build</span>
+          <span class="flag-tests">77 tests</span>
+        </div>
+        <h3><a href="https://github.com/gravion-ux/gravion-ai" rel="noopener noreferrer">gravion-ai</a></h3>
+        <p>A modular AI platform startups build on instead of starting from scratch — chat, support, coder, website builder, media and security modules plus an all-in-one, in four tiers over Gravion's own model registry. Runs locally or on your own API key, with a signed-licensing core: cryptographic deployment identity, tamper-evident audit, and safe suspension with full data export — never a kill switch.</p>
+        <a class="flag-link" href="https://github.com/gravion-ux/gravion-ai" rel="noopener noreferrer">github.com/gravion-ux/gravion-ai ↗</a>
+      </li>
       <li class="flag-card glass tilt reveal" data-tilt>
         <div class="flag-head">
           <span class="flag-tag">WordPress · CVE</span>
