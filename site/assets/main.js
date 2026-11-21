@@ -22,6 +22,22 @@
   window.addEventListener("scroll", onScrollHeader, { passive: true });
   onScrollHeader();
 
+  /* ---------- scroll progress bar ---------- */
+  var progress = document.getElementById("scrollProgress");
+  if (progress) {
+    var pTick = false;
+    var updateProgress = function () {
+      pTick = false;
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      var p = max > 0 ? window.scrollY / max : 0;
+      progress.style.transform = "scaleX(" + Math.min(Math.max(p, 0), 1).toFixed(4) + ")";
+    };
+    window.addEventListener("scroll", function () {
+      if (!pTick) { pTick = true; requestAnimationFrame(updateProgress); }
+    }, { passive: true });
+    updateProgress();
+  }
+
   if (toggle && nav) {
     toggle.addEventListener("click", function () {
       var open = nav.classList.toggle("open");
@@ -42,11 +58,21 @@
     revealEls.forEach(function (el) { el.classList.add("in"); });
   } else {
     var revealObs = new IntersectionObserver(function (entries) {
+      var batch = [];
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-          entry.target.classList.add("in");
+          batch.push(entry.target);
           revealObs.unobserve(entry.target);
         }
+      });
+      /* stagger elements that arrive together, then clear the delay so
+         it never lags the tilt/hover transitions on the same element */
+      batch.forEach(function (el, i) {
+        if (batch.length > 1) {
+          el.style.transitionDelay = Math.min(i * 75, 450) + "ms";
+          setTimeout(function () { el.style.transitionDelay = ""; }, 1500);
+        }
+        el.classList.add("in");
       });
     }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
     revealEls.forEach(function (el) { revealObs.observe(el); });
@@ -89,9 +115,11 @@
           var r = card.getBoundingClientRect();
           var px = (e.clientX - r.left) / r.width - 0.5;
           var py = (e.clientY - r.top) / r.height - 0.5;
+          card.style.setProperty("--mx", ((px + 0.5) * 100).toFixed(1) + "%");
+          card.style.setProperty("--my", ((py + 0.5) * 100).toFixed(1) + "%");
           card.style.transform =
             "perspective(900px) rotateX(" + (-py * 7).toFixed(2) + "deg) rotateY(" +
-            (px * 9).toFixed(2) + "deg) translateY(-3px)";
+            (px * 9).toFixed(2) + "deg) translateY(-3px) scale(1.02)";
         });
       });
       card.addEventListener("pointerleave", function () {
@@ -193,7 +221,17 @@
       new THREE.IcosahedronGeometry(1.25, 0),
       new THREE.MeshBasicMaterial({ color: RED, wireframe: true, transparent: true, opacity: 0.34 })
     );
-    core.add(ico); core.add(inner);
+    /* outer shell + orbit ring: extra depth layers around the core */
+    var shell = new THREE.Mesh(
+      new THREE.IcosahedronGeometry(2.75, 1),
+      new THREE.MeshBasicMaterial({ color: LIME, wireframe: true, transparent: true, opacity: 0.13 })
+    );
+    var ring = new THREE.Mesh(
+      new THREE.TorusGeometry(3.15, 0.014, 8, 100),
+      new THREE.MeshBasicMaterial({ color: RED, transparent: true, opacity: 0.22 })
+    );
+    ring.rotation.x = Math.PI / 2.25;
+    core.add(ico); core.add(inner); core.add(shell); core.add(ring);
     core.position.set(3.4, 0.3, 0);
     scene.add(core);
 
@@ -223,21 +261,40 @@
     }));
     scene.add(lines);
 
+    /* sparse red accent particles on a deeper plane (no link lines) */
+    var RCOUNT = window.innerWidth < 640 ? 14 : 26;
+    var rPos = new Float32Array(RCOUNT * 3);
+    var rSpeeds = [];
+    for (var j = 0; j < RCOUNT; j++) {
+      rPos[j * 3] = (Math.random() - 0.5) * W;
+      rPos[j * 3 + 1] = (Math.random() - 0.5) * H;
+      rPos[j * 3 + 2] = -2 - Math.random() * 3;
+      rSpeeds.push({ x: (Math.random() - 0.5) * 0.002, y: (Math.random() - 0.5) * 0.002 });
+    }
+    var rGeo = new THREE.BufferGeometry();
+    rGeo.setAttribute("position", new THREE.BufferAttribute(rPos, 3));
+    var rPoints = new THREE.Points(rGeo, new THREE.PointsMaterial({
+      color: RED, size: 0.11, transparent: true, opacity: 0.75, sizeAttenuation: true
+    }));
+    scene.add(rPoints);
+
     var mouseX = 0, mouseY = 0;
     window.addEventListener("pointermove", function (e) {
       mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
       mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
     }, { passive: true });
 
+    var coreBaseY = 0.3, coreBaseScale = 1;
     function resize() {
       var w = hero.clientWidth, h = hero.clientHeight;
       renderer.setSize(w, h, false);
       camera.aspect = w / h;
       camera.updateProjectionMatrix();
       core.position.x = w < 760 ? 0 : 3.4;
-      core.position.y = w < 760 ? 1.9 : 0.3;
-      var s = w < 760 ? 0.62 : 1;
-      core.scale.set(s, s, s);
+      coreBaseY = w < 760 ? 1.9 : 0.3;
+      coreBaseScale = w < 760 ? 0.62 : 1;
+      core.position.y = coreBaseY;
+      core.scale.set(coreBaseScale, coreBaseScale, coreBaseScale);
     }
     resize();
     window.addEventListener("resize", resize);
@@ -256,7 +313,15 @@
 
       ico.rotation.y = t * 0.12; ico.rotation.x = t * 0.07;
       inner.rotation.y = -t * 0.2; inner.rotation.z = t * 0.09;
-      core.position.y += Math.sin(t * 0.7) * 0.0009;
+      shell.rotation.y = -t * 0.05; shell.rotation.x = t * 0.03;
+      ring.rotation.z = t * 0.1;
+      /* anchored float + breathing pulse (no cumulative drift), and the
+         whole core leans gently toward the pointer */
+      core.position.y = coreBaseY + Math.sin(t * 0.7) * 0.16;
+      var pulse = coreBaseScale * (1 + Math.sin(t * 1.25) * 0.02);
+      core.scale.set(pulse, pulse, pulse);
+      core.rotation.y += (mouseX * 0.3 - core.rotation.y) * 0.03;
+      core.rotation.x += (mouseY * 0.18 - core.rotation.x) * 0.03;
 
       var arr = pGeo.attributes.position.array;
       for (var i = 0; i < COUNT; i++) {
@@ -268,6 +333,17 @@
         if (arr[i * 3 + 1] < -H / 2) arr[i * 3 + 1] = H / 2;
       }
       pGeo.attributes.position.needsUpdate = true;
+
+      var rArr = rGeo.attributes.position.array;
+      for (var j = 0; j < RCOUNT; j++) {
+        rArr[j * 3] += rSpeeds[j].x;
+        rArr[j * 3 + 1] += rSpeeds[j].y;
+        if (rArr[j * 3] > W / 2) rArr[j * 3] = -W / 2;
+        if (rArr[j * 3] < -W / 2) rArr[j * 3] = W / 2;
+        if (rArr[j * 3 + 1] > H / 2) rArr[j * 3 + 1] = -H / 2;
+        if (rArr[j * 3 + 1] < -H / 2) rArr[j * 3 + 1] = H / 2;
+      }
+      rGeo.attributes.position.needsUpdate = true;
 
       var li = 0;
       for (var a = 0; a < COUNT; a++) {
