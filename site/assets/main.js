@@ -1,8 +1,10 @@
 /* ============================================================
-   GRAVION — interactions
+   GRAVION — interactions (2026 redesign)
    Three.js hero, 3D tilt cards, scroll reveals, counters,
    terminal typing, nav. Everything degrades gracefully:
    no WebGL / no THREE / reduced motion -> static styled page.
+   THREE comes from the CDN script tag in index.html; if that
+   fails, the local assets/three.min.js copy is loaded instead.
    ============================================================ */
 (function () {
   "use strict";
@@ -48,6 +50,26 @@
         nav.classList.remove("open");
         toggle.setAttribute("aria-expanded", "false");
       }
+    });
+  }
+
+  /* ---------- active nav link (scrollspy) ---------- */
+  if (nav && "IntersectionObserver" in window) {
+    var navLinks = {};
+    nav.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      navLinks[a.getAttribute("href").slice(1)] = a;
+    });
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        Object.keys(navLinks).forEach(function (k) { navLinks[k].classList.remove("active"); });
+        var link = navLinks[entry.target.id];
+        if (link) link.classList.add("active");
+      });
+    }, { rootMargin: "-38% 0px -55% 0px" });
+    Object.keys(navLinks).forEach(function (id) {
+      var sec = document.getElementById(id);
+      if (sec) spy.observe(sec);
     });
   }
 
@@ -194,7 +216,9 @@
     }
   }
 
-  /* ---------- Three.js hero: particle network + wireframe core ---------- */
+  /* ---------- Three.js hero: particle network + wireframe core ----------
+     Palette sampled from the GRAVION logo: vivid red #ff2916,
+     silver-greys, near-black.                              */
   var canvas = document.getElementById("hero-canvas");
   var hero = document.querySelector(".hero");
   function initThree() {
@@ -209,33 +233,33 @@
     var camera = new THREE.PerspectiveCamera(58, 1, 0.1, 100);
     camera.position.z = 9;
 
-    var LIME = 0xa3e635, RED = 0xfb4d6d;
+    var RED = 0xff2916, SILVER = 0xc9c9cf, GREY = 0x8e8e96;
 
     /* wireframe icosahedron core, right side */
     var core = new THREE.Group();
     var ico = new THREE.Mesh(
       new THREE.IcosahedronGeometry(2.15, 1),
-      new THREE.MeshBasicMaterial({ color: LIME, wireframe: true, transparent: true, opacity: 0.5 })
+      new THREE.MeshBasicMaterial({ color: RED, wireframe: true, transparent: true, opacity: 0.55 })
     );
     var inner = new THREE.Mesh(
       new THREE.IcosahedronGeometry(1.25, 0),
-      new THREE.MeshBasicMaterial({ color: RED, wireframe: true, transparent: true, opacity: 0.34 })
+      new THREE.MeshBasicMaterial({ color: SILVER, wireframe: true, transparent: true, opacity: 0.32 })
     );
     /* outer shell + orbit ring: extra depth layers around the core */
     var shell = new THREE.Mesh(
       new THREE.IcosahedronGeometry(2.75, 1),
-      new THREE.MeshBasicMaterial({ color: LIME, wireframe: true, transparent: true, opacity: 0.13 })
+      new THREE.MeshBasicMaterial({ color: GREY, wireframe: true, transparent: true, opacity: 0.14 })
     );
     var ring = new THREE.Mesh(
       new THREE.TorusGeometry(3.15, 0.014, 8, 100),
-      new THREE.MeshBasicMaterial({ color: RED, transparent: true, opacity: 0.22 })
+      new THREE.MeshBasicMaterial({ color: RED, transparent: true, opacity: 0.26 })
     );
     ring.rotation.x = Math.PI / 2.25;
     core.add(ico); core.add(inner); core.add(shell); core.add(ring);
     core.position.set(3.4, 0.3, 0);
     scene.add(core);
 
-    /* particle field + connecting lines */
+    /* silver particle field + faint red connecting lines */
     var W = 26, H = 15, COUNT = window.innerWidth < 640 ? 55 : 105;
     var positions = new Float32Array(COUNT * 3);
     var speeds = [];
@@ -248,7 +272,7 @@
     var pGeo = new THREE.BufferGeometry();
     pGeo.setAttribute("position", new THREE.BufferAttribute(positions, 3));
     var points = new THREE.Points(pGeo, new THREE.PointsMaterial({
-      color: LIME, size: 0.075, transparent: true, opacity: 0.9, sizeAttenuation: true
+      color: SILVER, size: 0.075, transparent: true, opacity: 0.85, sizeAttenuation: true
     }));
     scene.add(points);
 
@@ -257,7 +281,7 @@
     var lGeo = new THREE.BufferGeometry();
     lGeo.setAttribute("position", new THREE.BufferAttribute(linePos, 3));
     var lines = new THREE.LineSegments(lGeo, new THREE.LineBasicMaterial({
-      color: LIME, transparent: true, opacity: 0.17
+      color: RED, transparent: true, opacity: 0.13
     }));
     scene.add(lines);
 
@@ -274,7 +298,7 @@
     var rGeo = new THREE.BufferGeometry();
     rGeo.setAttribute("position", new THREE.BufferAttribute(rPos, 3));
     var rPoints = new THREE.Points(rGeo, new THREE.PointsMaterial({
-      color: RED, size: 0.11, transparent: true, opacity: 0.75, sizeAttenuation: true
+      color: RED, size: 0.11, transparent: true, opacity: 0.8, sizeAttenuation: true
     }));
     scene.add(rPoints);
 
@@ -367,12 +391,22 @@
     })();
   }
 
-  if (reduceMotion) {
-    /* static fallback stays (CSS gradients/grid) */
-    return;
+  /* Boot the hero once THREE is available. index.html loads THREE from
+     a CDN; if that script failed, fall back to the local copy. If both
+     fail, the CSS hero-fallback (gradients + grid) stays — by design. */
+  function bootThree() {
+    if (typeof THREE !== "undefined") { initThree(); return; }
+    var s = document.createElement("script");
+    s.src = "assets/three.min.js";
+    s.onload = function () { initThree(); };
+    document.body.appendChild(s);
   }
-  if (document.readyState === "complete") initThree();
-  else window.addEventListener("load", initThree);
+
+  if (!reduceMotion) {
+    if (document.readyState === "complete") bootThree();
+    else window.addEventListener("load", bootThree);
+  }
+  /* reduced motion: static fallback stays (CSS gradients/grid) */
 
   /* ---------- hero content parallax ---------- */
   if (finePointer && !reduceMotion) {
