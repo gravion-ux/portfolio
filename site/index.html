@@ -379,92 +379,81 @@ proof_not_promises</pre>
   <div class="wrap">
     <p class="section-tag reveal">// 06 — support my work</p>
     <h2 class="section-title reveal">Buy me <span class="accent">a coffee</span></h2>
-    <p class="section-lede reveal">All 35 tools in the arsenal are free and open source — no paywalls, no trials. If they saved you time, hardened your stack or taught you something, you can keep them alive here. Four rails — pick whichever suits you.</p>
+    <p class="section-lede reveal">All 35 tools in the arsenal are free and open source — no paywalls, no trials. If they saved you time, hardened your stack or taught you something, you can keep them alive here. Everything lives in one box now: pick how to pay, pick an amount, and pay on that rail's own page or app.</p>
 
-    <div class="support-grid">
-      <article class="pay-card glass tilt reveal" data-tilt>
-        <div class="pay-head">
-          <span class="pay-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></span>
-          <h3>GitHub Sponsors</h3>
-          <span class="pay-badge">Monthly · from $5</span>
-        </div>
-        <p>Sponsor the arsenal directly on GitHub — monthly tiers or a one-time gift. Every sponsor keeps the tools maintained, CI-tested and free for everyone.</p>
-        <a class="btn btn-primary pay-cta" href="https://github.com/sponsors/gravion-ux" rel="noopener noreferrer">Sponsor on GitHub ↗</a>
-      </article>
+    <div class="support-one glass reveal">
+      <div class="pay-head">
+        <span class="pay-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></span>
+        <h3>Support in one place</h3>
+        <span class="pay-badge">Optional · always appreciated</span>
+      </div>
+      <p class="so-sub">Support is optional and the tools stay free either way. You choose the rail and the amount — payment always happens on the rail's own page or in your own app, never on this site.</p>
 
-      <article class="pay-card glass tilt reveal" data-tilt>
-        <div class="pay-head">
-          <span class="pay-ico pay-letter" aria-hidden="true">P</span>
-          <h3>PayPal</h3>
-          <span class="pay-badge">One-time · worldwide</span>
-        </div>
-        <p>Send a coffee from anywhere in the world — one tap on PayPal.Me, no email needed:</p>
-        <a class="btn btn-primary pay-cta" href="https://paypal.me/gravion937" rel="noopener noreferrer">Send via PayPal ↗</a>
-      </article>
+      <p class="so-label">1 · Choose how to pay</p>
+      <div class="so-methods" id="soMethods">
+        <button type="button" class="so-method is-active" data-method="upi">UPI <span>India · instant</span></button>
+        <button type="button" class="so-method" data-method="paypal">PayPal <span>Worldwide</span></button>
+        <button type="button" class="so-method" data-method="sponsors">GitHub Sponsors <span>Monthly · from $5</span></button>
+        <button type="button" class="so-method" data-method="binance">Binance Pay <span>No network fee</span></button>
+        <button type="button" class="so-method" data-method="crypto">Crypto <span>USDT · LTC on-chain</span></button>
+      </div>
 
-      <article class="pay-card glass tilt reveal" data-tilt>
-        <div class="pay-head">
-          <span class="pay-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg></span>
-          <h3>UPI</h3>
-          <span class="pay-badge">India · instant</span>
+      <div id="soAmountRow">
+        <p class="so-label">2 · Choose an amount</p>
+        <div class="so-amounts" id="soAmounts">
+          <button type="button" class="so-amt" data-amt="100">₹100</button>
+          <button type="button" class="so-amt is-active" data-amt="250">₹250</button>
+          <button type="button" class="so-amt" data-amt="500">₹500</button>
+          <button type="button" class="so-amt" data-amt="1000">₹1,000</button>
+          <input type="number" id="soCustom" min="1" placeholder="Custom" aria-label="Custom amount">
         </div>
+      </div>
+
+      <p class="so-label">3 · Pay</p>
+      <div class="so-pane" data-pane="upi">
         <p>Scan the QR with any UPI app — GPay, PhonePe, Paytm — or send straight to the ID:</p>
         <img class="pay-qr" src="assets/upi-qr.png" alt="UPI QR code — pay to gravionthakur@fam" width="148" height="148" loading="lazy">
         <div class="pay-id-row">
           <code class="pay-id">gravionthakur@fam</code>
           <button class="copy-btn" type="button" data-copy="gravionthakur@fam">Copy</button>
         </div>
-      </article>
-
-      <article class="pay-card glass tilt reveal" data-tilt>
-        <div class="pay-head">
-          <span class="pay-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><rect x="9" y="9" width="6" height="6" transform="rotate(45 12 12)"/><rect x="10.6" y="1.4" width="2.8" height="2.8" transform="rotate(45 12 2.8)"/><rect x="10.6" y="19.8" width="2.8" height="2.8" transform="rotate(45 12 21.2)"/><rect x="1.4" y="10.6" width="2.8" height="2.8" transform="rotate(45 2.8 12)"/><rect x="19.8" y="10.6" width="2.8" height="2.8" transform="rotate(45 21.2 12)"/></svg></span>
-          <h3>Binance Pay</h3>
-          <span class="pay-badge">Crypto · no network fee</span>
-        </div>
-        <p>On Binance? Send USDT or any coin instantly with my Binance Pay ID — no network fee:</p>
+        <a class="btn btn-primary pay-cta" id="soUpiBtn" href="upi://pay?pa=gravionthakur@fam&amp;pn=Priyanshu%20Kumar%20Thakur&amp;cu=INR&amp;am=250" rel="noopener noreferrer">Pay ₹250 in your UPI app ↗</a>
+      </div>
+      <div class="so-pane" data-pane="paypal" hidden>
+        <p>Send a coffee from anywhere in the world — one tap on PayPal.Me, no email needed. The amount you picked is filled in for you:</p>
+        <a class="btn btn-primary pay-cta" id="soPaypalBtn" href="https://paypal.me/gravion937/250" rel="noopener noreferrer">Send $250 via PayPal ↗</a>
+      </div>
+      <div class="so-pane" data-pane="sponsors" hidden>
+        <p>Sponsor the arsenal directly on GitHub — monthly tiers or a one-time gift; you pick the amount on GitHub. Every sponsor keeps the tools maintained, CI-tested and free for everyone.</p>
+        <a class="btn btn-primary pay-cta" href="https://github.com/sponsors/gravion-ux" rel="noopener noreferrer">Sponsor on GitHub ↗</a>
+      </div>
+      <div class="so-pane" data-pane="binance" hidden>
+        <p>On Binance? Send the amount you picked — USDT or any coin — instantly with my Binance Pay ID, no network fee:</p>
         <div class="pay-id-row">
           <code class="pay-id">1197075404</code>
           <button class="copy-btn" type="button" data-copy="1197075404">Copy</button>
         </div>
-        <p>Not on Binance? Send USDT on-chain from any wallet or exchange:</p>
-        <div class="addr-list">
-          <div class="addr-row">
-            <span class="addr-net">USDT · TRC20 — Tron · lowest fee</span>
-            <div class="pay-id-row">
-              <code class="pay-id">TPrpHBNXWtG6LR3UNpM7cjKGTnnTTyE8Vf</code>
-              <button class="copy-btn" type="button" data-copy="TPrpHBNXWtG6LR3UNpM7cjKGTnnTTyE8Vf">Copy</button>
-            </div>
-          </div>
-          <div class="addr-row">
-            <span class="addr-net">USDT · Solana</span>
-            <div class="pay-id-row">
-              <code class="pay-id">4Lc9zwrMkid2qmfx8egnSyixoRzTy8uKA2z9G3AzUUkh</code>
-              <button class="copy-btn" type="button" data-copy="4Lc9zwrMkid2qmfx8egnSyixoRzTy8uKA2z9G3AzUUkh">Copy</button>
-            </div>
-          </div>
-          <div class="addr-row">
-            <span class="addr-net">USDT · BEP20 / ERC20 — EVM</span>
-            <div class="pay-id-row">
-              <code class="pay-id">0xe30b8e32ca270f07e47736d7ac76439b5bb88945</code>
-              <button class="copy-btn" type="button" data-copy="0xe30b8e32ca270f07e47736d7ac76439b5bb88945">Copy</button>
-            </div>
-          </div>
-          <div class="addr-row">
-            <span class="addr-net">Litecoin (LTC) · BEP20 — BSC</span>
-            <div class="pay-id-row">
-              <code class="pay-id">0xe30b8e32ca270f07e47736d7ac76439b5bb88945</code>
-              <button class="copy-btn" type="button" data-copy="0xe30b8e32ca270f07e47736d7ac76439b5bb88945">Copy</button>
-            </div>
-          </div>
+      </div>
+      <div class="so-pane" data-pane="crypto" hidden>
+        <p>Send the amount you picked from any wallet or exchange — choose the network, then copy the address:</p>
+        <label class="so-net-label">Network
+          <select id="soNet">
+            <option value="TPrpHBNXWtG6LR3UNpM7cjKGTnnTTyE8Vf">USDT · TRC20 — Tron · lowest fee</option>
+            <option value="4Lc9zwrMkid2qmfx8egnSyixoRzTy8uKA2z9G3AzUUkh">USDT · Solana</option>
+            <option value="0xe30b8e32ca270f07e47736d7ac76439b5bb88945">USDT · BEP20 / ERC20 — EVM</option>
+            <option value="0xe30b8e32ca270f07e47736d7ac76439b5bb88945">Litecoin (LTC) · BEP20 — BSC</option>
+          </select>
+        </label>
+        <div class="pay-id-row">
+          <code class="pay-id" id="soAddr">TPrpHBNXWtG6LR3UNpM7cjKGTnnTTyE8Vf</code>
+          <button class="copy-btn" type="button" id="soCopy" data-copy="TPrpHBNXWtG6LR3UNpM7cjKGTnnTTyE8Vf">Copy</button>
         </div>
-        <p class="pay-note">Send only on the network named with each address — a wrong-network transfer can be lost.</p>
-      </article>
-    </div>
-    <p class="support-note reveal">Support is optional and always appreciated — the tools stay free either way.</p>
+        <p class="pay-note">Send only on the network you selected — a wrong-network transfer can be lost.</p>
+      </div>
 
-    <div class="verify-panel glass reveal">
-      <h3>Already paid? Verify your payment</h3>
+      <details class="so-verify">
+        <summary>Already paid? Verify your payment (optional)</summary>
+        <div class="so-verify-body">
       <p>GitHub Sponsors payments confirm themselves on GitHub. For every other rail, send your proof once using this form — I check the UTR ID against the bank record, or the transaction hash on the blockchain, and reply with your confirmation. No proof, no guesswork.</p>
       <form class="verify-form" id="verifyForm">
         <label>Your name
@@ -500,6 +489,8 @@ proof_not_promises</pre>
         </div>
         <p class="pay-note vf-wide">This form only ever asks for a UTR ID or a transaction hash — public proof references. Never share bank, card or wallet passwords or keys; no genuine payment needs them. You can check a crypto payment yourself on <a href="https://tronscan.org" rel="noopener noreferrer">Tronscan</a>, <a href="https://bscscan.com" rel="noopener noreferrer">BscScan</a>, <a href="https://etherscan.io" rel="noopener noreferrer">Etherscan</a> or <a href="https://solscan.io" rel="noopener noreferrer">Solscan</a>.</p>
       </form>
+        </div>
+      </details>
     </div>
   </div>
 </section>
