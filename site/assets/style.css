@@ -512,3 +512,33 @@ html{scrollbar-width:thin;scrollbar-color:#26262b var(--bg)}
 .so-verify-body{padding-top:16px}
 .so-verify-body>p{color:var(--muted);margin:0 0 20px;max-width:760px}
 @media (max-width:640px){ .support-one{padding:22px} }
+
+/* ---------- support chooser v2: compact modern ---------- */
+.support-one{padding:26px 28px;max-width:760px;border-radius:22px}
+.support-one .pay-head h3{font-size:1.15rem}
+.support-one .so-sub{margin:10px 0 18px;font-size:.93rem}
+.so-methods{
+  display:flex;gap:4px;padding:5px;border-radius:999px;
+  background:rgba(255,255,255,.04);border:1px solid var(--border-soft);
+}
+.so-method{
+  flex:1;align-items:center;text-align:center;padding:9px 6px;border-radius:999px;
+  background:transparent;border:1px solid transparent;font-size:.92rem;white-space:nowrap;
+}
+.so-method.is-active{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 6px 22px var(--accent-glow)}
+.so-amounts{margin-top:14px}
+.so-amt{padding:8px 16px;font-size:.9rem}
+#soCustom{width:110px;padding:8px 13px}
+.so-pane{margin-top:18px;padding-top:18px;border-top:1px solid var(--border-soft)}
+.so-pane p{font-size:.93rem}
+.so-upi-row{display:flex;gap:20px;align-items:center}
+.so-upi-row .pay-qr{width:118px;height:118px;border-radius:14px;flex:none}
+.so-upi-side{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.so-upi-side .pay-id-row{margin-top:0}
+.so-verify{margin-top:22px;padding-top:16px}
+.so-verify summary{font-size:1rem}
+@media (max-width:640px){
+  .so-methods{flex-wrap:wrap;border-radius:18px}
+  .so-method{flex:1 1 30%}
+  .so-upi-row{flex-direction:column;align-items:flex-start}
+}
