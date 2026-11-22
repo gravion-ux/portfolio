@@ -462,6 +462,45 @@ proof_not_promises</pre>
       </article>
     </div>
     <p class="support-note reveal">Support is optional and always appreciated — the tools stay free either way.</p>
+
+    <div class="verify-panel glass reveal">
+      <h3>Already paid? Verify your payment</h3>
+      <p>GitHub Sponsors payments confirm themselves on GitHub. For every other rail, send your proof once using this form — I check the UTR ID against the bank record, or the transaction hash on the blockchain, and reply with your confirmation. No proof, no guesswork.</p>
+      <form class="verify-form" id="verifyForm">
+        <label>Your name
+          <input type="text" id="vfName" required autocomplete="name" placeholder="Full name">
+        </label>
+        <label>Your email or WhatsApp number
+          <input type="text" id="vfContact" required placeholder="Where I send the confirmation">
+        </label>
+        <label>Payment method
+          <select id="vfMethod">
+            <option value="UPI">UPI</option>
+            <option value="Binance Pay">Binance Pay</option>
+            <option value="USDT — TRC20 (Tron)">USDT — TRC20 (Tron)</option>
+            <option value="USDT — Solana">USDT — Solana</option>
+            <option value="USDT — BEP20 / ERC20">USDT — BEP20 / ERC20</option>
+            <option value="Litecoin (LTC) — BEP20">Litecoin (LTC) — BEP20</option>
+            <option value="PayPal">PayPal</option>
+            <option value="GitHub Sponsors">GitHub Sponsors</option>
+          </select>
+        </label>
+        <label>Amount paid
+          <input type="text" id="vfAmount" required placeholder="e.g. ₹500 or 25 USDT">
+        </label>
+        <label class="vf-wide"><span id="vfProofLabel">UTR ID — the 12-digit reference in your UPI app's payment history</span>
+          <input type="text" id="vfProof" required placeholder="Paste the UTR ID here">
+        </label>
+        <label class="vf-wide">What is this payment for? (optional)
+          <input type="text" id="vfPurpose" placeholder="Sponsorship, or the service you booked">
+        </label>
+        <div class="verify-actions vf-wide">
+          <button type="submit" class="btn btn-primary">Send proof on WhatsApp ↗</button>
+          <button type="button" class="btn btn-ghost" id="vfEmailBtn">Send proof via Email</button>
+        </div>
+        <p class="pay-note vf-wide">This form only ever asks for a UTR ID or a transaction hash — public proof references. Never share bank, card or wallet passwords or keys; no genuine payment needs them. You can check a crypto payment yourself on <a href="https://tronscan.org" rel="noopener noreferrer">Tronscan</a>, <a href="https://bscscan.com" rel="noopener noreferrer">BscScan</a>, <a href="https://etherscan.io" rel="noopener noreferrer">Etherscan</a> or <a href="https://solscan.io" rel="noopener noreferrer">Solscan</a>.</p>
+      </form>
+    </div>
   </div>
 </section>
 
