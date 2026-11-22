@@ -386,6 +386,12 @@ html{scrollbar-width:thin;scrollbar-color:#26262b var(--bg)}
 .copy-btn:hover{background:var(--accent-bright)}
 .copy-btn.copied{background:var(--panel-strong);color:var(--accent-soft)}
 .pay-qr{width:148px;height:148px;border-radius:14px;background:#fff;padding:8px}
+.addr-list{display:flex;flex-direction:column;gap:14px}
+.addr-net{
+  display:block;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.05em;
+  color:var(--accent-soft);margin-bottom:6px;text-transform:uppercase;
+}
+.addr-row .pay-id-row{margin-top:0}
 .pay-note{font-size:.88rem !important;color:var(--muted-2) !important}
 .support-note{margin:28px 0 0;text-align:center;color:var(--muted)}
 
