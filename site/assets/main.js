@@ -512,3 +512,77 @@
     window.location.href = url;
   });
 })();
+
+/* ---------- support: unified chooser ---------- */
+(function () {
+  var methods = document.getElementById("soMethods");
+  if (!methods) return;
+  var amountRow = document.getElementById("soAmountRow");
+  var chips = Array.prototype.slice.call(document.querySelectorAll(".so-amt"));
+  var custom = document.getElementById("soCustom");
+  var upiBtn = document.getElementById("soUpiBtn");
+  var paypalBtn = document.getElementById("soPaypalBtn");
+  var net = document.getElementById("soNet");
+  var addr = document.getElementById("soAddr");
+  var copyBtn = document.getElementById("soCopy");
+  var state = { method: "upi", amount: 250 };
+  var PRESETS = {
+    upi: { cur: "₹", vals: [100, 250, 500, 1000] },
+    paypal: { cur: "$", vals: [5, 10, 25, 50] },
+    sponsors: { cur: "$", vals: [5, 10, 25, 50] },
+    binance: { cur: "$", vals: [5, 10, 25, 50] },
+    crypto: { cur: "$", vals: [5, 10, 25, 50] }
+  };
+  function fmt(cur, n) { return cur + Number(n).toLocaleString("en-IN"); }
+  function renderAmounts() {
+    var p = PRESETS[state.method];
+    chips.forEach(function (chip, i) {
+      chip.setAttribute("data-amt", p.vals[i]);
+      chip.textContent = fmt(p.cur, p.vals[i]);
+      chip.classList.toggle("is-active", Number(state.amount) === p.vals[i] && !custom.value);
+    });
+    amountRow.style.display = state.method === "sponsors" ? "none" : "";
+  }
+  function renderPanes() {
+    document.querySelectorAll(".so-pane").forEach(function (pane) {
+      pane.hidden = pane.getAttribute("data-pane") !== state.method;
+    });
+    var p = PRESETS[state.method];
+    var amt = state.amount;
+    if (upiBtn) {
+      upiBtn.href = "upi://pay?pa=gravionthakur@fam&pn=Priyanshu%20Kumar%20Thakur&cu=INR" + (amt ? "&am=" + amt : "");
+      upiBtn.textContent = amt ? "Pay " + fmt("₹", amt) + " in your UPI app ↗" : "Pay in your UPI app ↗";
+    }
+    if (paypalBtn) {
+      paypalBtn.href = "https://paypal.me/gravion937" + (amt ? "/" + amt : "");
+      paypalBtn.textContent = amt ? "Send " + fmt("$", amt) + " via PayPal ↗" : "Send via PayPal ↗";
+    }
+  }
+  methods.addEventListener("click", function (e) {
+    var btn = e.target.closest(".so-method");
+    if (!btn) return;
+    state.method = btn.getAttribute("data-method");
+    methods.querySelectorAll(".so-method").forEach(function (b) { b.classList.toggle("is-active", b === btn); });
+    var p = PRESETS[state.method];
+    state.amount = p.vals[1];
+    custom.value = "";
+    renderAmounts(); renderPanes();
+  });
+  chips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      state.amount = Number(chip.getAttribute("data-amt"));
+      custom.value = "";
+      renderAmounts(); renderPanes();
+    });
+  });
+  if (custom) custom.addEventListener("input", function () {
+    var v = parseFloat(custom.value);
+    state.amount = isFinite(v) && v > 0 ? v : null;
+    renderAmounts(); renderPanes();
+  });
+  if (net) net.addEventListener("change", function () {
+    addr.textContent = net.value;
+    copyBtn.setAttribute("data-copy", net.value);
+  });
+  renderAmounts(); renderPanes();
+})();
