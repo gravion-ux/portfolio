@@ -387,19 +387,17 @@ proof_not_promises</pre>
         <h3>Support in one place</h3>
         <span class="pay-badge">Optional · always appreciated</span>
       </div>
-      <p class="so-sub">Support is optional and the tools stay free either way. You choose the rail and the amount — payment always happens on the rail's own page or in your own app, never on this site.</p>
+      <p class="so-sub">Pick a rail, pick an amount, pay — payment always happens on the rail's own page or in your own app, never on this site.</p>
 
-      <p class="so-label">1 · Choose how to pay</p>
-      <div class="so-methods" id="soMethods">
-        <button type="button" class="so-method is-active" data-method="upi">UPI <span>India · instant</span></button>
-        <button type="button" class="so-method" data-method="paypal">PayPal <span>Worldwide</span></button>
-        <button type="button" class="so-method" data-method="sponsors">GitHub Sponsors <span>Monthly · from $5</span></button>
-        <button type="button" class="so-method" data-method="binance">Binance Pay <span>No network fee</span></button>
-        <button type="button" class="so-method" data-method="crypto">Crypto <span>USDT · LTC on-chain</span></button>
+      <div class="so-methods" id="soMethods" role="tablist" aria-label="Payment method">
+        <button type="button" class="so-method is-active" data-method="upi">UPI</button>
+        <button type="button" class="so-method" data-method="paypal">PayPal</button>
+        <button type="button" class="so-method" data-method="sponsors">Sponsors</button>
+        <button type="button" class="so-method" data-method="binance">Binance Pay</button>
+        <button type="button" class="so-method" data-method="crypto">Crypto</button>
       </div>
 
       <div id="soAmountRow">
-        <p class="so-label">2 · Choose an amount</p>
         <div class="so-amounts" id="soAmounts">
           <button type="button" class="so-amt" data-amt="100">₹100</button>
           <button type="button" class="so-amt is-active" data-amt="250">₹250</button>
@@ -409,33 +407,36 @@ proof_not_promises</pre>
         </div>
       </div>
 
-      <p class="so-label">3 · Pay</p>
       <div class="so-pane" data-pane="upi">
-        <p>Scan the QR with any UPI app — GPay, PhonePe, Paytm — or send straight to the ID:</p>
-        <img class="pay-qr" src="assets/upi-qr.png" alt="UPI QR code — pay to gravionthakur@fam" width="148" height="148" loading="lazy">
-        <div class="pay-id-row">
-          <code class="pay-id">gravionthakur@fam</code>
-          <button class="copy-btn" type="button" data-copy="gravionthakur@fam">Copy</button>
+        <div class="so-upi-row">
+          <img class="pay-qr" src="assets/upi-qr.png" alt="UPI QR code — pay to gravionthakur@fam" width="118" height="118" loading="lazy">
+          <div class="so-upi-side">
+            <p>Scan with any UPI app, or send to the ID:</p>
+            <div class="pay-id-row">
+              <code class="pay-id">gravionthakur@fam</code>
+              <button class="copy-btn" type="button" data-copy="gravionthakur@fam">Copy</button>
+            </div>
+            <a class="btn btn-primary pay-cta" id="soUpiBtn" href="upi://pay?pa=gravionthakur@fam&amp;pn=Priyanshu%20Kumar%20Thakur&amp;cu=INR&amp;am=250" rel="noopener noreferrer">Pay ₹250 in your UPI app ↗</a>
+          </div>
         </div>
-        <a class="btn btn-primary pay-cta" id="soUpiBtn" href="upi://pay?pa=gravionthakur@fam&amp;pn=Priyanshu%20Kumar%20Thakur&amp;cu=INR&amp;am=250" rel="noopener noreferrer">Pay ₹250 in your UPI app ↗</a>
       </div>
       <div class="so-pane" data-pane="paypal" hidden>
-        <p>Send a coffee from anywhere in the world — one tap on PayPal.Me, no email needed. The amount you picked is filled in for you:</p>
+        <p>One tap on PayPal.Me — your amount is filled in for you:</p>
         <a class="btn btn-primary pay-cta" id="soPaypalBtn" href="https://paypal.me/gravion937/250" rel="noopener noreferrer">Send $250 via PayPal ↗</a>
       </div>
       <div class="so-pane" data-pane="sponsors" hidden>
-        <p>Sponsor the arsenal directly on GitHub — monthly tiers or a one-time gift; you pick the amount on GitHub. Every sponsor keeps the tools maintained, CI-tested and free for everyone.</p>
+        <p>Monthly tiers or a one-time gift — you pick the amount on GitHub:</p>
         <a class="btn btn-primary pay-cta" href="https://github.com/sponsors/gravion-ux" rel="noopener noreferrer">Sponsor on GitHub ↗</a>
       </div>
       <div class="so-pane" data-pane="binance" hidden>
-        <p>On Binance? Send the amount you picked — USDT or any coin — instantly with my Binance Pay ID, no network fee:</p>
+        <p>Send any coin, fee-free, to my Binance Pay ID:</p>
         <div class="pay-id-row">
           <code class="pay-id">1197075404</code>
           <button class="copy-btn" type="button" data-copy="1197075404">Copy</button>
         </div>
       </div>
       <div class="so-pane" data-pane="crypto" hidden>
-        <p>Send the amount you picked from any wallet or exchange — choose the network, then copy the address:</p>
+        <p>Choose the network, copy the address, send from any wallet:</p>
         <label class="so-net-label">Network
           <select id="soNet">
             <option value="TPrpHBNXWtG6LR3UNpM7cjKGTnnTTyE8Vf">USDT · TRC20 — Tron · lowest fee</option>
