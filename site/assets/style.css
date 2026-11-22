@@ -394,6 +394,18 @@ html{scrollbar-width:thin;scrollbar-color:#26262b var(--bg)}
 .addr-row .pay-id-row{margin-top:0}
 .pay-note{font-size:.88rem !important;color:var(--muted-2) !important}
 .support-note{margin:28px 0 0;text-align:center;color:var(--muted)}
+.verify-panel{margin-top:34px;padding:32px}
+.verify-panel h3{font-family:var(--font-display);font-size:1.35rem;margin:0 0 10px}
+.verify-panel>p{color:var(--muted);margin:0 0 22px;max-width:760px}
+.verify-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.verify-form label{display:flex;flex-direction:column;gap:7px;font-size:.9rem;color:var(--muted)}
+.verify-form input,.verify-form select{
+  font:inherit;font-size:.95rem;color:var(--text);background:rgba(0,0,0,.35);
+  border:1px solid var(--border-soft);border-radius:10px;padding:11px 13px;width:100%;
+}
+.verify-form input:focus,.verify-form select:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.vf-wide{grid-column:1/-1}
+.verify-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
 
 /* ---------- contact ---------- */
 .social-grid{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 26px;padding:0}
@@ -425,6 +437,7 @@ html{scrollbar-width:thin;scrollbar-color:#26262b var(--bg)}
 }
 @media (max-width:820px){
   .about-grid{grid-template-columns:1fr}
+  .verify-form{grid-template-columns:1fr}
   .terminal{position:static}
   .flagship-grid,.skills-grid{grid-template-columns:1fr}
   .social-grid{grid-template-columns:1fr 1fr}

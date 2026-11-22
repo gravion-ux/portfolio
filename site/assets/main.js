@@ -456,3 +456,59 @@
     });
   });
 })();
+
+/* ---------- payment verification form (support section) ---------- */
+(function () {
+  var form = document.getElementById("verifyForm");
+  if (!form) return;
+  var method = document.getElementById("vfMethod");
+  var proof = document.getElementById("vfProof");
+  var proofLabel = document.getElementById("vfProofLabel");
+
+  var proofHints = {
+    "UPI": ["UTR ID — the 12-digit reference in your UPI app's payment history", "Paste the UTR ID here"],
+    "Binance Pay": ["Binance Pay transaction ID — in Binance app → Pay → History", "Paste the transaction ID here"],
+    "USDT — TRC20 (Tron)": ["Transaction hash (TxID) — check it on Tronscan", "Paste the transaction hash here"],
+    "USDT — Solana": ["Transaction signature / hash — check it on Solscan", "Paste the transaction hash here"],
+    "USDT — BEP20 / ERC20": ["Transaction hash (TxID) — check it on BscScan / Etherscan", "Paste the transaction hash here"],
+    "Litecoin (LTC) — BEP20": ["Transaction hash (TxID) — check it on BscScan", "Paste the transaction hash here"],
+    "PayPal": ["PayPal transaction ID — in the payment email / activity", "Paste the transaction ID here"],
+    "GitHub Sponsors": ["Your GitHub username — sponsorships show on your profile", "Paste your GitHub username here"]
+  };
+
+  function syncProof() {
+    var h = proofHints[method.value] || proofHints["UPI"];
+    proofLabel.textContent = h[0];
+    proof.placeholder = h[1];
+  }
+  method.addEventListener("change", syncProof);
+  syncProof();
+
+  function buildMessage() {
+    var lines = [
+      "Payment verification — Gravion",
+      "Name: " + document.getElementById("vfName").value.trim(),
+      "Contact: " + document.getElementById("vfContact").value.trim(),
+      "Method: " + method.value,
+      "Amount: " + document.getElementById("vfAmount").value.trim(),
+      "Proof (UTR / Tx hash / ID): " + proof.value.trim()
+    ];
+    var purpose = document.getElementById("vfPurpose").value.trim();
+    if (purpose) lines.push("For: " + purpose);
+    return lines.join("\n");
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var url = "https://wa.me/918178777142?text=" + encodeURIComponent(buildMessage());
+    window.open(url, "_blank", "noopener");
+  });
+
+  document.getElementById("vfEmailBtn").addEventListener("click", function () {
+    if (!form.reportValidity()) return;
+    var subject = "Payment verification — " + method.value;
+    var url = "mailto:priyanshukumarthakur937@gmail.com?subject=" +
+      encodeURIComponent(subject) + "&body=" + encodeURIComponent(buildMessage());
+    window.location.href = url;
+  });
+})();
