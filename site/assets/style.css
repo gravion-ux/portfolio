@@ -542,3 +542,10 @@ html{scrollbar-width:thin;scrollbar-color:#26262b var(--bg)}
   .so-method{flex:1 1 30%}
   .so-upi-row{flex-direction:column;align-items:flex-start}
 }
+
+/* ---------- support chooser v3: pane visibility + layout fixes ---------- */
+.so-pane[hidden]{display:none !important}
+.so-methods{background:rgba(0,0,0,.38);border-color:rgba(255,255,255,.14);gap:4px}
+.so-upi-row{width:100%}
+.so-upi-side{flex:1;min-width:0}
+.so-upi-side .pay-id-row{flex-wrap:wrap}
