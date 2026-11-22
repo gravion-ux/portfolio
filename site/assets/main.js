@@ -586,3 +586,29 @@
   });
   renderAmounts(); renderPanes();
 })();
+
+/* ---------- builder pass: drag me ---------- */
+(function () {
+  var pass = document.getElementById("builderPass");
+  if (!pass) return;
+  var dx = 0, dy = 0, sx = 0, sy = 0, dragging = false;
+  function apply() {
+    pass.style.transform = "translate(" + dx + "px," + dy + "px) rotate(" + (dragging ? -2 : 0) + "deg) scale(" + (dragging ? 1.03 : 1) + ")";
+  }
+  pass.addEventListener("pointerdown", function (e) {
+    dragging = true; sx = e.clientX - dx; sy = e.clientY - dy;
+    pass.classList.add("dragging");
+    try { pass.setPointerCapture(e.pointerId); } catch (err) {}
+    apply();
+  });
+  pass.addEventListener("pointermove", function (e) {
+    if (!dragging) return;
+    dx = e.clientX - sx; dy = e.clientY - sy;
+    apply();
+  });
+  function end() { dragging = false; pass.classList.remove("dragging"); apply(); }
+  pass.addEventListener("pointerup", end);
+  pass.addEventListener("pointercancel", end);
+  pass.addEventListener("dblclick", function () { dx = 0; dy = 0; apply(); });
+  pass.addEventListener("dragstart", function (e) { e.preventDefault(); });
+})();
