@@ -50,7 +50,8 @@ licensed — and contributes fixes upstream to the projects I use.
 - Tested real-world web applications and APIs
 - Identified and responsibly disclosed vulnerabilities
 - Provided detailed reports with impact and remediation
-- Built and published 38 MIT licensed security and developer tools
+- Built and published 38 MIT licensed security and developer tools, with 3,364
+  measured tests across them
 - Fixed the Corpus Hub IPv6 rate limiter upstream in xerj-org/xerj
 
 ---
