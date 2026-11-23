@@ -157,10 +157,10 @@
     { p: "$ ", c: "whoami", cls: "t-prompt" },
     { p: "", c: "gravion — penetration tester, Delhi (remote)", cls: "" },
     { p: "$ ", c: "ls arsenal/", cls: "t-prompt" },
-    { p: "", c: "gravion-ai  wp-cve-hunter  llm-redteam-kit  mcp-shield  jwt-auditor  +33 more", cls: "" },
+    { p: "", c: "gravion-ai  wp-cve-hunter  llm-redteam-kit  mcp-shield  jwt-auditor  petforge  universal-hacker-kit  +31 more", cls: "" },
     { p: "$ ", c: "./status --now", cls: "t-prompt" },
     { p: "", c: "[sentra-byte] offensive security — active", cls: "" },
-    { p: "", c: "[patchstack]  2 reports filed Nov 2026 — lab-verified", cls: "" },
+    { p: "", c: "[patchstack]  report filed Nov 2026 — lab-verified", cls: "" },
     { p: "", c: "[upstream]    PRs merged → xerj-org/xerj", cls: "" },
     { p: "$ ", c: "echo $MODE", cls: "t-prompt" },
     { p: "", c: "proof_not_promises", cls: "t-red" }
