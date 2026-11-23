@@ -19,7 +19,7 @@ and **OWASP API Top 10**: finding authorization flaws (BOLA and IDOR),
 authentication and session-handling weaknesses, injection, and unsafe business logic,
 then writing reports that engineers can act on.
 
-Alongside that, I build and maintain **open-source security tooling** — 30 published
+Alongside that, I build and maintain **open-source security tooling** — 36 published
 projects, every one of them MIT licensed — covering vulnerability triage, detection-rule
 conformance, engagement evidence, and auditing for the AI systems that ship beside
 modern applications. I contribute bug fixes upstream to the projects I use.
@@ -30,13 +30,13 @@ modern applications. I contribute bug fixes upstream to the projects I use.
 
 | Claim | Value | Source |
 | --- | --- | --- |
-| Authored open-source projects | 30 | The 33 public repositories minus this profile repository, this website repository, and a fork of another maintainer's project |
-| Test cases across 28 projects | 2,103 collected, 2,097 passing, 6 skipped, 0 failing | Each repository's own suite, run on a fresh clone on 2026-11-11 |
-| The three flagship tools | 129 + 187 + 115 = 431 tests | `fixqueue`, `rulebench`, `opsledger` |
-| MIT licensed | 30 of 30 | Every `LICENSE` file fetched and compared against the canonical MIT text |
-| Repositories with a CI workflow | 23 of 30 | The `.github/workflows` directory of each repository |
-| Node tools with zero runtime dependencies | 15 of 16 | `package.json` of each repository |
-| Python tools with zero runtime dependencies | 9 of 12 | `pyproject.toml` and `requirements.txt` of each repository |
+| Authored open-source projects | 36 | The 42 public repositories minus 2 forks, this profile repository, this website repository, and 2 unrelated personal repositories |
+| Test cases across 34 projects | 2,455 collected, 2,448 passing, 7 skipped, 0 failing | Each repository's own suite, run on a fresh clone on 2026-11-11 and 2026-11-23 |
+| The five flagship builds | 116 + 82 + 46 + 46 + 36 = 326 tests | `gravion-ai`, `wp-cve-hunter`, `llm-redteam-kit`, `mcp-shield`, `jwt-auditor` |
+| MIT licensed | 36 of 36 | Every `LICENSE` file fetched and compared against the canonical MIT text |
+| Repositories with a CI workflow | 35 of 36 | The `.github/workflows` directory of each repository |
+| Node tools with zero runtime dependencies | 15 of 16 | `package.json` of each repository, checked 2026-11-23 |
+| Python tools with zero runtime dependencies | 14 of 18 | `pyproject.toml` and `requirements.txt` of each repository, checked 2026-11-23 |
 
 Nothing on this site is estimated. The inventory is regenerated from the live GitHub
 API by `tools/refresh_projects.py`, and the test counts come from
@@ -50,6 +50,7 @@ API by `tools/refresh_projects.py`, and the test counts come from
 
 | Project | What it does | Tests |
 | --- | --- | --- |
+| [wp-cve-hunter](https://github.com/gravion-ux/wp-cve-hunter) | WordPress plugin and theme version fingerprinter with CVE matching - prioritised vulnerability reports for authorised testing. Offline inventory mode, zero dependencies. | 82 |
 | [fixqueue](https://github.com/gravion-ux/fixqueue) | Merge SARIF, Trivy, Grype and OSV scanner output into one deduplicated, EPSS and KEV prioritized fix queue. | 129 |
 | [rulebench](https://github.com/gravion-ux/rulebench) | Sigma rule conformance harness: run rules against events, lint them, and measure coverage against the MITRE knowledge base. | 187 |
 | [opsledger](https://github.com/gravion-ux/opsledger) | Tamper-evident evidence ledger for red-team engagements: hash-chained events and a signed manifest. | 115 |
@@ -65,6 +66,9 @@ API by `tools/refresh_projects.py`, and the test counts come from
 
 | Project | What it does | Tests |
 | --- | --- | --- |
+| [llm-redteam-kit](https://github.com/gravion-ux/llm-redteam-kit) | A zero-dependency CI gate for LLM red-teaming: curated OWASP-LLM-2025 probe packs, heuristic scoring and an offline mock mode. | 46 |
+| [mcp-shield](https://github.com/gravion-ux/mcp-shield) | Security auditor for MCP server configs: tool-poisoning detection, secret and over-broad-grant review, and rug-pull drift detection against a SHA-256 baseline. Zero dependencies. | 46 |
+| [jwt-auditor](https://github.com/gravion-ux/jwt-auditor) | JWT security auditor: alg=none, embedded key material, weak-secret dictionary attack, kid injection, parser differentials - a prioritised report with a 0-100 risk score. | 36 |
 | [preference-data-doctor](https://github.com/gravion-ux/preference-data-doctor) | Diagnoses and repairs preference datasets: duplicates, contradictions, class imbalance, format drift, leaked secrets. | 147 |
 | [skill-supply-chain-auditor](https://github.com/gravion-ux/skill-supply-chain-auditor) | Audits agent skill packages for prompt injection, unsafe shell, obfuscated payloads, embedded secrets, unpinned dependencies. | 125 |
 | [gravion-harness](https://github.com/gravion-ux/gravion-harness) | A scoped, auditable security-testing harness with a hash-chained audit log. | 127 |
@@ -78,6 +82,8 @@ API by `tools/refresh_projects.py`, and the test counts come from
 
 | Project | What it does | Tests |
 | --- | --- | --- |
+| [gravion-ai](https://github.com/gravion-ux/gravion-ai) | Gravion AI - a modular AI platform startups build on: many AI types and an all-in-one package, four readiness tiers, a signed licensing layer, and a choice of your own endpoint or a fully offline engine. | 116 |
+| [gravion-hunter](https://github.com/gravion-ux/gravion-hunter) | Autonomous bug bounty agent framework - scope-enforced hunting, 7-question validation gate, dedupe-first discipline. | 26 |
 | [TRISHUL](https://github.com/gravion-ux/TRISHUL) | Authorized-scope, AI-powered security testing platform with real tool integration behind scope gates and an AI policy boundary. | 118 |
 | [webapp-security-toolkit](https://github.com/gravion-ux/webapp-security-toolkit) | Authorized-only web and API security assessment toolkit: header analysis, TLS posture, scope enforcement, structured findings. | 44 |
 | [web-security-labs](https://github.com/gravion-ux/web-security-labs) | Four OWASP-style labs (IDOR, XSS, broken-auth, logic-flaw), each with a vulnerable and a secure variant, loopback-only by design. | 22 checks across 4 labs |
@@ -135,13 +141,13 @@ permission review, and post-quantum migration-readiness inventory.
 ## Support the open-source work
 
 Sponsorship pays for the parts nobody sees: issue triage, CI maintenance, dependency
-review of my own tools, and the next release. Nine tiers are published on GitHub
-Sponsors — five monthly from $5, and four one-time.
+review of my own tools, and the next release. Thirteen tiers are published on GitHub
+Sponsors — seven monthly from $5, and six one-time.
 
 🔗 [Sponsor on GitHub](https://github.com/sponsors/gravion-ux)
 
 The tools stay free, MIT licensed, and free of telemetry whether or not anyone
-sponsors them. All 30 published projects carry the MIT licence.
+sponsors them. All 36 published projects carry the MIT licence.
 
 ---
 
@@ -161,6 +167,7 @@ sponsors them. All 30 published projects carry the MIT licence.
 | --- | --- |
 | `site/` | The static website served by GitHub Pages |
 | `site/assets/projects.json` | Generated project inventory, built from the live GitHub API |
+| `site/support.html` | The sponsorship page: the published tier ladder and the current-sponsors panel |
 | `tools/refresh_projects.py` | Regenerates the inventory. Run it whenever stars or descriptions change. |
 | `tools/verified-tests.json` | Measured test counts, with the command used for each one |
 | `docs/sponsors-setup.md` | The GitHub Sponsors content pack: bio, introduction, tiers and signup steps |

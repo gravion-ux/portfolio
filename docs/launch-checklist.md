@@ -13,7 +13,7 @@ happens to you.
 - [x] The site deployed to `https://gravion-ux.github.io/portfolio` and loading over
       HTTPS.
 - [x] GitHub profile metadata updated: bio, website, location, company.
-- [ ] GitHub Sponsors profile published with all nine tiers.
+- [x] GitHub Sponsors profile published with all thirteen tiers.
 - [ ] The sponsor link checked from a logged-out browser — it should reach the
       published Sponsors page.
 
@@ -33,9 +33,9 @@ removes, and what is coming next.
 
 ---
 
-## 2. LinkedIn — one post per flagship tool
+## 2. LinkedIn — one post per featured tool
 
-Three posts, not one. One tool per post gets three times the reach of a single
+Six posts, not one. One tool per post gets three times the reach of a single
 catch-all post, and the algorithm treats them separately.
 
 Each post follows the same shape:
@@ -47,7 +47,7 @@ Each post follows the same shape:
 5. The sponsor link.
 6. A closing question that invites a comment.
 
-Do not post all three on the same day. Space them a week or two apart.
+Do not post all six on the same day. Space them a week or two apart.
 
 ---
 
@@ -87,28 +87,33 @@ lands on pages that already get visited.
 - [ ] `iamosiac` (11 stars) — add a "related tools" line to its README.
 - [ ] `llm-security-bot` (3 stars) — same.
 
-Do this after the flagship READMEs have their own sponsor attribution slots, so the
-cross-links point at finished pages.
+Do this after the featured repository READMEs have their own sponsor attribution slots, so
+the cross-links point at finished pages.
 
 ---
 
 ## 6. Sponsor attribution slots
 
-The Sponsor tier promises a name in all three flagship READMEs. Put that promise in
-writing before anyone signs up for it.
+The live tiers promise a name in the Supporters section of the profile README and a name or
+logo in the README sponsor sections of the flagship repos. Those promises have to exist before
+anyone signs up for them.
 
-- [x] `fixqueue/README.md` — sponsor slot.
-- [x] `rulebench/README.md` — sponsor slot.
-- [x] `opsledger/README.md` — sponsor slot.
+- [x] `gravion-ux/README.md` — Supporters section.
+- [x] `iamosiac/README.md` — sponsor slot.
+- [x] `wp-cve-hunter/README.md` — sponsor slot.
+- [x] `llm-redteam-kit/README.md` — sponsor slot.
+- [x] `mcp-shield/README.md` — sponsor slot.
+- [x] `jwt-auditor/README.md` — sponsor slot.
+- [x] `gravion-ai/README.md` — sponsor slot.
+- [x] `.github/FUNDING.yml` on each of the six featured repositories.
 
 Keep the slot small and at the bottom. It should read as a fact, not a banner.
 
 Also done, for the same reason — the Sponsor button has to be reachable from the
 pages people already land on:
 
-- [x] `.github/FUNDING.yml` on all six featured repositories.
 - [x] A current-sponsors section on the site support page.
-- [x] A sponsors section in the profile README.
+- [x] The published tier ladder on `site/support.html`.
 
 ---
 

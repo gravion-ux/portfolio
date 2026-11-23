@@ -15,7 +15,7 @@ assessment, and authorized penetration testing. Experienced in identifying real-
 OWASP Top 10 issues including IDOR, XSS, and authentication flaws. Strong
 security-first mindset with the ability to collaborate with developers and provide
 actionable remediation guidance. Also builds and maintains dependency-light
-open-source security tooling in Node.js and Python — 30 published projects, all MIT
+open-source security tooling in Node.js and Python — 36 published projects, all MIT
 licensed — and contributes fixes upstream to the projects I use.
 
 ---
@@ -50,7 +50,7 @@ licensed — and contributes fixes upstream to the projects I use.
 - Tested real-world web applications and APIs
 - Identified and responsibly disclosed vulnerabilities
 - Provided detailed reports with impact and remediation
-- Built and published 30 MIT licensed security and developer tools
+- Built and published 36 MIT licensed security and developer tools
 - Fixed the Corpus Hub IPv6 rate limiter upstream in xerj-org/xerj
 
 ---
@@ -115,12 +115,12 @@ licensed — and contributes fixes upstream to the projects I use.
 
 ## Support my open-source work
 
-All 30 published projects are MIT licensed and free to use. Sponsorship keeps
+All 36 published projects are MIT licensed and free to use. Sponsorship keeps
 them maintained: issue triage, test runs, dependency review, and the next
 release. It buys time on the parts nobody sees, not features for one company.
 
-- **Monthly** — Supporter $5, Sponsor $25, Partner $100, Anchor $500, Executive $1,000
-- **One time** — Fix a bug $50, Fund a feature $250, Fund a release $1,000, Fund a roadmap quarter $2,500
+- **Monthly** — Supporter $5, Backer $10, Sponsor $25, Pro Sponsor $50, Security Partner $100, Anchor $500, Executive $1,000
+- **One time** — One-time Backer $25, One-time Sponsor $50, Fix a bug $50, Fund a feature $250, Fund a release $1,000, Fund a roadmap quarter $2,500
 - **Custom amounts** — from $5
 
 Sponsor at https://github.com/sponsors/gravion-ux, or read the full breakdown at
