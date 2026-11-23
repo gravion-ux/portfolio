@@ -394,6 +394,9 @@ html{scrollbar-width:thin;scrollbar-color:#26262b var(--bg)}
 .addr-row .pay-id-row{margin-top:0}
 .pay-note{font-size:.88rem !important;color:var(--muted-2) !important}
 .support-note{margin:28px 0 0;text-align:center;color:var(--muted)}
+/* The header is fixed. On a page without the hero, the first block needs the
+   same clearance the hero gives itself, or the title sits under the header. */
+.support-page > main > .section:first-of-type{padding-top:calc(var(--header-h) + 56px)}
 .verify-panel{margin-top:34px;padding:32px}
 .verify-panel h3{font-family:var(--font-display);font-size:1.35rem;margin:0 0 10px}
 .verify-panel>p{color:var(--muted);margin:0 0 22px;max-width:760px}

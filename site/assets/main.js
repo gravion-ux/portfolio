@@ -157,7 +157,7 @@
     { p: "$ ", c: "whoami", cls: "t-prompt" },
     { p: "", c: "gravion — penetration tester, Delhi (remote)", cls: "" },
     { p: "$ ", c: "ls arsenal/", cls: "t-prompt" },
-    { p: "", c: "gravion-ai  wp-cve-hunter  llm-redteam-kit  mcp-shield  jwt-auditor  +30 more", cls: "" },
+    { p: "", c: "gravion-ai  wp-cve-hunter  llm-redteam-kit  mcp-shield  jwt-auditor  +31 more", cls: "" },
     { p: "$ ", c: "./status --now", cls: "t-prompt" },
     { p: "", c: "[sentra-byte] offensive security — active", cls: "" },
     { p: "", c: "[patchstack]  report filed Nov 2026 — lab-verified", cls: "" },
@@ -402,7 +402,9 @@
     document.body.appendChild(s);
   }
 
-  if (!reduceMotion) {
+  /* The hero only exists on the home page. On any page without the canvas
+     there is nothing for three.js to draw, so the bundle is never fetched. */
+  if (!reduceMotion && document.getElementById("hero-canvas")) {
     if (document.readyState === "complete") bootThree();
     else window.addEventListener("load", bootThree);
   }
