@@ -721,3 +721,31 @@ rm -- "C:\Users\priya\.minimax\sessions\mvs_2ba71ace241c400e87532ec95e34a5c3\wor
 - [ ] **Step 7: Report**
 
 Report what was pushed to each repository, the live support page URL, the live profile state, and anything that could not be completed.
+
+## Execution notes
+
+Deliberate deviations from the plan above, recorded so the committed plan and
+the committed files do not contradict each other.
+
+1. **Name placement starts at $5, not $25, for the profile README.** The live
+   $5 Supporter tier promises "your name in the Supporters section of my
+   profile README", so the Supporters section and the support page both name
+   $5/month Supporter and $25 one-time Backer for the profile README, and
+   $25/month Sponsor and $50 one-time Sponsor for the repository slots.
+2. **`portfolio-repo` is not a temporary artifact.** Task 7 Step 6 listed it
+   for deletion; it is the primary repository and was kept.
+3. **The plan's own figures were stale in three places.** `llm-redteam-kit`
+   ships 26 probes, not 24; "every repo CI-green" is false (35 of 36 have a
+   workflow, so the live introduction now says "every featured repo CI-green");
+   and a uniform "+25 more" in the terminal listing would have totalled 30
+   instead of 36, so the terminal says "+31 more" and the mini-grid "+25 more".
+4. **Three canonical descriptions were tightened to what the repositories
+   actually document** (`gravion-ai`, `llm-redteam-kit`, `jwt-auditor`), and
+   each `tools/verified-tests.json` entry now carries its own measurement date.
+5. **The profile README's "THINGS I'VE BUILT" table became the live featured
+   six** - the same six the sponsors page lists - with the canonical
+   descriptions from `tools/project-descriptions.json`.
+6. **Stale published test counts in two featured repositories were corrected**:
+   `wp-cve-hunter` said 81 tests (measured 82) and `jwt-auditor` said 30
+   (measured 36). `gravion-ai` now states 116 collected, 115 passing and 1
+   skipped.
