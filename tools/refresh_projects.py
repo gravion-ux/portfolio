@@ -63,6 +63,12 @@ CATEGORY = {
     "aegis": "platform",
     "xerj-ipv6-rate-limit-fix": "contribution",
     "catalog-forge": "other",
+    "gravion-ai": "platform",
+    "wp-cve-hunter": "red-team",
+    "llm-redteam-kit": "ai-security",
+    "mcp-shield": "ai-security",
+    "jwt-auditor": "ai-security",
+    "gravion-hunter": "platform",
 }
 
 CATEGORY_LABEL = {
@@ -73,9 +79,9 @@ CATEGORY_LABEL = {
     "other": "Other",
 }
 
-# Repositories shown on the home page and featured on GitHub Sponsors. Each one
-# is MIT licensed, has a CI workflow, and has a measured test count.
-FEATURED = ["fixqueue", "rulebench", "opsledger", "iamosiac", "violet-trace", "accessweave"]
+# Repositories featured on GitHub Sponsors. Each one is MIT licensed, has a CI
+# workflow, and has a measured test count.
+FEATURED = ["iamosiac", "wp-cve-hunter", "llm-redteam-kit", "mcp-shield", "jwt-auditor", "gravion-ai"]
 
 # The site contains no ampersand character at all, so the canonical descriptions
 # must not contain one either. The one description that used to carry an

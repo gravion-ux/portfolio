@@ -29,5 +29,11 @@
   "rasgulla-ai": "A local-first AI-assisted security research workbench for code understanding and safe test generation.",
   "aegis": "Multi-agent system core: task lifecycle, persistent memory, provider abstraction, default-deny tool registry, budgets and recovery.",
   "xerj-ipv6-rate-limit-fix": "A contribution to xerj-org/xerj fixing the Corpus Hub rate limiter to bucket compressed IPv6 addresses by their /64. Open upstream as xerj-org/xerj#2872.",
-  "catalog-forge": "Crawls a shop catalog and serves it as a storefront."
+  "catalog-forge": "Crawls a shop catalog and serves it as a storefront.",
+  "gravion-ai": "Gravion AI - a modular AI platform startups build on: many AI types and an all-in-one package, four readiness tiers, a signed licensing layer, and a choice of your own endpoint or a fully offline engine.",
+  "wp-cve-hunter": "WordPress plugin and theme version fingerprinter with CVE matching - prioritised vulnerability reports for authorised testing. Offline inventory mode, zero dependencies.",
+  "llm-redteam-kit": "A zero-dependency CI gate for LLM red-teaming: curated OWASP-LLM-2025 probe packs, heuristic scoring and an offline mock mode.",
+  "mcp-shield": "Security auditor for MCP server configs: tool-poisoning detection, secret and over-broad-grant review, and rug-pull drift detection against a SHA-256 baseline. Zero dependencies.",
+  "jwt-auditor": "JWT security auditor: alg=none, embedded key material, weak-secret dictionary attack, kid injection, parser differentials - a prioritised report with a 0-100 risk score.",
+  "gravion-hunter": "Autonomous bug bounty agent framework - scope-enforced hunting, 7-question validation gate, dedupe-first discipline."
 }

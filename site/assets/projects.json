@@ -1,13 +1,13 @@
 {
-  "generated": "2026-11-19",
+  "generated": "2026-11-23",
   "owner": "gravion-ux",
   "featured": [
-    "fixqueue",
-    "rulebench",
-    "opsledger",
     "iamosiac",
-    "violet-trace",
-    "accessweave"
+    "wp-cve-hunter",
+    "llm-redteam-kit",
+    "mcp-shield",
+    "jwt-auditor",
+    "gravion-ai"
   ],
   "categories": [
     {
@@ -36,7 +36,7 @@
       "name": "context-bridge",
       "description": "A VS Code extension that writes privacy-conscious Markdown handoffs, with secret redaction built in.",
       "language": "JavaScript",
-      "stars": 1,
+      "stars": 4,
       "category": "ai-security",
       "categoryLabel": "AI and agent security",
       "topics": [
@@ -60,7 +60,7 @@
       "name": "gravion-harness",
       "description": "A scoped, auditable security-testing harness with a hash-chained audit log.",
       "language": "JavaScript",
-      "stars": 1,
+      "stars": 4,
       "category": "ai-security",
       "categoryLabel": "AI and agent security",
       "topics": [
@@ -84,7 +84,7 @@
       "name": "gravion-trainner",
       "description": "Model quality evaluation starter for OpenAI-compatible chat-completions endpoints.",
       "language": "Python",
-      "stars": 1,
+      "stars": 4,
       "category": "ai-security",
       "categoryLabel": "AI and agent security",
       "topics": [
@@ -105,10 +105,58 @@
       "featured": false
     },
     {
+      "name": "jwt-auditor",
+      "description": "JWT security auditor: alg=none, embedded key material, weak-secret dictionary attack, kid injection, parser differentials - a prioritised report with a 0-100 risk score.",
+      "language": "Python",
+      "stars": 4,
+      "category": "ai-security",
+      "categoryLabel": "AI and agent security",
+      "topics": [
+        "appsec",
+        "authentication",
+        "infosec",
+        "json-web-token",
+        "jwt",
+        "penetration-testing",
+        "python",
+        "security",
+        "security-tools",
+        "vulnerability-scanner"
+      ],
+      "url": "https://github.com/gravion-ux/jwt-auditor",
+      "testCount": 36,
+      "testSource": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 36 passed",
+      "featured": true
+    },
+    {
+      "name": "llm-redteam-kit",
+      "description": "A zero-dependency CI gate for LLM red-teaming: curated OWASP-LLM-2025 probe packs, heuristic scoring and an offline mock mode.",
+      "language": "Python",
+      "stars": 4,
+      "category": "ai-security",
+      "categoryLabel": "AI and agent security",
+      "topics": [
+        "ai",
+        "ai-security",
+        "llm",
+        "llm-red-team",
+        "llm-security",
+        "owasp",
+        "prompt-injection",
+        "python",
+        "red-team",
+        "red-teaming"
+      ],
+      "url": "https://github.com/gravion-ux/llm-redteam-kit",
+      "testCount": 46,
+      "testSource": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 46 passed",
+      "featured": true
+    },
+    {
       "name": "llm-security-bot",
       "description": "Pattern-based static analysis for code, configs, log lines and LLM input — deterministic, so the output is a triage list, not proof of exploitability.",
       "language": "JavaScript",
-      "stars": 3,
+      "stars": 5,
       "category": "ai-security",
       "categoryLabel": "AI and agent security",
       "topics": [
@@ -132,7 +180,7 @@
       "name": "local-slm-eval-kit",
       "description": "Evaluates a local model against a fixed task suite with redaction, timeouts and diffable reports.",
       "language": "JavaScript",
-      "stars": 1,
+      "stars": 4,
       "category": "ai-security",
       "categoryLabel": "AI and agent security",
       "topics": [
@@ -153,10 +201,32 @@
       "featured": false
     },
     {
+      "name": "mcp-shield",
+      "description": "Security auditor for MCP server configs: tool-poisoning detection, secret and over-broad-grant review, and rug-pull drift detection against a SHA-256 baseline. Zero dependencies.",
+      "language": "Python",
+      "stars": 4,
+      "category": "ai-security",
+      "categoryLabel": "AI and agent security",
+      "topics": [
+        "ai-security",
+        "devsecops",
+        "llm",
+        "mcp",
+        "model-context-protocol",
+        "python",
+        "security-audit",
+        "security-tools"
+      ],
+      "url": "https://github.com/gravion-ux/mcp-shield",
+      "testCount": 46,
+      "testSource": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 46 passed",
+      "featured": true
+    },
+    {
       "name": "memorytrust",
       "description": "Audits an agent memory store for unverified, stale, contradictory and sensitive content and scores how much can be trusted.",
       "language": "JavaScript",
-      "stars": 1,
+      "stars": 4,
       "category": "ai-security",
       "categoryLabel": "AI and agent security",
       "topics": [
@@ -180,7 +250,7 @@
       "name": "preference-data-doctor",
       "description": "Diagnoses and repairs preference datasets: duplicates, contradictions, class imbalance, format drift, leaked secrets.",
       "language": "JavaScript",
-      "stars": 1,
+      "stars": 4,
       "category": "ai-security",
       "categoryLabel": "AI and agent security",
       "topics": [
@@ -204,7 +274,7 @@
       "name": "skill-supply-chain-auditor",
       "description": "Audits agent skill packages for prompt injection, unsafe shell, obfuscated payloads, embedded secrets, unpinned dependencies.",
       "language": "JavaScript",
-      "stars": 1,
+      "stars": 4,
       "category": "ai-security",
       "categoryLabel": "AI and agent security",
       "topics": [
@@ -228,7 +298,7 @@
       "name": "xerj-ipv6-rate-limit-fix",
       "description": "A contribution to xerj-org/xerj fixing the Corpus Hub rate limiter to bucket compressed IPv6 addresses by their /64. Open upstream as xerj-org/xerj#2872.",
       "language": "JavaScript",
-      "stars": 1,
+      "stars": 4,
       "category": "contribution",
       "categoryLabel": "Upstream contribution",
       "topics": [
@@ -252,7 +322,7 @@
       "name": "catalog-forge",
       "description": "Crawls a shop catalog and serves it as a storefront.",
       "language": "Python",
-      "stars": 1,
+      "stars": 4,
       "category": "other",
       "categoryLabel": "Other",
       "topics": [
@@ -276,7 +346,7 @@
       "name": "TRISHUL",
       "description": "Authorized-scope, AI-powered security testing platform with real tool integration behind scope gates and an AI policy boundary.",
       "language": "Python",
-      "stars": 1,
+      "stars": 4,
       "category": "platform",
       "categoryLabel": "Assessment, automation and platform",
       "topics": [
@@ -300,7 +370,7 @@
       "name": "aegis",
       "description": "Multi-agent system core: task lifecycle, persistent memory, provider abstraction, default-deny tool registry, budgets and recovery.",
       "language": "JavaScript",
-      "stars": 1,
+      "stars": 4,
       "category": "platform",
       "categoryLabel": "Assessment, automation and platform",
       "topics": [
@@ -324,7 +394,7 @@
       "name": "agent-browser",
       "description": "Visible Playwright browser starter with an explicit domain allow-list and explicit stop conditions.",
       "language": "JavaScript",
-      "stars": 1,
+      "stars": 4,
       "category": "platform",
       "categoryLabel": "Assessment, automation and platform",
       "topics": [
@@ -348,7 +418,7 @@
       "name": "api-security-testing",
       "description": "Read-only BOLA and cross-tenant detector with a rate-limit probe, backed by a local mock API for reproducible demos.",
       "language": "JavaScript",
-      "stars": 1,
+      "stars": 4,
       "category": "platform",
       "categoryLabel": "Assessment, automation and platform",
       "topics": [
@@ -369,10 +439,58 @@
       "featured": false
     },
     {
+      "name": "gravion-ai",
+      "description": "Gravion AI - a modular AI platform startups build on: many AI types and an all-in-one package, four readiness tiers, a signed licensing layer, and a choice of your own endpoint or a fully offline engine.",
+      "language": "Python",
+      "stars": 4,
+      "category": "platform",
+      "categoryLabel": "Assessment, automation and platform",
+      "topics": [
+        "ai-agents",
+        "ai-platform",
+        "developer-tools",
+        "generative-ai",
+        "gravion",
+        "licensing",
+        "llm",
+        "modular-ai",
+        "python",
+        "sdk"
+      ],
+      "url": "https://github.com/gravion-ux/gravion-ai",
+      "testCount": 116,
+      "testSource": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 115 passed, 1 skipped",
+      "featured": true
+    },
+    {
+      "name": "gravion-hunter",
+      "description": "Autonomous bug bounty agent framework - scope-enforced hunting, 7-question validation gate, dedupe-first discipline.",
+      "language": "Python",
+      "stars": 4,
+      "category": "platform",
+      "categoryLabel": "Assessment, automation and platform",
+      "topics": [
+        "agent-framework",
+        "ai-agents",
+        "automation",
+        "bug-bounty",
+        "llm",
+        "offensive-security",
+        "python",
+        "red-team",
+        "security",
+        "vulnerability-assessment"
+      ],
+      "url": "https://github.com/gravion-ux/gravion-hunter",
+      "testCount": 26,
+      "testSource": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 26 passed",
+      "featured": false
+    },
+    {
       "name": "localshare",
       "description": "Shares a local development server through Cloudflare tunnels, with loopback-only origins.",
       "language": "JavaScript",
-      "stars": 1,
+      "stars": 4,
       "category": "platform",
       "categoryLabel": "Assessment, automation and platform",
       "topics": [
@@ -396,7 +514,7 @@
       "name": "privacyflow",
       "description": "Validates authorized WireGuard profiles and plans safe VPN rotation workflows.",
       "language": "Python",
-      "stars": 1,
+      "stars": 4,
       "category": "platform",
       "categoryLabel": "Assessment, automation and platform",
       "topics": [
@@ -420,7 +538,7 @@
       "name": "rasgulla-ai",
       "description": "A local-first AI-assisted security research workbench for code understanding and safe test generation.",
       "language": "Python",
-      "stars": 1,
+      "stars": 4,
       "category": "platform",
       "categoryLabel": "Assessment, automation and platform",
       "topics": [
@@ -444,7 +562,7 @@
       "name": "security-automation-scripts",
       "description": "Small Node.js and Bash utilities: header analysis, TLS configuration check, log parsing helpers.",
       "language": "JavaScript",
-      "stars": 1,
+      "stars": 4,
       "category": "platform",
       "categoryLabel": "Assessment, automation and platform",
       "topics": [
@@ -468,7 +586,7 @@
       "name": "web-security-labs",
       "description": "Four OWASP-style labs (IDOR, XSS, broken-auth, logic-flaw), each with a vulnerable and a secure variant, loopback-only by design.",
       "language": "JavaScript",
-      "stars": 1,
+      "stars": 4,
       "category": "platform",
       "categoryLabel": "Assessment, automation and platform",
       "topics": [
@@ -492,7 +610,7 @@
       "name": "webapp-security-toolkit",
       "description": "Authorized-only web and API security assessment toolkit: header analysis, TLS posture, scope enforcement, structured findings.",
       "language": "JavaScript",
-      "stars": 1,
+      "stars": 4,
       "category": "platform",
       "categoryLabel": "Assessment, automation and platform",
       "topics": [
@@ -516,7 +634,7 @@
       "name": "accessweave",
       "description": "Offline identity-relationship and directory-permission review from explicitly exported inventory data.",
       "language": "Python",
-      "stars": 1,
+      "stars": 4,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
       "topics": [
@@ -534,13 +652,13 @@
       "url": "https://github.com/gravion-ux/accessweave",
       "testCount": 33,
       "testSource": "pytest --collect-only, full run: 33 passed",
-      "featured": true
+      "featured": false
     },
     {
       "name": "cipherbench",
       "description": "A benchmark and interoperability test harness specification for vetted post-quantum cryptographic providers.",
       "language": "Python",
-      "stars": 1,
+      "stars": 4,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
       "topics": [
@@ -564,7 +682,7 @@
       "name": "fixqueue",
       "description": "Merge SARIF, Trivy, Grype and OSV scanner output into one deduplicated, EPSS and KEV prioritized fix queue.",
       "language": "JavaScript",
-      "stars": 1,
+      "stars": 4,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
       "topics": [
@@ -582,13 +700,13 @@
       "url": "https://github.com/gravion-ux/fixqueue",
       "testCount": 129,
       "testSource": "npm test (node --test): 129 passed",
-      "featured": true
+      "featured": false
     },
     {
       "name": "fuzzharbor",
       "description": "A reproducible local fuzzing campaign manager and crash triage toolkit.",
       "language": "Python",
-      "stars": 1,
+      "stars": 4,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
       "topics": [
@@ -612,7 +730,7 @@
       "name": "iamosiac",
       "description": "Offline cloud-IAM policy review and permission-relationship visualization data, with least-privilege remediation hints.",
       "language": "Python",
-      "stars": 11,
+      "stars": 13,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
       "topics": [
@@ -636,7 +754,7 @@
       "name": "opsledger",
       "description": "Tamper-evident evidence ledger for red-team engagements: hash-chained events and a signed manifest.",
       "language": "JavaScript",
-      "stars": 1,
+      "stars": 4,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
       "topics": [
@@ -654,13 +772,13 @@
       "url": "https://github.com/gravion-ux/opsledger",
       "testCount": 115,
       "testSource": "npm test (node --test): 115 passed",
-      "featured": true
+      "featured": false
     },
     {
       "name": "quanta-sentry",
       "description": "Cryptographic inventory and post-quantum migration-readiness reporting from source and configuration evidence.",
       "language": "Python",
-      "stars": 1,
+      "stars": 4,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
       "topics": [
@@ -684,7 +802,7 @@
       "name": "rulebench",
       "description": "Sigma rule conformance harness: run rules against events, lint them, and measure coverage against the MITRE knowledge base.",
       "language": "Python",
-      "stars": 1,
+      "stars": 4,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
       "topics": [
@@ -702,13 +820,13 @@
       "url": "https://github.com/gravion-ux/rulebench",
       "testCount": 187,
       "testSource": "pytest --collect-only, full run: 187 passed",
-      "featured": true
+      "featured": false
     },
     {
       "name": "secret-sniper",
       "description": "Leaked credential detection with live verification.",
       "language": "Python",
-      "stars": 1,
+      "stars": 4,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
       "topics": [
@@ -732,7 +850,7 @@
       "name": "violet-trace",
       "description": "A safe purple-team validation harness for defensive telemetry and detection-rule tests.",
       "language": "Python",
-      "stars": 1,
+      "stars": 4,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
       "topics": [
@@ -750,6 +868,28 @@
       "url": "https://github.com/gravion-ux/violet-trace",
       "testCount": 34,
       "testSource": "pytest --collect-only, full run: 34 passed",
+      "featured": false
+    },
+    {
+      "name": "wp-cve-hunter",
+      "description": "WordPress plugin and theme version fingerprinter with CVE matching - prioritised vulnerability reports for authorised testing. Offline inventory mode, zero dependencies.",
+      "language": "Python",
+      "stars": 4,
+      "category": "red-team",
+      "categoryLabel": "Red-team and detection engineering",
+      "topics": [
+        "bug-bounty",
+        "cve",
+        "infosec",
+        "patchstack",
+        "python",
+        "security",
+        "vulnerability-scanner",
+        "wordpress"
+      ],
+      "url": "https://github.com/gravion-ux/wp-cve-hunter",
+      "testCount": 82,
+      "testSource": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 82 passed",
       "featured": true
     }
   ]
