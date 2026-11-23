@@ -13,8 +13,8 @@ happens to you.
 - [x] The site deployed to `https://gravion-ux.github.io/portfolio` and loading over
       HTTPS.
 - [x] GitHub profile metadata updated: bio, website, location, company.
-- [ ] GitHub Sponsors profile published with all nine tiers.
-- [ ] The sponsor link checked from a logged-out browser — it should reach the
+- [x] GitHub Sponsors profile published with all thirteen tiers.
+- [x] The sponsor link checked from a logged-out browser — it should reach the
       published Sponsors page.
 
 ---
@@ -84,8 +84,8 @@ Rules that matter:
 Two repositories already have stars. Link the new tools from them, so the traffic
 lands on pages that already get visited.
 
-- [ ] `iamosiac` (11 stars) — add a "related tools" line to its README.
-- [ ] `llm-security-bot` (3 stars) — same.
+- [ ] `iamosiac` (13 stars) — add a "related tools" line to its README.
+- [ ] `llm-security-bot` (5 stars) — same.
 
 Do this after the flagship READMEs have their own sponsor attribution slots, so the
 cross-links point at finished pages.
@@ -94,8 +94,8 @@ cross-links point at finished pages.
 
 ## 6. Sponsor attribution slots
 
-The Sponsor tier promises a name in all three flagship READMEs. Put that promise in
-writing before anyone signs up for it.
+The Sponsor tier promises a name or logo in the flagship repos' README sponsor
+sections. Put that promise in writing before anyone signs up for it.
 
 - [x] `fixqueue/README.md` — sponsor slot.
 - [x] `rulebench/README.md` — sponsor slot.
@@ -141,7 +141,11 @@ something new:
 
 - [ ] Re-run the test suite and update the count in `tools/verified-tests.json`.
 - [ ] Run `python tools/refresh_projects.py` so stars and descriptions are current.
+- [ ] Run `python tools/sync_project_tables.py` so the README project tables match
+      the inventory.
 - [ ] Check that any new "MIT licensed" or "CI" sentence still matches reality.
+      The CI count is the number of authored repositories with a workflow in
+      `.github/workflows`; read it from the live inventory, never from memory.
 
 A sponsor who catches one inflated number assumes the rest are inflated too. That
 is the single thing most likely to destroy this profile, and it is entirely
