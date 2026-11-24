@@ -19,7 +19,7 @@ and **OWASP API Top 10**: finding authorization flaws (BOLA and IDOR),
 authentication and session-handling weaknesses, injection, and unsafe business logic,
 then writing reports that engineers can act on.
 
-Alongside that, I build and maintain **open-source security tooling** — 49 public
+Alongside that, I build and maintain **open-source security tooling** — 50 public
 repositories of published projects, the original tools among them MIT licensed — covering vulnerability triage, detection-rule
 conformance, engagement evidence, and auditing for the AI systems that ship beside
 modern applications. I contribute bug fixes upstream to the projects I use.
@@ -30,7 +30,7 @@ modern applications. I contribute bug fixes upstream to the projects I use.
 
 | Claim | Value | Source |
 | --- | --- | --- |
-| Public repositories | 49 | Live count at [github.com/gravion-ux](https://github.com/gravion-ux), checked 24 Nov 2026 — includes the full-stack builds (TaskForge, ChatSphere) and the ExpenseMate mobile app published that week |
+| Public repositories | 50 | Live count at [github.com/gravion-ux](https://github.com/gravion-ux), checked 24 Nov 2026 — includes the full-stack builds (TaskForge, ChatSphere) and the ExpenseMate mobile app published that week |
 | Test cases across 28 projects | 2,103 collected, 2,097 passing, 6 skipped, 0 failing | Each repository's own suite, run on a fresh clone on 2026-11-11 |
 | The three flagship tools | 129 + 187 + 115 = 431 tests | `fixqueue`, `rulebench`, `opsledger` |
 | MIT licensed | 30 of 30 (verified set) | Every `LICENSE` file in the set measured on 2026-11-11, fetched and compared against the canonical MIT text |
