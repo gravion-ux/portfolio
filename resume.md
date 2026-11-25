@@ -15,8 +15,8 @@ assessment, and authorized penetration testing. Experienced in identifying real-
 OWASP Top 10 issues including IDOR, XSS, and authentication flaws. Strong
 security-first mindset with the ability to collaborate with developers and provide
 actionable remediation guidance. Also builds and maintains dependency-light
-open-source security tooling in Node.js and Python — 38 published projects, all MIT
-licensed — and contributes fixes upstream to the projects I use.
+open-source tooling in Node.js and Python — 46 published projects, 45
+of them MIT licensed — and contributes fixes upstream to the projects I use.
 
 ---
 
@@ -50,8 +50,8 @@ licensed — and contributes fixes upstream to the projects I use.
 - Tested real-world web applications and APIs
 - Identified and responsibly disclosed vulnerabilities
 - Provided detailed reports with impact and remediation
-- Built and published 38 MIT licensed security and developer tools, with 3,364
-  measured tests across them
+- Built and published 46 security and developer tools — 45 MIT licensed —
+  with 4,010 measured tests across 44 repositories
 - Fixed the Corpus Hub IPv6 rate limiter upstream in xerj-org/xerj
 
 ---
@@ -78,16 +78,16 @@ licensed — and contributes fixes upstream to the projects I use.
 - **local-slm-eval-kit** — evaluates a local model against a fixed 10-task suite
   with 6 scorers and diffable reports. 108 tests.
 - **gravion-harness** — scoped, auditable security-testing harness with a
-  hash-chained audit log. 127 tests.
+  hash-chained audit log. 142 tests.
 - **context-bridge** — VS Code extension for privacy-conscious Markdown handoffs,
   with secret redaction built in. 66 tests.
 - **aegis** — multi-agent system core: task lifecycle, persistent memory,
   provider abstraction, default-deny tool registry, budgets and recovery.
-  294 tests.
+  315 tests.
 - **iamosiac** — offline cloud-IAM policy review and permission-relationship
   visualization data. Parses normalized IAM policy JSON, flags wildcard actions
   and resources, emits relationship edges, gives least-privilege remediation
-  hints. Python 3.11+, zero runtime dependencies, MIT. 39 tests.
+  hints. Python 3.11+, zero runtime dependencies, MIT. 61 tests.
 - **fixqueue** — merges SARIF, Trivy, Grype and OSV scanner output into one
   deduplicated, EPSS and KEV prioritized fix queue. 157 tests.
 - **rulebench** — Sigma rule conformance harness: runs rules against events,
@@ -97,8 +97,8 @@ licensed — and contributes fixes upstream to the projects I use.
 - **xerj-ipv6-rate-limit-fix** — contribution to
   [xerj-org/xerj](https://github.com/xerj-org/xerj): fixed the Corpus Hub
   rate limiter, which bucketed compressed IPv6 addresses by their first four
-  colon-separated fields instead of their /64. Open upstream as
-  [xerj-org/xerj#2872](https://github.com/xerj-org/xerj/pull/2872). 4 tests.
+  colon-separated fields instead of their /64. Merged upstream as
+  [xerj-org/xerj#2872](https://github.com/xerj-org/xerj/pull/2872) on 2026-11-17. 4 tests.
 
 ---
 
@@ -116,7 +116,7 @@ licensed — and contributes fixes upstream to the projects I use.
 
 ## Support my open-source work
 
-All 38 published projects are MIT licensed and free to use. Sponsorship keeps
+45 of the 46 published projects are MIT licensed and free to use. Sponsorship keeps
 them maintained: issue triage, test runs, dependency review, and the next
 release. It buys time on the parts nobody sees, not features for one company.
 

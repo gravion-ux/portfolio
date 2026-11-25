@@ -73,6 +73,12 @@ CATEGORY = {
     "wp-cve-hunter": "red-team",
     "petforge": "ai-security",
     "universal-hacker-kit": "red-team",
+    "apishield": "red-team",
+    "vulndesk": "platform",
+    "taskforge": "other",
+    "chatsphere": "other",
+    "expensemate": "other",
+    "security-research": "other",
 }
 
 CATEGORY_LABEL = {

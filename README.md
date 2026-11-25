@@ -19,8 +19,8 @@ and **OWASP API Top 10**: finding authorization flaws (BOLA and IDOR),
 authentication and session-handling weaknesses, injection, and unsafe business logic,
 then writing reports that engineers can act on.
 
-Alongside that, I build and maintain **open-source security tooling** — 38 published
-projects, every one of them MIT licensed — covering vulnerability triage, detection-rule
+Alongside that, I build and maintain **open-source tooling** — 46 published
+projects, 45 of them MIT licensed — covering vulnerability triage, detection-rule
 conformance, engagement evidence, and auditing for the AI systems that ship beside
 modern applications. I contribute bug fixes upstream to the projects I use.
 
@@ -30,13 +30,13 @@ modern applications. I contribute bug fixes upstream to the projects I use.
 
 | Claim | Value | Source |
 | --- | --- | --- |
-| Authored open-source projects | 38 | The 42 public repositories minus this profile repository, this website repository, and two forks of other maintainers' projects |
-| Test cases across 38 projects | 3,364 collected, 3,357 passing, 7 skipped, 0 failing | Each repository's own suite, run on a fresh clone: 28 repositories on 2026-11-20 and 10 on 2026-11-22 |
-| The three flagship tools | 157 + 198 + 137 = 492 tests | `fixqueue`, `rulebench`, `opsledger` |
-| MIT licensed | 38 of 38 | Every `LICENSE` file fetched and compared against the canonical MIT text |
-| Repositories with a CI workflow | 37 of 38 | The `.github/workflows` directory of each repository |
-| Node tools with zero runtime dependencies | 15 of 16 | `package.json` of each repository |
-| Python tools with zero runtime dependencies | 16 of 21 | `pyproject.toml` and `requirements.txt` of each repository |
+| Authored open-source projects | 46 | The 50 public repositories minus this profile repository, this website repository, and two forks of other maintainers' projects |
+| Test cases across 46 projects | 4,010 collected, 3,998 passing, 12 skipped, 0 failing | Each repository's own suite, run on a fresh clone on 2026-11-25; 44 of the 46 repositories have a suite |
+| The five flagship builds | 385 + 82 + 46 + 58 + 38 = 609 tests | `gravion-ai`, `wp-cve-hunter`, `llm-redteam-kit`, `mcp-shield`, `jwt-auditor` |
+| MIT licensed | 45 of 46 | Every `LICENSE` file fetched and compared against the canonical MIT text; `security-research` holds written research and carries no licence file |
+| Repositories with a CI workflow | 44 of 46 | The `.github/workflows` directory of each repository |
+| Node tools with zero runtime dependencies | 17 of 19 | `package.json` of each repository |
+| Python tools with zero runtime dependencies | 18 of 23 | `pyproject.toml` and `requirements.txt` of each repository |
 
 Nothing on this site is estimated. The inventory is regenerated from the live GitHub
 API by `tools/refresh_projects.py`, and the test counts come from
@@ -50,59 +50,67 @@ API by `tools/refresh_projects.py`, and the test counts come from
 
 | Project | What it does | Tests |
 | --- | --- | --- |
-| [iamosiac](https://github.com/gravion-ux/iamosiac) | Offline cloud-IAM policy review and permission-relationship visualization data, with least-privilege remediation hints. | 39 tests |
+| [iamosiac](https://github.com/gravion-ux/iamosiac) | Offline cloud-IAM policy review and permission-relationship visualization data, with least-privilege remediation hints. | 61 tests |
 | [wp-cve-hunter](https://github.com/gravion-ux/wp-cve-hunter) | Match WordPress plugin and theme versions against known CVEs — a defensive, authorised-testing CLI for site owners and bug bounty researchers. | 82 tests |
 | [llm-redteam-kit](https://github.com/gravion-ux/llm-redteam-kit) | Authorized LLM red-teaming evaluation toolkit: OWASP LLM Top 10 probe packs, heuristic scoring, CI regression gates. | 46 tests |
-| [mcp-shield](https://github.com/gravion-ux/mcp-shield) | Defensive security auditor for MCP server configurations and tool definitions. | 46 tests |
-| [jwt-auditor](https://github.com/gravion-ux/jwt-auditor) | Defensive security auditor for JSON Web Tokens: alg=none, weak HMAC secrets, embedded keys, kid injection, lifetime and claim hygiene. | 36 tests |
+| [mcp-shield](https://github.com/gravion-ux/mcp-shield) | Defensive security auditor for MCP server configurations and tool definitions. | 58 tests |
+| [jwt-auditor](https://github.com/gravion-ux/jwt-auditor) | Defensive security auditor for JSON Web Tokens: alg=none, weak HMAC secrets, embedded keys, kid injection, lifetime and claim hygiene. | 38 tests |
 | [rulebench](https://github.com/gravion-ux/rulebench) | Sigma rule conformance harness: run rules against events, lint them, and measure coverage against the MITRE knowledge base. | 198 tests |
 | [fixqueue](https://github.com/gravion-ux/fixqueue) | Merge SARIF, Trivy, Grype and OSV scanner output into one deduplicated, EPSS and KEV prioritized fix queue. | 157 tests |
 | [opsledger](https://github.com/gravion-ux/opsledger) | Tamper-evident evidence ledger for red-team engagements: hash-chained events and a signed manifest. | 137 tests |
 | [secret-sniper](https://github.com/gravion-ux/secret-sniper) | Leaked credential detection with live verification. | 69 checks |
+| [apishield](https://github.com/gravion-ux/apishield) | API security gateway — BOLA/IDOR, JWT and auth-abuse inspection in front of any API (zero-dependency Python). | 59 tests |
 | [violet-trace](https://github.com/gravion-ux/violet-trace) | A safe purple-team validation harness for defensive telemetry and detection-rule tests. | 34 tests |
 | [accessweave](https://github.com/gravion-ux/accessweave) | Offline identity-relationship and directory-permission review from explicitly exported inventory data. | 33 tests |
 | [cipherbench](https://github.com/gravion-ux/cipherbench) | A benchmark and interoperability test harness specification for vetted post-quantum cryptographic providers. | 29 tests |
 | [gravion-hunter](https://github.com/gravion-ux/gravion-hunter) | Autonomous bug bounty agent framework — scope-locked hunting, a hard 7-question validation gate, dedupe-in-the-loop, and a validity brake on autopilot submission. | 26 tests |
 | [quanta-sentry](https://github.com/gravion-ux/quanta-sentry) | Cryptographic inventory and post-quantum migration-readiness reporting from source and configuration evidence. | 26 tests |
 | [fuzzharbor](https://github.com/gravion-ux/fuzzharbor) | A reproducible local fuzzing campaign manager and crash triage toolkit. | 21 tests |
+| [universal-hacker-kit](https://github.com/gravion-ux/universal-hacker-kit) | A Claude Code command kit for bug bounty hunting: write, triage, gotchas and dedupe commands for drafting and validating reports before submission (free edition). | 0 tests |
 
 ### AI and agent security
 
 | Project | What it does | Tests |
 | --- | --- | --- |
-| [gravion-ai](https://github.com/gravion-ux/gravion-ai) | Gravion AI: a modular AI platform framework — many AI types, four tiers, one module system, with a cryptographic licensing and entitlement layer for commercial deployments. | 116 tests |
+| [gravion-ai](https://github.com/gravion-ux/gravion-ai) | Gravion AI: a modular AI platform framework — many AI types, four tiers, one module system, with a cryptographic licensing and entitlement layer for commercial deployments. | 385 tests |
 | [preference-data-doctor](https://github.com/gravion-ux/preference-data-doctor) | Diagnoses and repairs preference datasets: duplicates, contradictions, class imbalance, format drift, leaked secrets. | 147 tests |
-| [gravion-harness](https://github.com/gravion-ux/gravion-harness) | A scoped, auditable security-testing harness with a hash-chained audit log. | 127 tests |
+| [gravion-harness](https://github.com/gravion-ux/gravion-harness) | A scoped, auditable security-testing harness with a hash-chained audit log. | 142 tests |
 | [skill-supply-chain-auditor](https://github.com/gravion-ux/skill-supply-chain-auditor) | Audits agent skill packages for prompt injection, unsafe shell, obfuscated payloads, embedded secrets, unpinned dependencies. | 125 tests |
 | [memorytrust](https://github.com/gravion-ux/memorytrust) | Audits an agent memory store for unverified, stale, contradictory and sensitive content and scores how much can be trusted. | 112 tests |
 | [local-slm-eval-kit](https://github.com/gravion-ux/local-slm-eval-kit) | Evaluates a local model against a fixed task suite with redaction, timeouts and diffable reports. | 108 tests |
 | [context-bridge](https://github.com/gravion-ux/context-bridge) | A VS Code extension that writes privacy-conscious Markdown handoffs, with secret redaction built in. | 66 tests |
+| [petforge](https://github.com/gravion-ux/petforge) | AI companions for agents and subagents — 34 original pets with mood engines, bond levels and an adopt/react API. | 50 tests |
 | [agent-skills](https://github.com/gravion-ux/agent-skills) | A 1200-skill agent skill library with a deterministic master router that selects the right skill for any task. | 48 tests |
-| [gravion-trainner](https://github.com/gravion-ux/gravion-trainner) | Model quality evaluation starter for OpenAI-compatible chat-completions endpoints. | 27 tests |
+| [gravion-trainner](https://github.com/gravion-ux/gravion-trainner) | Model quality evaluation starter for OpenAI-compatible chat-completions endpoints. | 45 tests |
 | [llm-security-bot](https://github.com/gravion-ux/llm-security-bot) | Pattern-based static analysis for code, configs, log lines and LLM input — deterministic, so the output is a triage list, not proof of exploitability. | 20 tests |
 
 ### Assessment, automation and platform
 
 | Project | What it does | Tests |
 | --- | --- | --- |
-| [Her--Him](https://github.com/gravion-ux/Her--Him) | Two complete AI-companion personality catalogues with a deterministic, explainable affect engine and mood-driven multilingual voice. | 434 tests |
-| [TRISHUL](https://github.com/gravion-ux/TRISHUL) | Authorized-scope, AI-powered security testing platform with real tool integration behind scope gates and an AI policy boundary. | 334 tests |
-| [aegis](https://github.com/gravion-ux/aegis) | Multi-agent system core: task lifecycle, persistent memory, provider abstraction, default-deny tool registry, budgets and recovery. | 294 tests |
+| [Her--Him](https://github.com/gravion-ux/Her--Him) | Two complete AI-companion personality catalogues with a deterministic, explainable affect engine and mood-driven multilingual voice. | 438 tests |
+| [TRISHUL](https://github.com/gravion-ux/TRISHUL) | Authorized-scope, AI-powered security testing platform with real tool integration behind scope gates and an AI policy boundary. | 335 tests |
+| [aegis](https://github.com/gravion-ux/aegis) | Multi-agent system core: task lifecycle, persistent memory, provider abstraction, default-deny tool registry, budgets and recovery. | 315 tests |
+| [vulndesk](https://github.com/gravion-ux/vulndesk) | Multi-tenant vulnerability management and bug bounty triage platform — RBAC, dedupe engine, CVSS scoring, report export (zero-dependency Node.js). | 61 tests |
+| [localshare](https://github.com/gravion-ux/localshare) | Shares a local development server through Cloudflare tunnels, with loopback-only origins. | 51 tests |
+| [privacyflow](https://github.com/gravion-ux/privacyflow) | Validates authorized WireGuard profiles and plans safe VPN rotation workflows. | 50 tests |
 | [rasgulla-ai](https://github.com/gravion-ux/rasgulla-ai) | A local-first AI-assisted security research workbench for code understanding and safe test generation. | 50 tests |
 | [webapp-security-toolkit](https://github.com/gravion-ux/webapp-security-toolkit) | Authorized-only web and API security assessment toolkit: header analysis, TLS posture, scope enforcement, structured findings. | 44 tests |
 | [agent-browser](https://github.com/gravion-ux/agent-browser) | Visible Playwright browser starter with an explicit domain allow-list and explicit stop conditions. | 43 tests |
-| [localshare](https://github.com/gravion-ux/localshare) | Shares a local development server through Cloudflare tunnels, with loopback-only origins. | 40 tests |
-| [privacyflow](https://github.com/gravion-ux/privacyflow) | Validates authorized WireGuard profiles and plans safe VPN rotation workflows. | 38 tests |
 | [security-automation-scripts](https://github.com/gravion-ux/security-automation-scripts) | Small Node.js and Bash utilities: header analysis, TLS configuration check, log parsing helpers. | 22 tests |
-| [web-security-labs](https://github.com/gravion-ux/web-security-labs) | Four OWASP-style labs (IDOR, XSS, broken-auth, logic-flaw), each with a vulnerable and a secure variant, loopback-only by design. | 22 checks across 4 labs |
+| [web-security-labs](https://github.com/gravion-ux/web-security-labs) | Four OWASP-style labs (IDOR, XSS, broken-auth, logic-flaw), each with a vulnerable and a secure variant, loopback-only by design. | 22 tests |
 | [api-security-testing](https://github.com/gravion-ux/api-security-testing) | Read-only BOLA and cross-tenant detector with a rate-limit probe, backed by a local mock API for reproducible demos. | 18 tests |
 
 ### Upstream contribution and other
 
 | Project | What it does | Tests |
 | --- | --- | --- |
-| [catalog-forge](https://github.com/gravion-ux/catalog-forge) | Crawls a shop catalog and serves it as a storefront. | 146 tests |
+| [catalog-forge](https://github.com/gravion-ux/catalog-forge) | Crawls a shop catalog and serves it as a storefront. | 156 tests |
+| [expensemate](https://github.com/gravion-ux/expensemate) | ExpenseMate — React Native (Expo) expense tracker in TypeScript: categories, monthly summaries, breakdown charts, AsyncStorage persistence, multi-currency, dark theme. | 32 tests |
+| [chatsphere](https://github.com/gravion-ux/chatsphere) | ChatSphere — real-time chat app (direct and group) with Socket.io and MongoDB: JWT-authenticated sockets, presence, typing indicators, unread counts; React frontend. | 30 tests |
+| [taskforge](https://github.com/gravion-ux/taskforge) | TaskForge — full-stack team task manager (MERN): JWT auth, role-based access, projects, kanban boards with drag-and-drop, tasks, comments. | 17 tests |
 | [xerj-ipv6-rate-limit-fix](https://github.com/gravion-ux/xerj-ipv6-rate-limit-fix) | A contribution to xerj-org/xerj fixing the Corpus Hub rate limiter to bucket compressed IPv6 addresses by their /64. Merged upstream as xerj-org/xerj#2872 on 2026-11-17. | 4 tests |
+| [security-research](https://github.com/gravion-ux/security-research) | Responsible-disclosure write-ups from my WordPress plugin security research — concept-level, sanitised, no exploit payloads. | 0 tests |
 ---
 
 ## Services
@@ -147,8 +155,8 @@ Sponsors — seven monthly from $5, and six one-time from $25.
 
 🔗 [Sponsor on GitHub](https://github.com/sponsors/gravion-ux)
 
-The tools stay free, MIT licensed, and free of telemetry whether or not anyone
-sponsors them. All 38 published projects carry the MIT licence.
+The tools stay free and free of telemetry whether or not anyone sponsors them.
+45 of the 46 published projects carry the MIT licence; `security-research` holds written research and carries no licence file.
 
 ---
 
@@ -168,6 +176,8 @@ sponsors them. All 38 published projects carry the MIT licence.
 | --- | --- |
 | `site/` | The static website served by GitHub Pages |
 | `site/assets/projects.json` | Generated project inventory, built from the live GitHub API |
+| `site/support.html` | The sponsorship page: the tier ladder, what each tier includes, and where a name gets placed |
+| `site/support.html` | The sponsorship page: the tier ladder, what each tier includes, and where a name gets placed |
 | `tools/refresh_projects.py` | Regenerates the inventory. Run it whenever stars or descriptions change. |
 | `tools/sync_project_tables.py` | Regenerates the project tables in this README from the inventory. |
 | `tools/verified-tests.json` | Measured test counts, with the command used for each one |

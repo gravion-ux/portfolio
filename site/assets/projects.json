@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-23",
+  "generated": "2026-11-25",
   "owner": "gravion-ux",
   "featured": [
     "iamosiac",
@@ -43,14 +43,17 @@
         "agent-skills",
         "ai-agents",
         "automation",
+        "bm25",
+        "information-retrieval",
         "llm",
         "orchestration",
         "prompt-engineering",
+        "python",
         "skill-library"
       ],
       "url": "https://github.com/gravion-ux/agent-skills",
       "testCount": 48,
-      "testSource": "pytest -q: 48 passed, 0 skipped",
+      "testSource": "pytest --junitxml on a fresh clone: 48 passed, 0 skipped",
       "featured": false
     },
     {
@@ -74,7 +77,7 @@
       ],
       "url": "https://github.com/gravion-ux/context-bridge",
       "testCount": 66,
-      "testSource": "npm test (node --test): 66 passed, 0 skipped",
+      "testSource": "node --test : 66 passed, 0 skipped",
       "featured": false
     },
     {
@@ -85,15 +88,20 @@
       "category": "ai-security",
       "categoryLabel": "AI and agent security",
       "topics": [
+        "ai-agents",
         "ai-platform",
+        "developer-tools",
+        "generative-ai",
         "gravion",
         "licensing",
+        "llm",
         "modular-ai",
-        "python"
+        "python",
+        "sdk"
       ],
       "url": "https://github.com/gravion-ux/gravion-ai",
-      "testCount": 116,
-      "testSource": "pytest -q: 115 passed, 1 skipped, 116 collected (the skipped test asserts POSIX permission bits, which os.chmod cannot set on win32)",
+      "testCount": 385,
+      "testSource": "pytest --junitxml on the repaired branch (percent-escaped CLI help, POSIX export paths, dataset hash bytes): 380 passed, 5 skipped, 0 failed, 385 collected",
       "featured": true
     },
     {
@@ -116,8 +124,8 @@
         "security"
       ],
       "url": "https://github.com/gravion-ux/gravion-harness",
-      "testCount": 127,
-      "testSource": "npm test (node --test): 127 passed, 0 skipped",
+      "testCount": 142,
+      "testSource": "node --test : 142 passed, 0 skipped",
       "featured": false
     },
     {
@@ -140,8 +148,8 @@
         "security"
       ],
       "url": "https://github.com/gravion-ux/gravion-trainner",
-      "testCount": 27,
-      "testSource": "pytest --collect-only, full run: 27 passed, 0 skipped",
+      "testCount": 45,
+      "testSource": "pytest --junitxml on a fresh clone: 45 passed, 0 skipped",
       "featured": false
     },
     {
@@ -165,7 +173,7 @@
       ],
       "url": "https://github.com/gravion-ux/llm-security-bot",
       "testCount": 20,
-      "testSource": "npm test (node --test): 20 passed, 0 skipped",
+      "testSource": "node --test test/detectors.test.js test/scanner.test.js test/cli.test.js: 20 passed, 0 skipped",
       "featured": false
     },
     {
@@ -189,7 +197,7 @@
       ],
       "url": "https://github.com/gravion-ux/local-slm-eval-kit",
       "testCount": 108,
-      "testSource": "npm test (node --test): 108 passed, 0 skipped",
+      "testSource": "node --test test/adapter.test.js test/cli.test.js test/metrics.test.js test/redact.test.js test/report.test.js test/runner.test.js test/tasks.test.js: 108 passed, 0 skipped",
       "featured": false
     },
     {
@@ -213,7 +221,31 @@
       ],
       "url": "https://github.com/gravion-ux/memorytrust",
       "testCount": 112,
-      "testSource": "npm test (node --test): 112 passed, 0 skipped",
+      "testSource": "node --test test/cli.test.js test/findings.test.js test/loader.test.js test/redact.test.js test/report.test.js test/rules.test.js test/scanner.test.js test/schema.test.js: 112 passed, 0 skipped",
+      "featured": false
+    },
+    {
+      "name": "petforge",
+      "description": "AI companions for agents and subagents — 34 original pets with mood engines, bond levels and an adopt/react API.",
+      "language": "Python",
+      "stars": 0,
+      "category": "ai-security",
+      "categoryLabel": "AI and agent security",
+      "topics": [
+        "ai-agents",
+        "ai-companion",
+        "cli",
+        "json",
+        "llm",
+        "multi-agent",
+        "open-source",
+        "pytest",
+        "python",
+        "virtual-pet"
+      ],
+      "url": "https://github.com/gravion-ux/petforge",
+      "testCount": 50,
+      "testSource": "pytest --junitxml on a fresh clone: 50 passed, 0 skipped",
       "featured": false
     },
     {
@@ -237,7 +269,7 @@
       ],
       "url": "https://github.com/gravion-ux/preference-data-doctor",
       "testCount": 147,
-      "testSource": "npm test (node --test): 147 passed, 0 skipped",
+      "testSource": "node --test test/cli.test.js test/findings.test.js test/loader.test.js test/redact.test.js test/repair.test.js test/report.test.js test/rules.test.js test/scanner.test.js test/schema.test.js: 147 passed, 0 skipped",
       "featured": false
     },
     {
@@ -261,7 +293,7 @@
       ],
       "url": "https://github.com/gravion-ux/skill-supply-chain-auditor",
       "testCount": 125,
-      "testSource": "npm test (node --test): 125 passed, 0 skipped",
+      "testSource": "node --test test/cli.test.js test/findings.test.js test/loader.test.js test/redact.test.js test/report.test.js test/rules.test.js test/scanner.test.js: 125 passed, 0 skipped",
       "featured": false
     },
     {
@@ -308,8 +340,60 @@
         "woocommerce"
       ],
       "url": "https://github.com/gravion-ux/catalog-forge",
-      "testCount": 146,
-      "testSource": "pytest -o addopts= -q (backend/requirements.txt installed): 146 passed, 0 skipped",
+      "testCount": 156,
+      "testSource": "pytest --junitxml on a fresh clone: 156 passed, 0 skipped",
+      "featured": false
+    },
+    {
+      "name": "chatsphere",
+      "description": "ChatSphere — real-time chat app (direct and group) with Socket.io and MongoDB: JWT-authenticated sockets, presence, typing indicators, unread counts; React frontend.",
+      "language": "JavaScript",
+      "stars": 0,
+      "category": "other",
+      "categoryLabel": "Other",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/chatsphere",
+      "testCount": 30,
+      "testSource": "npm test in each workspace package (client vitest 7, server jest 23): 30 passed, 0 skipped",
+      "featured": false
+    },
+    {
+      "name": "expensemate",
+      "description": "ExpenseMate — React Native (Expo) expense tracker in TypeScript: categories, monthly summaries, breakdown charts, AsyncStorage persistence, multi-currency, dark theme.",
+      "language": "TypeScript",
+      "stars": 0,
+      "category": "other",
+      "categoryLabel": "Other",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/expensemate",
+      "testCount": 32,
+      "testSource": "npm test (jest): 32 passed, 0 skipped",
+      "featured": false
+    },
+    {
+      "name": "security-research",
+      "description": "Responsible-disclosure write-ups from my WordPress plugin security research — concept-level, sanitised, no exploit payloads.",
+      "language": "Other",
+      "stars": 0,
+      "category": "other",
+      "categoryLabel": "Other",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/security-research",
+      "testCount": 0,
+      "testSource": "no test suite in the repository: it holds written research, not code",
+      "featured": false
+    },
+    {
+      "name": "taskforge",
+      "description": "TaskForge — full-stack team task manager (MERN): JWT auth, role-based access, projects, kanban boards with drag-and-drop, tasks, comments.",
+      "language": "JavaScript",
+      "stars": 0,
+      "category": "other",
+      "categoryLabel": "Other",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/taskforge",
+      "testCount": 17,
+      "testSource": "npm test in each workspace package (client vitest 3, server jest 14): 17 passed, 0 skipped",
       "featured": false
     },
     {
@@ -321,16 +405,19 @@
       "categoryLabel": "Assessment, automation and platform",
       "topics": [
         "affect-engine",
+        "ai",
         "ai-companion",
         "character-card",
+        "chatbot",
         "mood-driven",
         "multilingual-tts",
         "persona",
+        "python",
         "voice-synthesis"
       ],
       "url": "https://github.com/gravion-ux/Her--Him",
-      "testCount": 434,
-      "testSource": "pytest -q: 434 passed, 0 skipped",
+      "testCount": 438,
+      "testSource": "pytest --junitxml on a fresh clone: 438 passed, 0 skipped",
       "featured": false
     },
     {
@@ -353,8 +440,8 @@
         "vulnerability-scanning"
       ],
       "url": "https://github.com/gravion-ux/TRISHUL",
-      "testCount": 334,
-      "testSource": "pytest --collect-only, full run: 334 passed, 0 skipped",
+      "testCount": 335,
+      "testSource": "pytest --junitxml on a fresh clone: 335 passed, 0 skipped",
       "featured": false
     },
     {
@@ -377,8 +464,8 @@
         "tool-use"
       ],
       "url": "https://github.com/gravion-ux/aegis",
-      "testCount": 294,
-      "testSource": "npm test (node --test): 293 passed, 1 skipped",
+      "testCount": 315,
+      "testSource": "node --test test/states.test.js test/task.test.js test/storage.test.js test/audit.test.js test/redact.test.js test/agent.test.js test/memory.test.js test/cli.test.js test/memory2.test.js test/providers.test.js test/tools.test.js test/usage.test.js test/orchestrator.test.js test/recovery.test.js test/phase1-compat.test.js test/regressions.test.js test/security-hardening.test.js test/adversarial.test.js test/phase22-regressions.test.js test/phase22-aliasing-regressions.test.js test/chief.test.js: 314 passed, 1 skipped",
       "featured": false
     },
     {
@@ -402,7 +489,7 @@
       ],
       "url": "https://github.com/gravion-ux/agent-browser",
       "testCount": 43,
-      "testSource": "npm test (node --test): 43 passed, 0 skipped",
+      "testSource": "node --test ./test/*.test.js: 43 passed, 0 skipped",
       "featured": false
     },
     {
@@ -426,7 +513,7 @@
       ],
       "url": "https://github.com/gravion-ux/api-security-testing",
       "testCount": 18,
-      "testSource": "npm test (node --test): 18 passed, 0 skipped",
+      "testSource": "node --test test/bola.test.js test/rate-limit.test.js test/cli.test.js test/server.test.js: 18 passed, 0 skipped",
       "featured": false
     },
     {
@@ -449,8 +536,8 @@
         "tunneling"
       ],
       "url": "https://github.com/gravion-ux/localshare",
-      "testCount": 40,
-      "testSource": "npm test (node --test): 39 passed, 1 skipped",
+      "testCount": 51,
+      "testSource": "node --test ./test/*.test.js: 49 passed, 2 skipped",
       "featured": false
     },
     {
@@ -473,8 +560,8 @@
         "wireguard"
       ],
       "url": "https://github.com/gravion-ux/privacyflow",
-      "testCount": 38,
-      "testSource": "pytest --collect-only, full run: 38 passed, 0 skipped",
+      "testCount": 50,
+      "testSource": "pytest --junitxml on a fresh clone: 50 passed, 0 skipped",
       "featured": false
     },
     {
@@ -498,7 +585,7 @@
       ],
       "url": "https://github.com/gravion-ux/rasgulla-ai",
       "testCount": 50,
-      "testSource": "pytest --collect-only, full run: 49 passed, 1 skipped",
+      "testSource": "pytest --junitxml on a fresh clone: 49 passed, 1 skipped",
       "featured": false
     },
     {
@@ -522,7 +609,28 @@
       ],
       "url": "https://github.com/gravion-ux/security-automation-scripts",
       "testCount": 22,
-      "testSource": "npm test (node --test): 22 passed, 0 skipped",
+      "testSource": "node --test test/headers.test.js test/tls.test.js test/log-normalizer.test.js test/cli.test.js: 22 passed, 0 skipped",
+      "featured": false
+    },
+    {
+      "name": "vulndesk",
+      "description": "Multi-tenant vulnerability management and bug bounty triage platform — RBAC, dedupe engine, CVSS scoring, report export (zero-dependency Node.js).",
+      "language": "JavaScript",
+      "stars": 0,
+      "category": "platform",
+      "categoryLabel": "Assessment, automation and platform",
+      "topics": [
+        "bug-bounty",
+        "cvss",
+        "nodejs",
+        "rbac",
+        "security",
+        "triage",
+        "vulnerability-management"
+      ],
+      "url": "https://github.com/gravion-ux/vulndesk",
+      "testCount": 61,
+      "testSource": "node --test test/*.test.js: 61 passed, 0 skipped",
       "featured": false
     },
     {
@@ -546,7 +654,7 @@
       ],
       "url": "https://github.com/gravion-ux/web-security-labs",
       "testCount": 22,
-      "testSource": "npm test: 4 labs, checks 5 + 5 + 6 + 6 = 22, all passed",
+      "testSource": "node --test : 22 passed, 0 skipped",
       "featured": false
     },
     {
@@ -570,7 +678,7 @@
       ],
       "url": "https://github.com/gravion-ux/webapp-security-toolkit",
       "testCount": 44,
-      "testSource": "npm test (node --test): 44 passed, 0 skipped",
+      "testSource": "node --test test/scope.test.js test/headers.test.js test/tls.test.js test/findings.test.js test/cli.test.js: 44 passed, 0 skipped",
       "featured": false
     },
     {
@@ -594,7 +702,28 @@
       ],
       "url": "https://github.com/gravion-ux/accessweave",
       "testCount": 33,
-      "testSource": "pytest --collect-only, full run: 33 passed, 0 skipped",
+      "testSource": "pytest --junitxml on a fresh clone: 33 passed, 0 skipped",
+      "featured": false
+    },
+    {
+      "name": "apishield",
+      "description": "API security gateway — BOLA/IDOR, JWT and auth-abuse inspection in front of any API (zero-dependency Python).",
+      "language": "Python",
+      "stars": 0,
+      "category": "red-team",
+      "categoryLabel": "Red-team and detection engineering",
+      "topics": [
+        "api-security",
+        "bola",
+        "idor",
+        "jwt",
+        "owasp-api",
+        "python",
+        "security-gateway"
+      ],
+      "url": "https://github.com/gravion-ux/apishield",
+      "testCount": 59,
+      "testSource": "pytest --junitxml on a fresh clone: 59 passed, 0 skipped",
       "featured": false
     },
     {
@@ -618,7 +747,7 @@
       ],
       "url": "https://github.com/gravion-ux/cipherbench",
       "testCount": 29,
-      "testSource": "pytest --collect-only, full run: 29 passed, 0 skipped",
+      "testSource": "pytest --junitxml on a fresh clone: 29 passed, 0 skipped",
       "featured": false
     },
     {
@@ -642,7 +771,7 @@
       ],
       "url": "https://github.com/gravion-ux/fixqueue",
       "testCount": 157,
-      "testSource": "npm test (node --test): 157 passed, 0 skipped",
+      "testSource": "node --test test/normalize.test.js test/dedupe.test.js test/enrich.test.js test/score.test.js test/report.test.js test/suppress.test.js test/cache.test.js test/feeds.test.js test/cli.test.js: 157 passed, 0 skipped",
       "featured": false
     },
     {
@@ -666,7 +795,7 @@
       ],
       "url": "https://github.com/gravion-ux/fuzzharbor",
       "testCount": 21,
-      "testSource": "pytest --collect-only, full run: 19 passed, 2 skipped",
+      "testSource": "pytest --junitxml on a fresh clone: 19 passed, 2 skipped",
       "featured": false
     },
     {
@@ -676,10 +805,21 @@
       "stars": 4,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
-      "topics": [],
+      "topics": [
+        "agent-framework",
+        "ai-agents",
+        "automation",
+        "bug-bounty",
+        "llm",
+        "offensive-security",
+        "python",
+        "red-team",
+        "security",
+        "vulnerability-assessment"
+      ],
       "url": "https://github.com/gravion-ux/gravion-hunter",
       "testCount": 26,
-      "testSource": "pytest -q: 26 passed, 0 skipped",
+      "testSource": "pytest --junitxml on a fresh clone: 26 passed, 0 skipped",
       "featured": false
     },
     {
@@ -702,8 +842,8 @@
         "visualization"
       ],
       "url": "https://github.com/gravion-ux/iamosiac",
-      "testCount": 39,
-      "testSource": "pytest --collect-only, full run: 39 passed, 0 skipped",
+      "testCount": 61,
+      "testSource": "pytest --junitxml on a fresh clone: 61 passed, 0 skipped",
       "featured": true
     },
     {
@@ -713,10 +853,21 @@
       "stars": 4,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
-      "topics": [],
+      "topics": [
+        "appsec",
+        "authentication",
+        "infosec",
+        "json-web-token",
+        "jwt",
+        "penetration-testing",
+        "python",
+        "security",
+        "security-tools",
+        "vulnerability-scanner"
+      ],
       "url": "https://github.com/gravion-ux/jwt-auditor",
-      "testCount": 36,
-      "testSource": "pytest -q: 36 passed, 0 skipped",
+      "testCount": 38,
+      "testSource": "pytest --junitxml on a fresh clone: 38 passed, 0 skipped",
       "featured": true
     },
     {
@@ -740,7 +891,7 @@
       ],
       "url": "https://github.com/gravion-ux/llm-redteam-kit",
       "testCount": 46,
-      "testSource": "pytest -q: 46 passed, 0 skipped",
+      "testSource": "pytest --junitxml on a fresh clone: 46 passed, 0 skipped",
       "featured": true
     },
     {
@@ -761,8 +912,8 @@
         "security-tools"
       ],
       "url": "https://github.com/gravion-ux/mcp-shield",
-      "testCount": 46,
-      "testSource": "pytest -q: 46 passed, 0 skipped",
+      "testCount": 58,
+      "testSource": "pytest --junitxml on a fresh clone: 58 passed, 0 skipped",
       "featured": true
     },
     {
@@ -786,7 +937,7 @@
       ],
       "url": "https://github.com/gravion-ux/opsledger",
       "testCount": 137,
-      "testSource": "npm test (node --test): 137 passed, 0 skipped",
+      "testSource": "node --test test/hash.test.js test/ledger.test.js test/artifacts.test.js test/verify.test.js test/report.test.js test/cli.test.js: 137 passed, 0 skipped",
       "featured": false
     },
     {
@@ -810,7 +961,7 @@
       ],
       "url": "https://github.com/gravion-ux/quanta-sentry",
       "testCount": 26,
-      "testSource": "pytest --collect-only, full run: 25 passed, 1 skipped",
+      "testSource": "pytest --junitxml on a fresh clone: 25 passed, 1 skipped",
       "featured": false
     },
     {
@@ -834,7 +985,7 @@
       ],
       "url": "https://github.com/gravion-ux/rulebench",
       "testCount": 198,
-      "testSource": "pytest --collect-only, full run: 198 passed, 0 skipped",
+      "testSource": "pytest --junitxml on a fresh clone: 198 passed, 0 skipped",
       "featured": false
     },
     {
@@ -862,6 +1013,30 @@
       "featured": false
     },
     {
+      "name": "universal-hacker-kit",
+      "description": "A Claude Code command kit for bug bounty hunting: write, triage, gotchas and dedupe commands for drafting and validating reports before submission (free edition).",
+      "language": "Python",
+      "stars": 0,
+      "category": "red-team",
+      "categoryLabel": "Red-team and detection engineering",
+      "topics": [
+        "ai-tools",
+        "bug-bounty",
+        "bugcrowd",
+        "claude-code",
+        "hackerone",
+        "intigriti",
+        "patchstack",
+        "prompt-engineering",
+        "security",
+        "yeswehack"
+      ],
+      "url": "https://github.com/gravion-ux/universal-hacker-kit",
+      "testCount": 0,
+      "testSource": "no test suite in the repository: it ships command definitions and documentation only",
+      "featured": false
+    },
+    {
       "name": "violet-trace",
       "description": "A safe purple-team validation harness for defensive telemetry and detection-rule tests.",
       "language": "Python",
@@ -882,7 +1057,7 @@
       ],
       "url": "https://github.com/gravion-ux/violet-trace",
       "testCount": 34,
-      "testSource": "pytest --collect-only, full run: 34 passed, 0 skipped",
+      "testSource": "pytest --junitxml on a fresh clone: 34 passed, 0 skipped",
       "featured": false
     },
     {
@@ -904,7 +1079,7 @@
       ],
       "url": "https://github.com/gravion-ux/wp-cve-hunter",
       "testCount": 82,
-      "testSource": "pytest -q: 82 passed, 0 skipped",
+      "testSource": "pytest --junitxml on a fresh clone: 82 passed, 0 skipped",
       "featured": true
     }
   ]

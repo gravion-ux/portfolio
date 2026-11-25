@@ -157,7 +157,7 @@
     { p: "$ ", c: "whoami", cls: "t-prompt" },
     { p: "", c: "gravion — penetration tester, Delhi (remote)", cls: "" },
     { p: "$ ", c: "ls arsenal/", cls: "t-prompt" },
-    { p: "", c: "gravion-ai  wp-cve-hunter  llm-redteam-kit  mcp-shield  jwt-auditor  petforge  universal-hacker-kit  +31 more", cls: "" },
+    { p: "", c: "gravion-ai  wp-cve-hunter  llm-redteam-kit  mcp-shield  jwt-auditor  petforge  universal-hacker-kit  +39 more", cls: "" },
     { p: "$ ", c: "./status --now", cls: "t-prompt" },
     { p: "", c: "[sentra-byte] offensive security — active", cls: "" },
     { p: "", c: "[patchstack]  report filed Nov 2026 — lab-verified", cls: "" },

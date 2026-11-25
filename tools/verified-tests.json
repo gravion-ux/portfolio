@@ -1,13 +1,13 @@
 {
-  "_comment": "Test counts measured by running each repository's own suite on a fresh clone. The per-entry measured field records the date that suite was run: 2026-11-20 for the first audit pass, 2026-11-22 for the ten repositories measured after it, and 2026-11-24 for every repository whose test files changed after its recorded measurement date. The source string records the exact command used. These are the only test counts allowed to be published.",
-  "measured": "2026-11-24",
+  "_comment": "Test counts measured by running each repository's own suite on a fresh clone of its live remote. The per-entry measured field records the date that suite was run: 2026-11-25 for the full sweep of all 46 authored repositories, and 2026-11-22 for xerj-ipv6-rate-limit-fix, which is measured against the upstream corpus-hub tip it contributes to. The source string records the exact command used. These are the only test counts allowed to be published.",
+  "measured": "2026-11-25",
   "Her--Him": {
-    "tests": 434,
-    "passed": 434,
+    "tests": 438,
+    "passed": 438,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 434 passed, 0 skipped",
-    "measured": "2026-11-24"
+    "source": "pytest --junitxml on a fresh clone: 438 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "TRISHUL": {
     "tests": 335,
@@ -15,31 +15,31 @@
     "skipped": 0,
     "failed": 0,
     "source": "pytest --junitxml on a fresh clone: 335 passed, 0 skipped",
-    "measured": "2026-11-24"
+    "measured": "2026-11-25"
   },
   "accessweave": {
     "tests": 33,
     "passed": 33,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --collect-only, full run: 33 passed, 0 skipped",
-    "measured": "2026-11-20"
+    "source": "pytest --junitxml on a fresh clone: 33 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "aegis": {
-    "tests": 294,
-    "passed": 293,
+    "tests": 315,
+    "passed": 314,
     "skipped": 1,
     "failed": 0,
-    "source": "npm test (node --test): 293 passed, 1 skipped",
-    "measured": "2026-11-20"
+    "source": "node --test test/states.test.js test/task.test.js test/storage.test.js test/audit.test.js test/redact.test.js test/agent.test.js test/memory.test.js test/cli.test.js test/memory2.test.js test/providers.test.js test/tools.test.js test/usage.test.js test/orchestrator.test.js test/recovery.test.js test/phase1-compat.test.js test/regressions.test.js test/security-hardening.test.js test/adversarial.test.js test/phase22-regressions.test.js test/phase22-aliasing-regressions.test.js test/chief.test.js: 314 passed, 1 skipped",
+    "measured": "2026-11-25"
   },
   "agent-browser": {
     "tests": 43,
     "passed": 43,
     "skipped": 0,
     "failed": 0,
-    "source": "npm test (node --test): 43 passed, 0 skipped",
-    "measured": "2026-11-20"
+    "source": "node --test ./test/*.test.js: 43 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "agent-skills": {
     "tests": 48,
@@ -47,79 +47,103 @@
     "skipped": 0,
     "failed": 0,
     "source": "pytest --junitxml on a fresh clone: 48 passed, 0 skipped",
-    "measured": "2026-11-24"
+    "measured": "2026-11-25"
   },
   "api-security-testing": {
     "tests": 18,
     "passed": 18,
     "skipped": 0,
     "failed": 0,
-    "source": "npm test (node --test): 18 passed, 0 skipped",
-    "measured": "2026-11-20"
+    "source": "node --test test/bola.test.js test/rate-limit.test.js test/cli.test.js test/server.test.js: 18 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
-  "catalog-forge": {
-    "tests": 146,
-    "passed": 146,
+  "apishield": {
+    "tests": 59,
+    "passed": 59,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone, backend/requirements.txt installed: 146 passed, 0 skipped",
-    "measured": "2026-11-24"
+    "source": "pytest --junitxml on a fresh clone: 59 passed, 0 skipped",
+    "measured": "2026-11-25"
+  },
+  "catalog-forge": {
+    "tests": 156,
+    "passed": 156,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 156 passed, 0 skipped",
+    "measured": "2026-11-25"
+  },
+  "chatsphere": {
+    "tests": 30,
+    "passed": 30,
+    "skipped": 0,
+    "failed": 0,
+    "source": "npm test in each workspace package (client vitest 7, server jest 23): 30 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "cipherbench": {
     "tests": 29,
     "passed": 29,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --collect-only, full run: 29 passed, 0 skipped",
-    "measured": "2026-11-20"
+    "source": "pytest --junitxml on a fresh clone: 29 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "context-bridge": {
     "tests": 66,
     "passed": 66,
     "skipped": 0,
     "failed": 0,
-    "source": "npm test (node --test): 66 passed, 0 skipped",
-    "measured": "2026-11-20"
+    "source": "node --test : 66 passed, 0 skipped",
+    "measured": "2026-11-25"
+  },
+  "expensemate": {
+    "tests": 32,
+    "passed": 32,
+    "skipped": 0,
+    "failed": 0,
+    "source": "npm test (jest): 32 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "fixqueue": {
     "tests": 157,
     "passed": 157,
     "skipped": 0,
     "failed": 0,
-    "source": "node --test on a fresh clone: 157 passed, 0 skipped",
-    "measured": "2026-11-24"
+    "source": "node --test test/normalize.test.js test/dedupe.test.js test/enrich.test.js test/score.test.js test/report.test.js test/suppress.test.js test/cache.test.js test/feeds.test.js test/cli.test.js: 157 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "fuzzharbor": {
     "tests": 21,
     "passed": 19,
     "skipped": 2,
     "failed": 0,
-    "source": "pytest --collect-only, full run: 19 passed, 2 skipped",
-    "measured": "2026-11-20"
+    "source": "pytest --junitxml on a fresh clone: 19 passed, 2 skipped",
+    "measured": "2026-11-25"
   },
   "gravion-ai": {
-    "tests": 168,
-    "passed": 167,
-    "skipped": 1,
+    "tests": 385,
+    "passed": 380,
+    "skipped": 5,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 167 passed, 1 skipped, 168 collected",
-    "measured": "2026-11-24"
+    "source": "pytest --junitxml on the repaired branch (percent-escaped CLI help, POSIX export paths, dataset hash bytes): 380 passed, 5 skipped, 0 failed, 385 collected",
+    "measured": "2026-11-25"
   },
   "gravion-harness": {
-    "tests": 127,
-    "passed": 127,
+    "tests": 142,
+    "passed": 142,
     "skipped": 0,
     "failed": 0,
-    "source": "npm test (node --test): 127 passed, 0 skipped",
-    "measured": "2026-11-20"
+    "source": "node --test : 142 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "gravion-hunter": {
     "tests": 26,
     "passed": 26,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest -q: 26 passed, 0 skipped",
-    "measured": "2026-11-22"
+    "source": "pytest --junitxml on a fresh clone: 26 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "gravion-trainner": {
     "tests": 45,
@@ -127,7 +151,7 @@
     "skipped": 0,
     "failed": 0,
     "source": "pytest --junitxml on a fresh clone: 45 passed, 0 skipped",
-    "measured": "2026-11-24"
+    "measured": "2026-11-25"
   },
   "iamosiac": {
     "tests": 61,
@@ -135,79 +159,87 @@
     "skipped": 0,
     "failed": 0,
     "source": "pytest --junitxml on a fresh clone: 61 passed, 0 skipped",
-    "measured": "2026-11-24"
+    "measured": "2026-11-25"
   },
   "jwt-auditor": {
-    "tests": 36,
-    "passed": 36,
+    "tests": 38,
+    "passed": 38,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 36 passed, 0 skipped",
-    "measured": "2026-11-24"
+    "source": "pytest --junitxml on a fresh clone: 38 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "llm-redteam-kit": {
     "tests": 46,
     "passed": 46,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest -q: 46 passed, 0 skipped",
-    "measured": "2026-11-22"
+    "source": "pytest --junitxml on a fresh clone: 46 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "llm-security-bot": {
     "tests": 20,
     "passed": 20,
     "skipped": 0,
     "failed": 0,
-    "source": "npm test (node --test): 20 passed, 0 skipped",
-    "measured": "2026-11-20"
+    "source": "node --test test/detectors.test.js test/scanner.test.js test/cli.test.js: 20 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "local-slm-eval-kit": {
     "tests": 108,
     "passed": 108,
     "skipped": 0,
     "failed": 0,
-    "source": "npm test (node --test): 108 passed, 0 skipped",
-    "measured": "2026-11-20"
+    "source": "node --test test/adapter.test.js test/cli.test.js test/metrics.test.js test/redact.test.js test/report.test.js test/runner.test.js test/tasks.test.js: 108 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "localshare": {
-    "tests": 40,
-    "passed": 39,
-    "skipped": 1,
+    "tests": 51,
+    "passed": 49,
+    "skipped": 2,
     "failed": 0,
-    "source": "npm test (node --test): 39 passed, 1 skipped",
-    "measured": "2026-11-20"
+    "source": "node --test ./test/*.test.js: 49 passed, 2 skipped",
+    "measured": "2026-11-25"
   },
   "mcp-shield": {
-    "tests": 51,
-    "passed": 51,
+    "tests": 58,
+    "passed": 58,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 51 passed, 0 skipped",
-    "measured": "2026-11-24"
+    "source": "pytest --junitxml on a fresh clone: 58 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "memorytrust": {
     "tests": 112,
     "passed": 112,
     "skipped": 0,
     "failed": 0,
-    "source": "npm test (node --test): 112 passed, 0 skipped",
-    "measured": "2026-11-20"
+    "source": "node --test test/cli.test.js test/findings.test.js test/loader.test.js test/redact.test.js test/report.test.js test/rules.test.js test/scanner.test.js test/schema.test.js: 112 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "opsledger": {
     "tests": 137,
     "passed": 137,
     "skipped": 0,
     "failed": 0,
-    "source": "node --test on a fresh clone: 137 passed, 0 skipped",
-    "measured": "2026-11-24"
+    "source": "node --test test/hash.test.js test/ledger.test.js test/artifacts.test.js test/verify.test.js test/report.test.js test/cli.test.js: 137 passed, 0 skipped",
+    "measured": "2026-11-25"
+  },
+  "petforge": {
+    "tests": 50,
+    "passed": 50,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 50 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "preference-data-doctor": {
     "tests": 147,
     "passed": 147,
     "skipped": 0,
     "failed": 0,
-    "source": "npm test (node --test): 147 passed, 0 skipped",
-    "measured": "2026-11-20"
+    "source": "node --test test/cli.test.js test/findings.test.js test/loader.test.js test/redact.test.js test/repair.test.js test/report.test.js test/rules.test.js test/scanner.test.js test/schema.test.js: 147 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "privacyflow": {
     "tests": 50,
@@ -215,23 +247,23 @@
     "skipped": 0,
     "failed": 0,
     "source": "pytest --junitxml on a fresh clone: 50 passed, 0 skipped",
-    "measured": "2026-11-24"
+    "measured": "2026-11-25"
   },
   "quanta-sentry": {
     "tests": 26,
     "passed": 25,
     "skipped": 1,
     "failed": 0,
-    "source": "pytest --collect-only, full run: 25 passed, 1 skipped",
-    "measured": "2026-11-20"
+    "source": "pytest --junitxml on a fresh clone: 25 passed, 1 skipped",
+    "measured": "2026-11-25"
   },
   "rasgulla-ai": {
     "tests": 50,
     "passed": 49,
     "skipped": 1,
     "failed": 0,
-    "source": "pytest --collect-only, full run: 49 passed, 1 skipped",
-    "measured": "2026-11-20"
+    "source": "pytest --junitxml on a fresh clone: 49 passed, 1 skipped",
+    "measured": "2026-11-25"
   },
   "rulebench": {
     "tests": 198,
@@ -239,7 +271,7 @@
     "skipped": 0,
     "failed": 0,
     "source": "pytest --junitxml on a fresh clone: 198 passed, 0 skipped",
-    "measured": "2026-11-24"
+    "measured": "2026-11-25"
   },
   "secret-sniper": {
     "tests": 69,
@@ -247,47 +279,79 @@
     "skipped": 0,
     "failed": 0,
     "source": "python secret_sniper.py selftest -> 69/69 checks",
-    "measured": "2026-11-24"
+    "measured": "2026-11-25"
   },
   "security-automation-scripts": {
     "tests": 22,
     "passed": 22,
     "skipped": 0,
     "failed": 0,
-    "source": "npm test (node --test): 22 passed, 0 skipped",
-    "measured": "2026-11-20"
+    "source": "node --test test/headers.test.js test/tls.test.js test/log-normalizer.test.js test/cli.test.js: 22 passed, 0 skipped",
+    "measured": "2026-11-25"
+  },
+  "security-research": {
+    "tests": 0,
+    "passed": 0,
+    "skipped": 0,
+    "failed": 0,
+    "source": "no test suite in the repository: it holds written research, not code",
+    "measured": "2026-11-25"
   },
   "skill-supply-chain-auditor": {
     "tests": 125,
     "passed": 125,
     "skipped": 0,
     "failed": 0,
-    "source": "npm test (node --test): 125 passed, 0 skipped",
-    "measured": "2026-11-20"
+    "source": "node --test test/cli.test.js test/findings.test.js test/loader.test.js test/redact.test.js test/report.test.js test/rules.test.js test/scanner.test.js: 125 passed, 0 skipped",
+    "measured": "2026-11-25"
+  },
+  "taskforge": {
+    "tests": 17,
+    "passed": 17,
+    "skipped": 0,
+    "failed": 0,
+    "source": "npm test in each workspace package (client vitest 3, server jest 14): 17 passed, 0 skipped",
+    "measured": "2026-11-25"
+  },
+  "universal-hacker-kit": {
+    "tests": 0,
+    "passed": 0,
+    "skipped": 0,
+    "failed": 0,
+    "source": "no test suite in the repository: it ships command definitions and documentation only",
+    "measured": "2026-11-25"
   },
   "violet-trace": {
     "tests": 34,
     "passed": 34,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --collect-only, full run: 34 passed, 0 skipped",
-    "measured": "2026-11-20"
+    "source": "pytest --junitxml on a fresh clone: 34 passed, 0 skipped",
+    "measured": "2026-11-25"
+  },
+  "vulndesk": {
+    "tests": 61,
+    "passed": 61,
+    "skipped": 0,
+    "failed": 0,
+    "source": "node --test test/*.test.js: 61 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "web-security-labs": {
     "tests": 22,
     "passed": 22,
     "skipped": 0,
     "failed": 0,
-    "source": "npm test: 4 labs, checks 5 + 5 + 6 + 6 = 22, all passed",
-    "measured": "2026-11-20"
+    "source": "node --test : 22 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "webapp-security-toolkit": {
     "tests": 44,
     "passed": 44,
     "skipped": 0,
     "failed": 0,
-    "source": "npm test (node --test): 44 passed, 0 skipped",
-    "measured": "2026-11-20"
+    "source": "node --test test/scope.test.js test/headers.test.js test/tls.test.js test/findings.test.js test/cli.test.js: 44 passed, 0 skipped",
+    "measured": "2026-11-25"
   },
   "wp-cve-hunter": {
     "tests": 82,
@@ -295,7 +359,7 @@
     "skipped": 0,
     "failed": 0,
     "source": "pytest --junitxml on a fresh clone: 82 passed, 0 skipped",
-    "measured": "2026-11-24"
+    "measured": "2026-11-25"
   },
   "xerj-ipv6-rate-limit-fix": {
     "tests": 4,
@@ -304,21 +368,5 @@
     "failed": 0,
     "source": "node tools/corpus-hub-site/test_hub_usage_rate.mjs against xerj-org/xerj corpus-hub tip 31721e6: 4 passed, 0 skipped",
     "measured": "2026-11-22"
-  },
-  "petforge": {
-    "tests": 39,
-    "passed": 39,
-    "skipped": 0,
-    "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 39 passed, 0 skipped",
-    "measured": "2026-11-24"
-  },
-  "universal-hacker-kit": {
-    "tests": 0,
-    "passed": 0,
-    "skipped": 0,
-    "failed": 0,
-    "source": "no test suite in the repository: it ships command definitions and documentation only",
-    "measured": "2026-11-24"
   }
 }

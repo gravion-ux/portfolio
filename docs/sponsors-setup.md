@@ -1,7 +1,7 @@
 # GitHub Sponsors setup — content pack
 
 Everything needed to publish the GitHub Sponsors profile, copied here so it can be
-pasted in one sitting. Every test count below was measured on 2026-11-22 by running
+pasted in one sitting. Every test count below was measured on 2026-11-25 by running
 the relevant suite on a fresh clone. The star counts and tier prices are the live
 values published on GitHub Sponsors, read on 2026-11-23.
 
@@ -12,10 +12,10 @@ Sponsorship cannot be set up without it.
 
 ## 1. Short bio
 
-152 characters. GitHub's limit is 160.
+143 characters. GitHub's limit is 160. This is the text published on the live profile.
 
 ```
-🔐 Security engineer. 38 MIT-licensed open-source security tools, 3,364 measured tests. Sponsors welcome. Available for web and API security assessments.
+Security engineer building open-source tools for AppSec, detection engineering and engagement evidence. Funding keeps them free and maintained.
 ```
 
 ---
@@ -23,11 +23,11 @@ Sponsorship cannot be set up without it.
 ## 2. Introduction
 
 ```
-Security researcher and open-source builder from Delhi, India. I build free, MIT-licensed security tools the community can actually use — 38 tools and counting, 3,364 automated tests, 37 of them CI-gated. My flagships: wp-cve-hunter — WordPress CVE detection; llm-redteam-kit — OWASP-mapped LLM red-teaming cases; mcp-shield — MCP configuration security auditor; jwt-auditor — JWT attack-surface checks; gravion-hunter — a scope-locked, dedupe-first bug bounty agent framework; GRAVION AI — a modular AI platform, built in public, piece by piece.
+Security researcher and open-source builder from Delhi, India. I build free, MIT-licensed security tools the community can actually use — 46 open-source projects and counting, 4,010 automated tests, 45 MIT licensed, 44 CI-gated. My flagships: wp-cve-hunter — WordPress CVE detection; llm-redteam-kit — OWASP-mapped LLM red-teaming cases; mcp-shield — MCP configuration security auditor; jwt-auditor — JWT attack-surface checks; gravion-hunter — a scope-locked, dedupe-first bug bounty agent framework; GRAVION AI — a modular AI platform, built in public, piece by piece.
 
 Alongside the tools, I hunt on Patchstack, HackerOne and Bugcrowd (IDOR/BOLA, broken auth, business logic) and publish methodology writeups so other researchers can reuse the workflow.
 
-Sponsorship keeps the tools free and maintained: it funds development time, test infrastructure, and the lab I use to verify vulnerabilities safely before reporting them. Every sponsor is credited — your support is literally what keeps new tools shipping.
+Sponsorship keeps the tools free and maintained: it funds development time, test infrastructure, and the lab I use to verify vulnerabilities safely before reporting them. Every sponsor is credited — your support keeps new tools shipping.
 ```
 
 ---
@@ -39,19 +39,19 @@ measured test count.
 
 | Repository | Stars | Test cases | How the count was obtained |
 | --- | --- | --- | --- |
-| `iamosiac` | 13 | 39 | `pytest` on a fresh clone: 39 passed, 0 skipped |
-| `wp-cve-hunter` | 4 | 82 | `pytest -q` on a fresh clone: 82 passed, 0 skipped |
-| `llm-redteam-kit` | 4 | 46 | `pytest -q` on a fresh clone: 46 passed, 0 skipped |
-| `mcp-shield` | 4 | 46 | `pytest -q` on a fresh clone: 46 passed, 0 skipped |
-| `jwt-auditor` | 4 | 36 | `pytest -q` on a fresh clone: 36 passed, 0 skipped |
-| `gravion-ai` | 4 | 116 | `pytest -q` on a fresh clone: 115 passed, 1 skipped, 116 collected |
+| `iamosiac` | 13 | 61 | `pytest` on a fresh clone: 61 passed, 0 skipped |
+| `wp-cve-hunter` | 4 | 82 | `pytest` on a fresh clone: 82 passed, 0 skipped |
+| `llm-redteam-kit` | 4 | 46 | `pytest` on a fresh clone: 46 passed, 0 skipped |
+| `mcp-shield` | 4 | 58 | `pytest` on a fresh clone: 58 passed, 0 skipped |
+| `jwt-auditor` | 4 | 38 | `pytest` on a fresh clone: 38 passed, 0 skipped |
+| `gravion-ai` | 4 | 385 | `pytest` on a fresh clone: 380 passed, 5 skipped, 0 failed, 385 collected |
 
 Star counts move. The live values are in `site/assets/projects.json`, which
 `tools/refresh_projects.py` regenerates from the GitHub API.
 
-**`TRISHUL` is deliberately not featured.** It is MIT licensed and has 334 tests, but
-it has no CI workflow, so it does not meet the rule that every featured repository is
-MIT licensed, CI-backed and tested.
+**`TRISHUL` is deliberately not featured.** GitHub allows six featured repositories and
+all six slots are used. `TRISHUL` is MIT licensed, CI-backed and has 335
+measured tests, so it qualifies on the same terms as the six above.
 
 ---
 
