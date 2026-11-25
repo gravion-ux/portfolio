@@ -1,9 +1,9 @@
 # GitHub Sponsors setup — content pack
 
 Everything needed to publish the GitHub Sponsors profile, copied here so it can be
-pasted in one sitting. Every number below was measured by running the relevant test
-suite on a fresh clone — on 2026-11-11 for most repositories, and again on
-2026-11-23 for the six featured ones.
+pasted in one sitting. Every test count below was measured on 2026-11-22 by running
+the relevant suite on a fresh clone. The star counts and tier prices are the live
+values published on GitHub Sponsors, read on 2026-11-23.
 
 **Before starting:** two-factor authentication must be enabled on the GitHub account.
 Sponsorship cannot be set up without it.
@@ -12,42 +12,46 @@ Sponsorship cannot be set up without it.
 
 ## 1. Short bio
 
-143 characters. GitHub's limit is 160. This is the text published on the live
-profile.
+152 characters. GitHub's limit is 160.
 
 ```
-Security engineer building open-source tools for AppSec, detection engineering and engagement evidence. Funding keeps them free and maintained.
+🔐 Security engineer. 38 MIT-licensed open-source security tools, 3,364 measured tests. Sponsors welcome. Available for web and API security assessments.
 ```
 
 ---
 
 ## 2. Introduction
 
-Published on the live profile. It names the flagships and the platforms the tools are hunted on.
-
 ```
-Security researcher and open-source builder from Delhi, India. I build free, MIT-licensed security tools the community can actually use — 36 open-source projects and counting, 2,455 automated tests, every featured repo CI-green. My flagships: wp-cve-hunter — WordPress CVE detection; llm-redteam-kit — OWASP-mapped LLM red-teaming cases; mcp-shield — MCP configuration security auditor; jwt-auditor — JWT attack-surface checks; gravion-hunter — a scope-locked, dedupe-first bug bounty agent framework; GRAVION AI — a modular AI platform, built in public, piece by piece. Alongside the tools, I hunt on Patchstack, HackerOne and Bugcrowd (IDOR/BOLA, broken auth, business logic) and publish methodology writeups so other researchers can reuse the workflow. Sponsorship keeps the tools free and maintained: it funds development time, test infrastructure, and the lab I use to verify vulnerabilities safely before reporting them. Every sponsor is credited — your support is literally what keeps new tools shipping.
+Security researcher and open-source builder from Delhi, India. I build free, MIT-licensed security tools the community can actually use — 38 tools and counting, 3,364 automated tests, 37 of them CI-gated. My flagships: wp-cve-hunter — WordPress CVE detection; llm-redteam-kit — OWASP-mapped LLM red-teaming cases; mcp-shield — MCP configuration security auditor; jwt-auditor — JWT attack-surface checks; gravion-hunter — a scope-locked, dedupe-first bug bounty agent framework; GRAVION AI — a modular AI platform, built in public, piece by piece.
+
+Alongside the tools, I hunt on Patchstack, HackerOne and Bugcrowd (IDOR/BOLA, broken auth, business logic) and publish methodology writeups so other researchers can reuse the workflow.
+
+Sponsorship keeps the tools free and maintained: it funds development time, test infrastructure, and the lab I use to verify vulnerabilities safely before reporting them. Every sponsor is credited — your support is literally what keeps new tools shipping.
 ```
 
 ---
 
 ## 3. Featured repositories — six
 
-GitHub allows up to six. These are the six currently featured on the live profile. Each one is MIT licensed, has a CI workflow, and has a measured test count.
+GitHub allows up to six. Each one below is MIT licensed, has a CI workflow, and has a
+measured test count.
 
-| Repository | Test cases | How the count was obtained |
-| --- | --- | --- |
-| `iamosiac` | 39 | `python -m pytest -q` on a fresh clone |
-| `wp-cve-hunter` | 82 | `python -m pytest -q` on a fresh clone |
-| `llm-redteam-kit` | 46 | `python -m pytest -q` on a fresh clone |
-| `mcp-shield` | 46 | `python -m pytest -q` on a fresh clone |
-| `jwt-auditor` | 36 | `python -m pytest -q` on a fresh clone |
-| `gravion-ai` | 116 | `python -m pytest -q` on a fresh clone - 115 passed, 1 skipped |
+| Repository | Stars | Test cases | How the count was obtained |
+| --- | --- | --- | --- |
+| `iamosiac` | 13 | 39 | `pytest` on a fresh clone: 39 passed, 0 skipped |
+| `wp-cve-hunter` | 4 | 82 | `pytest -q` on a fresh clone: 82 passed, 0 skipped |
+| `llm-redteam-kit` | 4 | 46 | `pytest -q` on a fresh clone: 46 passed, 0 skipped |
+| `mcp-shield` | 4 | 46 | `pytest -q` on a fresh clone: 46 passed, 0 skipped |
+| `jwt-auditor` | 4 | 36 | `pytest -q` on a fresh clone: 36 passed, 0 skipped |
+| `gravion-ai` | 4 | 116 | `pytest -q` on a fresh clone: 115 passed, 1 skipped, 116 collected |
 
 Star counts move. The live values are in `site/assets/projects.json`, which
 `tools/refresh_projects.py` regenerates from the GitHub API.
 
-Every repository with a measured test count is listed in `tools/verified-tests.json`. `TRISHUL` is MIT licensed and has 118 tests, and it now has a CI workflow as well - it is simply not one of the six featured.
+**`TRISHUL` is deliberately not featured.** It is MIT licensed and has 334 tests, but
+it has no CI workflow, so it does not meet the rule that every featured repository is
+MIT licensed, CI-backed and tested.
 
 ---
 
@@ -60,12 +64,12 @@ Every repository with a measured test count is listed in `tools/verified-tests.j
 | Sponsor | $25 / month | Everything in Backer, plus your name or logo in the flagship repos' README sponsor sections |
 | Pro Sponsor | $50 / month | Everything in Sponsor, plus priority on your feature requests and issue reports across my repos |
 | Security Partner | $100 / month | Everything in Pro Sponsor, plus first look at new flagship tools and a monthly community Q&A post answering sponsor questions |
-| Anchor | $500 / month | Everything in Security Partner, named as anchor sponsor across the site, quarterly one-to-one call, one funded roadmap item per quarter |
-| Executive | $1,000 / month | Everything in Anchor, quarterly review of your use case, two funded roadmap items per year, first response on blocking issues |
+| Anchor | $500 / month | Everything in Security Partner, named as anchor sponsor across the site, a quarterly one-to-one call, and one funded roadmap item per quarter |
+| Executive | $1,000 / month | Everything in Anchor, a quarterly review of your use case, two funded roadmap items per year, and first response on blocking issues |
 
-The ladder stops at $1,000 per month on purpose. A solo developer cannot honestly
-honour a $2,500 service-level tier. Above that, it is a conversation, not a published
-tier.
+The monthly ladder stops at $1,000 on purpose. A solo developer cannot honestly
+honour a $2,500 monthly service-level tier. Above that, it is a conversation, not a
+published tier.
 
 ---
 
@@ -75,10 +79,10 @@ tier.
 | --- | --- | --- |
 | One-time Backer | $25 | Name in the Supporters section of my profile README |
 | One-time Sponsor | $50 | Name or logo in one flagship repo's README sponsor section |
-| Fix a bug | $50 | One confirmed defect fixed, credited in the release notes |
-| Fund a feature | $250 | One scoped feature shipped in a tagged release and covered by tests |
-| Fund a release | $1,000 | A full release cycle for one flagship tool: version bump, changelog, release notes, CI green on the release commit |
-| Fund a roadmap quarter | $2,500 | One quarter of work on one flagship tool, scope agreed in advance, progress shared at the end of the quarter |
+| Fix a bug | $50 | One confirmed defect fixed and credited in the release notes |
+| Fund a feature | $250 | One scoped feature shipped in a tagged release |
+| Fund a release | $1,000 | A full release cycle for one flagship tool |
+| Fund a roadmap quarter | $2,500 | One quarter of work on one flagship tool, agreed in advance |
 
 ---
 

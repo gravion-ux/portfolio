@@ -1,38 +1,324 @@
 {
-  "_comment": "Test counts measured by running each repository's own suite on a fresh clone. Six entries were measured on 2026-11-23 and the rest on 2026-11-11; each entry records its own measurement date and the exact command used. These are the only test counts allowed to be published.",
-  "measured": "2026-11-23",
-  "aegis": { "tests": 294, "source": "npm test (node --test): 293 passed, 1 skipped", "measured": "2026-11-11" },
-  "rulebench": { "tests": 187, "source": "pytest --collect-only, full run: 187 passed", "measured": "2026-11-11" },
-  "preference-data-doctor": { "tests": 147, "source": "npm test (node --test): 147 passed", "measured": "2026-11-11" },
-  "fixqueue": { "tests": 129, "source": "npm test (node --test): 129 passed", "measured": "2026-11-11" },
-  "gravion-harness": { "tests": 127, "source": "npm test (node --test): 127 passed", "measured": "2026-11-11" },
-  "skill-supply-chain-auditor": { "tests": 125, "source": "npm test (node --test): 125 passed", "measured": "2026-11-11" },
-  "TRISHUL": { "tests": 118, "source": "pytest tests: 118 collected, 0 failures", "measured": "2026-11-11" },
-  "gravion-ai": { "tests": 116, "source": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 115 passed, 1 skipped", "measured": "2026-11-23" },
-  "opsledger": { "tests": 115, "source": "npm test (node --test): 115 passed", "measured": "2026-11-11" },
-  "memorytrust": { "tests": 112, "source": "npm test (node --test): 112 passed", "measured": "2026-11-11" },
-  "local-slm-eval-kit": { "tests": 108, "source": "npm test (node --test): 108 passed", "measured": "2026-11-11" },
-  "wp-cve-hunter": { "tests": 82, "source": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 82 passed", "measured": "2026-11-23" },
-  "secret-sniper": { "tests": 69, "source": "python secret_sniper.py selftest: 69/69 checks", "measured": "2026-11-11" },
-  "context-bridge": { "tests": 66, "source": "npm test (node --test): 66 passed", "measured": "2026-11-11" },
-  "rasgulla-ai": { "tests": 50, "source": "pytest --collect-only, full run: 49 passed, 1 skipped", "measured": "2026-11-11" },
-  "llm-redteam-kit": { "tests": 46, "source": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 46 passed", "measured": "2026-11-23" },
-  "mcp-shield": { "tests": 46, "source": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 46 passed", "measured": "2026-11-23" },
-  "webapp-security-toolkit": { "tests": 44, "source": "npm test (node --test): 44 passed", "measured": "2026-11-11" },
-  "agent-browser": { "tests": 43, "source": "npm test (node --test): 43 passed", "measured": "2026-11-11" },
-  "localshare": { "tests": 40, "source": "npm test (node --test): 39 passed, 1 skipped", "measured": "2026-11-11" },
-  "iamosiac": { "tests": 39, "source": "pytest --collect-only, full run: 39 passed", "measured": "2026-11-11" },
-  "privacyflow": { "tests": 38, "source": "pytest --collect-only, full run: 38 passed", "measured": "2026-11-11" },
-  "jwt-auditor": { "tests": 36, "source": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 36 passed", "measured": "2026-11-23" },
-  "violet-trace": { "tests": 34, "source": "pytest --collect-only, full run: 34 passed", "measured": "2026-11-11" },
-  "accessweave": { "tests": 33, "source": "pytest --collect-only, full run: 33 passed", "measured": "2026-11-11" },
-  "cipherbench": { "tests": 29, "source": "pytest --collect-only, full run: 29 passed", "measured": "2026-11-11" },
-  "gravion-trainner": { "tests": 27, "source": "pytest --collect-only, full run: 27 passed", "measured": "2026-11-11" },
-  "quanta-sentry": { "tests": 26, "source": "pytest --collect-only, full run: 25 passed, 1 skipped", "measured": "2026-11-11" },
-  "gravion-hunter": { "tests": 26, "source": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 26 passed", "measured": "2026-11-23" },
-  "security-automation-scripts": { "tests": 22, "source": "npm test (node --test): 22 passed", "measured": "2026-11-11" },
-  "web-security-labs": { "tests": 22, "source": "npm test: 4 labs, checks 5 + 5 + 6 + 6 = 22, all passed", "measured": "2026-11-11" },
-  "llm-security-bot": { "tests": 20, "source": "npm test (node --test): 20 passed", "measured": "2026-11-11" },
-  "fuzzharbor": { "tests": 21, "source": "pytest --collect-only, full run: 19 passed, 2 skipped", "measured": "2026-11-11" },
-  "api-security-testing": { "tests": 18, "source": "npm test (node --test): 18 passed", "measured": "2026-11-11" }
+  "_comment": "Test counts measured by running each repository's own suite on a fresh clone. The per-entry measured field records the date that suite was run: 2026-11-20 for the first audit pass, 2026-11-22 for the ten repositories measured after it, and 2026-11-24 for every repository whose test files changed after its recorded measurement date. The source string records the exact command used. These are the only test counts allowed to be published.",
+  "measured": "2026-11-24",
+  "Her--Him": {
+    "tests": 434,
+    "passed": 434,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 434 passed, 0 skipped",
+    "measured": "2026-11-24"
+  },
+  "TRISHUL": {
+    "tests": 335,
+    "passed": 335,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 335 passed, 0 skipped",
+    "measured": "2026-11-24"
+  },
+  "accessweave": {
+    "tests": 33,
+    "passed": 33,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --collect-only, full run: 33 passed, 0 skipped",
+    "measured": "2026-11-20"
+  },
+  "aegis": {
+    "tests": 294,
+    "passed": 293,
+    "skipped": 1,
+    "failed": 0,
+    "source": "npm test (node --test): 293 passed, 1 skipped",
+    "measured": "2026-11-20"
+  },
+  "agent-browser": {
+    "tests": 43,
+    "passed": 43,
+    "skipped": 0,
+    "failed": 0,
+    "source": "npm test (node --test): 43 passed, 0 skipped",
+    "measured": "2026-11-20"
+  },
+  "agent-skills": {
+    "tests": 48,
+    "passed": 48,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 48 passed, 0 skipped",
+    "measured": "2026-11-24"
+  },
+  "api-security-testing": {
+    "tests": 18,
+    "passed": 18,
+    "skipped": 0,
+    "failed": 0,
+    "source": "npm test (node --test): 18 passed, 0 skipped",
+    "measured": "2026-11-20"
+  },
+  "catalog-forge": {
+    "tests": 146,
+    "passed": 146,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone, backend/requirements.txt installed: 146 passed, 0 skipped",
+    "measured": "2026-11-24"
+  },
+  "cipherbench": {
+    "tests": 29,
+    "passed": 29,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --collect-only, full run: 29 passed, 0 skipped",
+    "measured": "2026-11-20"
+  },
+  "context-bridge": {
+    "tests": 66,
+    "passed": 66,
+    "skipped": 0,
+    "failed": 0,
+    "source": "npm test (node --test): 66 passed, 0 skipped",
+    "measured": "2026-11-20"
+  },
+  "fixqueue": {
+    "tests": 157,
+    "passed": 157,
+    "skipped": 0,
+    "failed": 0,
+    "source": "node --test on a fresh clone: 157 passed, 0 skipped",
+    "measured": "2026-11-24"
+  },
+  "fuzzharbor": {
+    "tests": 21,
+    "passed": 19,
+    "skipped": 2,
+    "failed": 0,
+    "source": "pytest --collect-only, full run: 19 passed, 2 skipped",
+    "measured": "2026-11-20"
+  },
+  "gravion-ai": {
+    "tests": 168,
+    "passed": 167,
+    "skipped": 1,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 167 passed, 1 skipped, 168 collected",
+    "measured": "2026-11-24"
+  },
+  "gravion-harness": {
+    "tests": 127,
+    "passed": 127,
+    "skipped": 0,
+    "failed": 0,
+    "source": "npm test (node --test): 127 passed, 0 skipped",
+    "measured": "2026-11-20"
+  },
+  "gravion-hunter": {
+    "tests": 26,
+    "passed": 26,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest -q: 26 passed, 0 skipped",
+    "measured": "2026-11-22"
+  },
+  "gravion-trainner": {
+    "tests": 45,
+    "passed": 45,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 45 passed, 0 skipped",
+    "measured": "2026-11-24"
+  },
+  "iamosiac": {
+    "tests": 61,
+    "passed": 61,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 61 passed, 0 skipped",
+    "measured": "2026-11-24"
+  },
+  "jwt-auditor": {
+    "tests": 36,
+    "passed": 36,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 36 passed, 0 skipped",
+    "measured": "2026-11-24"
+  },
+  "llm-redteam-kit": {
+    "tests": 46,
+    "passed": 46,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest -q: 46 passed, 0 skipped",
+    "measured": "2026-11-22"
+  },
+  "llm-security-bot": {
+    "tests": 20,
+    "passed": 20,
+    "skipped": 0,
+    "failed": 0,
+    "source": "npm test (node --test): 20 passed, 0 skipped",
+    "measured": "2026-11-20"
+  },
+  "local-slm-eval-kit": {
+    "tests": 108,
+    "passed": 108,
+    "skipped": 0,
+    "failed": 0,
+    "source": "npm test (node --test): 108 passed, 0 skipped",
+    "measured": "2026-11-20"
+  },
+  "localshare": {
+    "tests": 40,
+    "passed": 39,
+    "skipped": 1,
+    "failed": 0,
+    "source": "npm test (node --test): 39 passed, 1 skipped",
+    "measured": "2026-11-20"
+  },
+  "mcp-shield": {
+    "tests": 51,
+    "passed": 51,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 51 passed, 0 skipped",
+    "measured": "2026-11-24"
+  },
+  "memorytrust": {
+    "tests": 112,
+    "passed": 112,
+    "skipped": 0,
+    "failed": 0,
+    "source": "npm test (node --test): 112 passed, 0 skipped",
+    "measured": "2026-11-20"
+  },
+  "opsledger": {
+    "tests": 137,
+    "passed": 137,
+    "skipped": 0,
+    "failed": 0,
+    "source": "node --test on a fresh clone: 137 passed, 0 skipped",
+    "measured": "2026-11-24"
+  },
+  "preference-data-doctor": {
+    "tests": 147,
+    "passed": 147,
+    "skipped": 0,
+    "failed": 0,
+    "source": "npm test (node --test): 147 passed, 0 skipped",
+    "measured": "2026-11-20"
+  },
+  "privacyflow": {
+    "tests": 50,
+    "passed": 50,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 50 passed, 0 skipped",
+    "measured": "2026-11-24"
+  },
+  "quanta-sentry": {
+    "tests": 26,
+    "passed": 25,
+    "skipped": 1,
+    "failed": 0,
+    "source": "pytest --collect-only, full run: 25 passed, 1 skipped",
+    "measured": "2026-11-20"
+  },
+  "rasgulla-ai": {
+    "tests": 50,
+    "passed": 49,
+    "skipped": 1,
+    "failed": 0,
+    "source": "pytest --collect-only, full run: 49 passed, 1 skipped",
+    "measured": "2026-11-20"
+  },
+  "rulebench": {
+    "tests": 198,
+    "passed": 198,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 198 passed, 0 skipped",
+    "measured": "2026-11-24"
+  },
+  "secret-sniper": {
+    "tests": 69,
+    "passed": 69,
+    "skipped": 0,
+    "failed": 0,
+    "source": "python secret_sniper.py selftest -> 69/69 checks",
+    "measured": "2026-11-24"
+  },
+  "security-automation-scripts": {
+    "tests": 22,
+    "passed": 22,
+    "skipped": 0,
+    "failed": 0,
+    "source": "npm test (node --test): 22 passed, 0 skipped",
+    "measured": "2026-11-20"
+  },
+  "skill-supply-chain-auditor": {
+    "tests": 125,
+    "passed": 125,
+    "skipped": 0,
+    "failed": 0,
+    "source": "npm test (node --test): 125 passed, 0 skipped",
+    "measured": "2026-11-20"
+  },
+  "violet-trace": {
+    "tests": 34,
+    "passed": 34,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --collect-only, full run: 34 passed, 0 skipped",
+    "measured": "2026-11-20"
+  },
+  "web-security-labs": {
+    "tests": 22,
+    "passed": 22,
+    "skipped": 0,
+    "failed": 0,
+    "source": "npm test: 4 labs, checks 5 + 5 + 6 + 6 = 22, all passed",
+    "measured": "2026-11-20"
+  },
+  "webapp-security-toolkit": {
+    "tests": 44,
+    "passed": 44,
+    "skipped": 0,
+    "failed": 0,
+    "source": "npm test (node --test): 44 passed, 0 skipped",
+    "measured": "2026-11-20"
+  },
+  "wp-cve-hunter": {
+    "tests": 82,
+    "passed": 82,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 82 passed, 0 skipped",
+    "measured": "2026-11-24"
+  },
+  "xerj-ipv6-rate-limit-fix": {
+    "tests": 4,
+    "passed": 4,
+    "skipped": 0,
+    "failed": 0,
+    "source": "node tools/corpus-hub-site/test_hub_usage_rate.mjs against xerj-org/xerj corpus-hub tip 31721e6: 4 passed, 0 skipped",
+    "measured": "2026-11-22"
+  },
+  "petforge": {
+    "tests": 39,
+    "passed": 39,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 39 passed, 0 skipped",
+    "measured": "2026-11-24"
+  },
+  "universal-hacker-kit": {
+    "tests": 0,
+    "passed": 0,
+    "skipped": 0,
+    "failed": 0,
+    "source": "no test suite in the repository: it ships command definitions and documentation only",
+    "measured": "2026-11-24"
+  }
 }

@@ -15,7 +15,7 @@ assessment, and authorized penetration testing. Experienced in identifying real-
 OWASP Top 10 issues including IDOR, XSS, and authentication flaws. Strong
 security-first mindset with the ability to collaborate with developers and provide
 actionable remediation guidance. Also builds and maintains dependency-light
-open-source security tooling in Node.js and Python — 36 published projects, all MIT
+open-source security tooling in Node.js and Python — 38 published projects, all MIT
 licensed — and contributes fixes upstream to the projects I use.
 
 ---
@@ -50,7 +50,8 @@ licensed — and contributes fixes upstream to the projects I use.
 - Tested real-world web applications and APIs
 - Identified and responsibly disclosed vulnerabilities
 - Provided detailed reports with impact and remediation
-- Built and published 36 MIT licensed security and developer tools
+- Built and published 38 MIT licensed security and developer tools, with 3,364
+  measured tests across them
 - Fixed the Corpus Hub IPv6 rate limiter upstream in xerj-org/xerj
 
 ---
@@ -88,16 +89,16 @@ licensed — and contributes fixes upstream to the projects I use.
   and resources, emits relationship edges, gives least-privilege remediation
   hints. Python 3.11+, zero runtime dependencies, MIT. 39 tests.
 - **fixqueue** — merges SARIF, Trivy, Grype and OSV scanner output into one
-  deduplicated, EPSS and KEV prioritized fix queue. 129 tests.
+  deduplicated, EPSS and KEV prioritized fix queue. 157 tests.
 - **rulebench** — Sigma rule conformance harness: runs rules against events,
-  lints them, and measures coverage against the MITRE knowledge base. 187 tests.
+  lints them, and measures coverage against the MITRE knowledge base. 198 tests.
 - **opsledger** — tamper-evident evidence ledger for red-team engagements:
-  hash-chained events and a signed manifest. 115 tests.
+  hash-chained events and a signed manifest. 137 tests.
 - **xerj-ipv6-rate-limit-fix** — contribution to
   [xerj-org/xerj](https://github.com/xerj-org/xerj): fixed the Corpus Hub
   rate limiter, which bucketed compressed IPv6 addresses by their first four
   colon-separated fields instead of their /64. Open upstream as
-  [xerj-org/xerj#2872](https://github.com/xerj-org/xerj/pull/2872).
+  [xerj-org/xerj#2872](https://github.com/xerj-org/xerj/pull/2872). 4 tests.
 
 ---
 
@@ -115,7 +116,7 @@ licensed — and contributes fixes upstream to the projects I use.
 
 ## Support my open-source work
 
-All 36 published projects are MIT licensed and free to use. Sponsorship keeps
+All 38 published projects are MIT licensed and free to use. Sponsorship keeps
 them maintained: issue triage, test runs, dependency review, and the next
 release. It buys time on the parts nobody sees, not features for one company.
 

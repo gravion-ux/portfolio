@@ -14,7 +14,7 @@ happens to you.
       HTTPS.
 - [x] GitHub profile metadata updated: bio, website, location, company.
 - [x] GitHub Sponsors profile published with all thirteen tiers.
-- [ ] The sponsor link checked from a logged-out browser — it should reach the
+- [x] The sponsor link checked from a logged-out browser — it should reach the
       published Sponsors page.
 
 ---
@@ -33,9 +33,9 @@ removes, and what is coming next.
 
 ---
 
-## 2. LinkedIn — one post per featured tool
+## 2. LinkedIn — one post per flagship tool
 
-Six posts, not one. One tool per post gets three times the reach of a single
+Three posts, not one. One tool per post gets three times the reach of a single
 catch-all post, and the algorithm treats them separately.
 
 Each post follows the same shape:
@@ -47,7 +47,7 @@ Each post follows the same shape:
 5. The sponsor link.
 6. A closing question that invites a comment.
 
-Do not post all six on the same day. Space them a week or two apart.
+Do not post all three on the same day. Space them a week or two apart.
 
 ---
 
@@ -84,36 +84,31 @@ Rules that matter:
 Two repositories already have stars. Link the new tools from them, so the traffic
 lands on pages that already get visited.
 
-- [ ] `iamosiac` (11 stars) — add a "related tools" line to its README.
-- [ ] `llm-security-bot` (3 stars) — same.
+- [ ] `iamosiac` (13 stars) — add a "related tools" line to its README.
+- [ ] `llm-security-bot` (5 stars) — same.
 
-Do this after the featured repository READMEs have their own sponsor attribution slots, so
-the cross-links point at finished pages.
+Do this after the flagship READMEs have their own sponsor attribution slots, so the
+cross-links point at finished pages.
 
 ---
 
 ## 6. Sponsor attribution slots
 
-The live tiers promise a name in the Supporters section of the profile README and a name or
-logo in the README sponsor sections of the flagship repos. Those promises have to exist before
-anyone signs up for them.
+The Sponsor tier promises a name or logo in the flagship repos' README sponsor
+sections. Put that promise in writing before anyone signs up for it.
 
-- [x] `gravion-ux/README.md` — Supporters section.
-- [x] `iamosiac/README.md` — sponsor slot.
-- [x] `wp-cve-hunter/README.md` — sponsor slot.
-- [x] `llm-redteam-kit/README.md` — sponsor slot.
-- [x] `mcp-shield/README.md` — sponsor slot.
-- [x] `jwt-auditor/README.md` — sponsor slot.
-- [x] `gravion-ai/README.md` — sponsor slot.
-- [x] `.github/FUNDING.yml` on each of the six featured repositories.
+- [x] `fixqueue/README.md` — sponsor slot.
+- [x] `rulebench/README.md` — sponsor slot.
+- [x] `opsledger/README.md` — sponsor slot.
 
 Keep the slot small and at the bottom. It should read as a fact, not a banner.
 
 Also done, for the same reason — the Sponsor button has to be reachable from the
 pages people already land on:
 
+- [x] `.github/FUNDING.yml` on all six featured repositories.
 - [x] A current-sponsors section on the site support page.
-- [x] The published tier ladder on `site/support.html`.
+- [x] A sponsors section in the profile README.
 
 ---
 
@@ -146,7 +141,11 @@ something new:
 
 - [ ] Re-run the test suite and update the count in `tools/verified-tests.json`.
 - [ ] Run `python tools/refresh_projects.py` so stars and descriptions are current.
+- [ ] Run `python tools/sync_project_tables.py` so the README project tables match
+      the inventory.
 - [ ] Check that any new "MIT licensed" or "CI" sentence still matches reality.
+      The CI count is the number of authored repositories with a workflow in
+      `.github/workflows`; read it from the live inventory, never from memory.
 
 A sponsor who catches one inflated number assumes the rest are inflated too. That
 is the single thing most likely to destroy this profile, and it is entirely

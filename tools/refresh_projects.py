@@ -63,12 +63,16 @@ CATEGORY = {
     "aegis": "platform",
     "xerj-ipv6-rate-limit-fix": "contribution",
     "catalog-forge": "other",
-    "gravion-ai": "platform",
+    "Her--Him": "platform",
+    "agent-skills": "ai-security",
+    "gravion-ai": "ai-security",
+    "gravion-hunter": "red-team",
+    "jwt-auditor": "red-team",
+    "llm-redteam-kit": "red-team",
+    "mcp-shield": "red-team",
     "wp-cve-hunter": "red-team",
-    "llm-redteam-kit": "ai-security",
-    "mcp-shield": "ai-security",
-    "jwt-auditor": "ai-security",
-    "gravion-hunter": "platform",
+    "petforge": "ai-security",
+    "universal-hacker-kit": "red-team",
 }
 
 CATEGORY_LABEL = {
@@ -79,13 +83,15 @@ CATEGORY_LABEL = {
     "other": "Other",
 }
 
-# Repositories featured on GitHub Sponsors. Each one is MIT licensed, has a CI
-# workflow, and has a measured test count.
-FEATURED = ["iamosiac", "wp-cve-hunter", "llm-redteam-kit", "mcp-shield", "jwt-auditor", "gravion-ai"]
+# The six repositories featured on the GitHub Sponsors profile. Each one is MIT
+# licensed, has a CI workflow, and has a measured test count. This list is the
+# same set that is published as the Sponsors featured repositories.
+FEATURED = ["iamosiac", "wp-cve-hunter", "llm-redteam-kit",
+            "mcp-shield", "jwt-auditor", "gravion-ai"]
 
-# The site contains no ampersand character at all, so the canonical descriptions
-# must not contain one either. The one description that used to carry an
-# ampersand, rulebench, is written out in full here.
+# The inventory data carries no ampersand character, so the canonical
+# descriptions must not contain one either. The one description that used to
+# carry an ampersand, rulebench, is written out in full here.
 
 
 def load_descriptions():
@@ -95,8 +101,8 @@ def load_descriptions():
     for name, text in descriptions.items():
         if "&" in text:
             raise SystemExit(
-                "canonical description for %s contains an ampersand; the site "
-                "must stay free of ampersand characters" % name)
+                "canonical description for %s contains an ampersand; the "
+                "inventory data must stay free of ampersand characters" % name)
     return descriptions
 
 

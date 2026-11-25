@@ -33,6 +33,27 @@
   ],
   "projects": [
     {
+      "name": "agent-skills",
+      "description": "A 1200-skill agent skill library with a deterministic master router that selects the right skill for any task.",
+      "language": "Python",
+      "stars": 2,
+      "category": "ai-security",
+      "categoryLabel": "AI and agent security",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "automation",
+        "llm",
+        "orchestration",
+        "prompt-engineering",
+        "skill-library"
+      ],
+      "url": "https://github.com/gravion-ux/agent-skills",
+      "testCount": 48,
+      "testSource": "pytest -q: 48 passed, 0 skipped",
+      "featured": false
+    },
+    {
       "name": "context-bridge",
       "description": "A VS Code extension that writes privacy-conscious Markdown handoffs, with secret redaction built in.",
       "language": "JavaScript",
@@ -53,8 +74,27 @@
       ],
       "url": "https://github.com/gravion-ux/context-bridge",
       "testCount": 66,
-      "testSource": "npm test (node --test): 66 passed",
+      "testSource": "npm test (node --test): 66 passed, 0 skipped",
       "featured": false
+    },
+    {
+      "name": "gravion-ai",
+      "description": "Gravion AI: a modular AI platform framework — many AI types, four tiers, one module system, with a cryptographic licensing and entitlement layer for commercial deployments.",
+      "language": "Python",
+      "stars": 4,
+      "category": "ai-security",
+      "categoryLabel": "AI and agent security",
+      "topics": [
+        "ai-platform",
+        "gravion",
+        "licensing",
+        "modular-ai",
+        "python"
+      ],
+      "url": "https://github.com/gravion-ux/gravion-ai",
+      "testCount": 116,
+      "testSource": "pytest -q: 115 passed, 1 skipped, 116 collected (the skipped test asserts POSIX permission bits, which os.chmod cannot set on win32)",
+      "featured": true
     },
     {
       "name": "gravion-harness",
@@ -77,7 +117,7 @@
       ],
       "url": "https://github.com/gravion-ux/gravion-harness",
       "testCount": 127,
-      "testSource": "npm test (node --test): 127 passed",
+      "testSource": "npm test (node --test): 127 passed, 0 skipped",
       "featured": false
     },
     {
@@ -101,56 +141,8 @@
       ],
       "url": "https://github.com/gravion-ux/gravion-trainner",
       "testCount": 27,
-      "testSource": "pytest --collect-only, full run: 27 passed",
+      "testSource": "pytest --collect-only, full run: 27 passed, 0 skipped",
       "featured": false
-    },
-    {
-      "name": "jwt-auditor",
-      "description": "JWT security auditor: alg=none, embedded key material, weak-secret dictionary attack, kid injection, parser differentials - a prioritised report with a 0-100 risk score.",
-      "language": "Python",
-      "stars": 4,
-      "category": "ai-security",
-      "categoryLabel": "AI and agent security",
-      "topics": [
-        "appsec",
-        "authentication",
-        "infosec",
-        "json-web-token",
-        "jwt",
-        "penetration-testing",
-        "python",
-        "security",
-        "security-tools",
-        "vulnerability-scanner"
-      ],
-      "url": "https://github.com/gravion-ux/jwt-auditor",
-      "testCount": 36,
-      "testSource": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 36 passed",
-      "featured": true
-    },
-    {
-      "name": "llm-redteam-kit",
-      "description": "A zero-dependency CI gate for LLM red-teaming: curated OWASP-LLM-2025 probe packs, heuristic scoring and an offline mock mode.",
-      "language": "Python",
-      "stars": 4,
-      "category": "ai-security",
-      "categoryLabel": "AI and agent security",
-      "topics": [
-        "ai",
-        "ai-security",
-        "llm",
-        "llm-red-team",
-        "llm-security",
-        "owasp",
-        "prompt-injection",
-        "python",
-        "red-team",
-        "red-teaming"
-      ],
-      "url": "https://github.com/gravion-ux/llm-redteam-kit",
-      "testCount": 46,
-      "testSource": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 46 passed",
-      "featured": true
     },
     {
       "name": "llm-security-bot",
@@ -173,7 +165,7 @@
       ],
       "url": "https://github.com/gravion-ux/llm-security-bot",
       "testCount": 20,
-      "testSource": "npm test (node --test): 20 passed",
+      "testSource": "npm test (node --test): 20 passed, 0 skipped",
       "featured": false
     },
     {
@@ -197,30 +189,8 @@
       ],
       "url": "https://github.com/gravion-ux/local-slm-eval-kit",
       "testCount": 108,
-      "testSource": "npm test (node --test): 108 passed",
+      "testSource": "npm test (node --test): 108 passed, 0 skipped",
       "featured": false
-    },
-    {
-      "name": "mcp-shield",
-      "description": "Security auditor for MCP server configs: tool-poisoning detection, secret and over-broad-grant review, and rug-pull drift detection against a SHA-256 baseline. Zero dependencies.",
-      "language": "Python",
-      "stars": 4,
-      "category": "ai-security",
-      "categoryLabel": "AI and agent security",
-      "topics": [
-        "ai-security",
-        "devsecops",
-        "llm",
-        "mcp",
-        "model-context-protocol",
-        "python",
-        "security-audit",
-        "security-tools"
-      ],
-      "url": "https://github.com/gravion-ux/mcp-shield",
-      "testCount": 46,
-      "testSource": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 46 passed",
-      "featured": true
     },
     {
       "name": "memorytrust",
@@ -243,7 +213,7 @@
       ],
       "url": "https://github.com/gravion-ux/memorytrust",
       "testCount": 112,
-      "testSource": "npm test (node --test): 112 passed",
+      "testSource": "npm test (node --test): 112 passed, 0 skipped",
       "featured": false
     },
     {
@@ -267,7 +237,7 @@
       ],
       "url": "https://github.com/gravion-ux/preference-data-doctor",
       "testCount": 147,
-      "testSource": "npm test (node --test): 147 passed",
+      "testSource": "npm test (node --test): 147 passed, 0 skipped",
       "featured": false
     },
     {
@@ -291,12 +261,12 @@
       ],
       "url": "https://github.com/gravion-ux/skill-supply-chain-auditor",
       "testCount": 125,
-      "testSource": "npm test (node --test): 125 passed",
+      "testSource": "npm test (node --test): 125 passed, 0 skipped",
       "featured": false
     },
     {
       "name": "xerj-ipv6-rate-limit-fix",
-      "description": "A contribution to xerj-org/xerj fixing the Corpus Hub rate limiter to bucket compressed IPv6 addresses by their /64. Open upstream as xerj-org/xerj#2872.",
+      "description": "A contribution to xerj-org/xerj fixing the Corpus Hub rate limiter to bucket compressed IPv6 addresses by their /64. Merged upstream as xerj-org/xerj#2872 on 2026-11-17.",
       "language": "JavaScript",
       "stars": 4,
       "category": "contribution",
@@ -314,8 +284,8 @@
         "security"
       ],
       "url": "https://github.com/gravion-ux/xerj-ipv6-rate-limit-fix",
-      "testCount": null,
-      "testSource": null,
+      "testCount": 4,
+      "testSource": "node tools/corpus-hub-site/test_hub_usage_rate.mjs against xerj-org/xerj corpus-hub tip 31721e6: 4 passed, 0 skipped",
       "featured": false
     },
     {
@@ -338,8 +308,29 @@
         "woocommerce"
       ],
       "url": "https://github.com/gravion-ux/catalog-forge",
-      "testCount": null,
-      "testSource": null,
+      "testCount": 146,
+      "testSource": "pytest -o addopts= -q (backend/requirements.txt installed): 146 passed, 0 skipped",
+      "featured": false
+    },
+    {
+      "name": "Her--Him",
+      "description": "Two complete AI-companion personality catalogues with a deterministic, explainable affect engine and mood-driven multilingual voice.",
+      "language": "Python",
+      "stars": 4,
+      "category": "platform",
+      "categoryLabel": "Assessment, automation and platform",
+      "topics": [
+        "affect-engine",
+        "ai-companion",
+        "character-card",
+        "mood-driven",
+        "multilingual-tts",
+        "persona",
+        "voice-synthesis"
+      ],
+      "url": "https://github.com/gravion-ux/Her--Him",
+      "testCount": 434,
+      "testSource": "pytest -q: 434 passed, 0 skipped",
       "featured": false
     },
     {
@@ -362,8 +353,8 @@
         "vulnerability-scanning"
       ],
       "url": "https://github.com/gravion-ux/TRISHUL",
-      "testCount": 118,
-      "testSource": "pytest tests: 118 collected, 0 failures",
+      "testCount": 334,
+      "testSource": "pytest --collect-only, full run: 334 passed, 0 skipped",
       "featured": false
     },
     {
@@ -411,7 +402,7 @@
       ],
       "url": "https://github.com/gravion-ux/agent-browser",
       "testCount": 43,
-      "testSource": "npm test (node --test): 43 passed",
+      "testSource": "npm test (node --test): 43 passed, 0 skipped",
       "featured": false
     },
     {
@@ -435,55 +426,7 @@
       ],
       "url": "https://github.com/gravion-ux/api-security-testing",
       "testCount": 18,
-      "testSource": "npm test (node --test): 18 passed",
-      "featured": false
-    },
-    {
-      "name": "gravion-ai",
-      "description": "Gravion AI - a modular AI platform startups build on: many AI types and an all-in-one package, four readiness tiers, a signed licensing layer, and a choice of your own endpoint or a fully offline engine.",
-      "language": "Python",
-      "stars": 4,
-      "category": "platform",
-      "categoryLabel": "Assessment, automation and platform",
-      "topics": [
-        "ai-agents",
-        "ai-platform",
-        "developer-tools",
-        "generative-ai",
-        "gravion",
-        "licensing",
-        "llm",
-        "modular-ai",
-        "python",
-        "sdk"
-      ],
-      "url": "https://github.com/gravion-ux/gravion-ai",
-      "testCount": 116,
-      "testSource": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 115 passed, 1 skipped",
-      "featured": true
-    },
-    {
-      "name": "gravion-hunter",
-      "description": "Autonomous bug bounty agent framework - scope-enforced hunting, 7-question validation gate, dedupe-first discipline.",
-      "language": "Python",
-      "stars": 4,
-      "category": "platform",
-      "categoryLabel": "Assessment, automation and platform",
-      "topics": [
-        "agent-framework",
-        "ai-agents",
-        "automation",
-        "bug-bounty",
-        "llm",
-        "offensive-security",
-        "python",
-        "red-team",
-        "security",
-        "vulnerability-assessment"
-      ],
-      "url": "https://github.com/gravion-ux/gravion-hunter",
-      "testCount": 26,
-      "testSource": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 26 passed",
+      "testSource": "npm test (node --test): 18 passed, 0 skipped",
       "featured": false
     },
     {
@@ -531,7 +474,7 @@
       ],
       "url": "https://github.com/gravion-ux/privacyflow",
       "testCount": 38,
-      "testSource": "pytest --collect-only, full run: 38 passed",
+      "testSource": "pytest --collect-only, full run: 38 passed, 0 skipped",
       "featured": false
     },
     {
@@ -579,7 +522,7 @@
       ],
       "url": "https://github.com/gravion-ux/security-automation-scripts",
       "testCount": 22,
-      "testSource": "npm test (node --test): 22 passed",
+      "testSource": "npm test (node --test): 22 passed, 0 skipped",
       "featured": false
     },
     {
@@ -627,7 +570,7 @@
       ],
       "url": "https://github.com/gravion-ux/webapp-security-toolkit",
       "testCount": 44,
-      "testSource": "npm test (node --test): 44 passed",
+      "testSource": "npm test (node --test): 44 passed, 0 skipped",
       "featured": false
     },
     {
@@ -651,7 +594,7 @@
       ],
       "url": "https://github.com/gravion-ux/accessweave",
       "testCount": 33,
-      "testSource": "pytest --collect-only, full run: 33 passed",
+      "testSource": "pytest --collect-only, full run: 33 passed, 0 skipped",
       "featured": false
     },
     {
@@ -675,7 +618,7 @@
       ],
       "url": "https://github.com/gravion-ux/cipherbench",
       "testCount": 29,
-      "testSource": "pytest --collect-only, full run: 29 passed",
+      "testSource": "pytest --collect-only, full run: 29 passed, 0 skipped",
       "featured": false
     },
     {
@@ -698,8 +641,8 @@
         "vulnerability-management"
       ],
       "url": "https://github.com/gravion-ux/fixqueue",
-      "testCount": 129,
-      "testSource": "npm test (node --test): 129 passed",
+      "testCount": 157,
+      "testSource": "npm test (node --test): 157 passed, 0 skipped",
       "featured": false
     },
     {
@@ -727,6 +670,19 @@
       "featured": false
     },
     {
+      "name": "gravion-hunter",
+      "description": "Autonomous bug bounty agent framework — scope-locked hunting, a hard 7-question validation gate, dedupe-in-the-loop, and a validity brake on autopilot submission.",
+      "language": "Python",
+      "stars": 4,
+      "category": "red-team",
+      "categoryLabel": "Red-team and detection engineering",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/gravion-hunter",
+      "testCount": 26,
+      "testSource": "pytest -q: 26 passed, 0 skipped",
+      "featured": false
+    },
+    {
       "name": "iamosiac",
       "description": "Offline cloud-IAM policy review and permission-relationship visualization data, with least-privilege remediation hints.",
       "language": "Python",
@@ -747,7 +703,66 @@
       ],
       "url": "https://github.com/gravion-ux/iamosiac",
       "testCount": 39,
-      "testSource": "pytest --collect-only, full run: 39 passed",
+      "testSource": "pytest --collect-only, full run: 39 passed, 0 skipped",
+      "featured": true
+    },
+    {
+      "name": "jwt-auditor",
+      "description": "Defensive security auditor for JSON Web Tokens: alg=none, weak HMAC secrets, embedded keys, kid injection, lifetime and claim hygiene.",
+      "language": "Python",
+      "stars": 4,
+      "category": "red-team",
+      "categoryLabel": "Red-team and detection engineering",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/jwt-auditor",
+      "testCount": 36,
+      "testSource": "pytest -q: 36 passed, 0 skipped",
+      "featured": true
+    },
+    {
+      "name": "llm-redteam-kit",
+      "description": "Authorized LLM red-teaming evaluation toolkit: OWASP LLM Top 10 probe packs, heuristic scoring, CI regression gates.",
+      "language": "Python",
+      "stars": 4,
+      "category": "red-team",
+      "categoryLabel": "Red-team and detection engineering",
+      "topics": [
+        "ai",
+        "ai-security",
+        "llm",
+        "llm-red-team",
+        "llm-security",
+        "owasp",
+        "prompt-injection",
+        "python",
+        "red-team",
+        "red-teaming"
+      ],
+      "url": "https://github.com/gravion-ux/llm-redteam-kit",
+      "testCount": 46,
+      "testSource": "pytest -q: 46 passed, 0 skipped",
+      "featured": true
+    },
+    {
+      "name": "mcp-shield",
+      "description": "Defensive security auditor for MCP server configurations and tool definitions.",
+      "language": "Python",
+      "stars": 4,
+      "category": "red-team",
+      "categoryLabel": "Red-team and detection engineering",
+      "topics": [
+        "ai-security",
+        "devsecops",
+        "llm",
+        "mcp",
+        "model-context-protocol",
+        "python",
+        "security-audit",
+        "security-tools"
+      ],
+      "url": "https://github.com/gravion-ux/mcp-shield",
+      "testCount": 46,
+      "testSource": "pytest -q: 46 passed, 0 skipped",
       "featured": true
     },
     {
@@ -770,8 +785,8 @@
         "security"
       ],
       "url": "https://github.com/gravion-ux/opsledger",
-      "testCount": 115,
-      "testSource": "npm test (node --test): 115 passed",
+      "testCount": 137,
+      "testSource": "npm test (node --test): 137 passed, 0 skipped",
       "featured": false
     },
     {
@@ -818,8 +833,8 @@
         "threat-hunting"
       ],
       "url": "https://github.com/gravion-ux/rulebench",
-      "testCount": 187,
-      "testSource": "pytest --collect-only, full run: 187 passed",
+      "testCount": 198,
+      "testSource": "pytest --collect-only, full run: 198 passed, 0 skipped",
       "featured": false
     },
     {
@@ -843,7 +858,7 @@
       ],
       "url": "https://github.com/gravion-ux/secret-sniper",
       "testCount": 69,
-      "testSource": "python secret_sniper.py selftest: 69/69 checks",
+      "testSource": "python secret_sniper.py selftest -> 69/69 checks",
       "featured": false
     },
     {
@@ -867,12 +882,12 @@
       ],
       "url": "https://github.com/gravion-ux/violet-trace",
       "testCount": 34,
-      "testSource": "pytest --collect-only, full run: 34 passed",
+      "testSource": "pytest --collect-only, full run: 34 passed, 0 skipped",
       "featured": false
     },
     {
       "name": "wp-cve-hunter",
-      "description": "WordPress plugin and theme version fingerprinter with CVE matching - prioritised vulnerability reports for authorised testing. Offline inventory mode, zero dependencies.",
+      "description": "Match WordPress plugin and theme versions against known CVEs — a defensive, authorised-testing CLI for site owners and bug bounty researchers.",
       "language": "Python",
       "stars": 4,
       "category": "red-team",
@@ -889,7 +904,7 @@
       ],
       "url": "https://github.com/gravion-ux/wp-cve-hunter",
       "testCount": 82,
-      "testSource": "python -m pytest -q (pytest 9.2.0, Python 3.15.0): 82 passed",
+      "testSource": "pytest -q: 82 passed, 0 skipped",
       "featured": true
     }
   ]
