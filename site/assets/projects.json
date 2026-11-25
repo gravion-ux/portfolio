@@ -226,7 +226,7 @@
     },
     {
       "name": "petforge",
-      "description": "AI companions for agents and subagents — 34 original pets with mood engines, bond levels and an adopt/react API.",
+      "description": "AI pet companion framework — 46 original pets across 10 categories (gods and devils included), personalities, moods, bonds and an actions and movements system.",
       "language": "Python",
       "stars": 0,
       "category": "ai-security",
@@ -614,7 +614,7 @@
     },
     {
       "name": "vulndesk",
-      "description": "Multi-tenant vulnerability management and bug bounty triage platform — RBAC, dedupe engine, CVSS scoring, report export (zero-dependency Node.js).",
+      "description": "Multi-tenant vulnerability-management and triage platform: tenant-isolated workspaces, RBAC, a real CVSS 3.1 scoring engine, hash-based dedupe and exportable reports.",
       "language": "JavaScript",
       "stars": 0,
       "category": "platform",
@@ -707,7 +707,7 @@
     },
     {
       "name": "apishield",
-      "description": "API security gateway — BOLA/IDOR, JWT and auth-abuse inspection in front of any API (zero-dependency Python).",
+      "description": "Zero-dependency API security gateway: a monitor and enforce reverse proxy that catches BOLA/IDOR ownership flaws, JWT weaknesses and response data exposure before they ship.",
       "language": "Python",
       "stars": 0,
       "category": "red-team",

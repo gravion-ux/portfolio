@@ -20,8 +20,7 @@ authentication and session-handling weaknesses, injection, and unsafe business l
 then writing reports that engineers can act on.
 
 Alongside that, I build and maintain **open-source tooling** — 46 published
-projects, 45 of them MIT licensed — covering vulnerability triage, detection-rule
-conformance, engagement evidence, and auditing for the AI systems that ship beside
+projects, 45 of them MIT licensed — covering vulnerability triage, detection-ruleconformance, engagement evidence, and auditing for the AI systems that ship beside
 modern applications. I contribute bug fixes upstream to the projects I use.
 
 ---
@@ -37,7 +36,6 @@ modern applications. I contribute bug fixes upstream to the projects I use.
 | Repositories with a CI workflow | 44 of 46 | The `.github/workflows` directory of each repository |
 | Node tools with zero runtime dependencies | 17 of 19 | `package.json` of each repository |
 | Python tools with zero runtime dependencies | 18 of 23 | `pyproject.toml` and `requirements.txt` of each repository |
-
 Nothing on this site is estimated. The inventory is regenerated from the live GitHub
 API by `tools/refresh_projects.py`, and the test counts come from
 `tools/verified-tests.json`, which records the exact command used for each count.
@@ -59,7 +57,7 @@ API by `tools/refresh_projects.py`, and the test counts come from
 | [fixqueue](https://github.com/gravion-ux/fixqueue) | Merge SARIF, Trivy, Grype and OSV scanner output into one deduplicated, EPSS and KEV prioritized fix queue. | 157 tests |
 | [opsledger](https://github.com/gravion-ux/opsledger) | Tamper-evident evidence ledger for red-team engagements: hash-chained events and a signed manifest. | 137 tests |
 | [secret-sniper](https://github.com/gravion-ux/secret-sniper) | Leaked credential detection with live verification. | 69 checks |
-| [apishield](https://github.com/gravion-ux/apishield) | API security gateway — BOLA/IDOR, JWT and auth-abuse inspection in front of any API (zero-dependency Python). | 59 tests |
+| [apishield](https://github.com/gravion-ux/apishield) | Zero-dependency API security gateway: a monitor and enforce reverse proxy that catches BOLA/IDOR ownership flaws, JWT weaknesses and response data exposure before they ship. | 59 tests |
 | [violet-trace](https://github.com/gravion-ux/violet-trace) | A safe purple-team validation harness for defensive telemetry and detection-rule tests. | 34 tests |
 | [accessweave](https://github.com/gravion-ux/accessweave) | Offline identity-relationship and directory-permission review from explicitly exported inventory data. | 33 tests |
 | [cipherbench](https://github.com/gravion-ux/cipherbench) | A benchmark and interoperability test harness specification for vetted post-quantum cryptographic providers. | 29 tests |
@@ -79,7 +77,7 @@ API by `tools/refresh_projects.py`, and the test counts come from
 | [memorytrust](https://github.com/gravion-ux/memorytrust) | Audits an agent memory store for unverified, stale, contradictory and sensitive content and scores how much can be trusted. | 112 tests |
 | [local-slm-eval-kit](https://github.com/gravion-ux/local-slm-eval-kit) | Evaluates a local model against a fixed task suite with redaction, timeouts and diffable reports. | 108 tests |
 | [context-bridge](https://github.com/gravion-ux/context-bridge) | A VS Code extension that writes privacy-conscious Markdown handoffs, with secret redaction built in. | 66 tests |
-| [petforge](https://github.com/gravion-ux/petforge) | AI companions for agents and subagents — 34 original pets with mood engines, bond levels and an adopt/react API. | 50 tests |
+| [petforge](https://github.com/gravion-ux/petforge) | AI pet companion framework — 46 original pets across 10 categories (gods and devils included), personalities, moods, bonds and an actions and movements system. | 50 tests |
 | [agent-skills](https://github.com/gravion-ux/agent-skills) | A 1200-skill agent skill library with a deterministic master router that selects the right skill for any task. | 48 tests |
 | [gravion-trainner](https://github.com/gravion-ux/gravion-trainner) | Model quality evaluation starter for OpenAI-compatible chat-completions endpoints. | 45 tests |
 | [llm-security-bot](https://github.com/gravion-ux/llm-security-bot) | Pattern-based static analysis for code, configs, log lines and LLM input — deterministic, so the output is a triage list, not proof of exploitability. | 20 tests |
@@ -91,7 +89,7 @@ API by `tools/refresh_projects.py`, and the test counts come from
 | [Her--Him](https://github.com/gravion-ux/Her--Him) | Two complete AI-companion personality catalogues with a deterministic, explainable affect engine and mood-driven multilingual voice. | 438 tests |
 | [TRISHUL](https://github.com/gravion-ux/TRISHUL) | Authorized-scope, AI-powered security testing platform with real tool integration behind scope gates and an AI policy boundary. | 335 tests |
 | [aegis](https://github.com/gravion-ux/aegis) | Multi-agent system core: task lifecycle, persistent memory, provider abstraction, default-deny tool registry, budgets and recovery. | 315 tests |
-| [vulndesk](https://github.com/gravion-ux/vulndesk) | Multi-tenant vulnerability management and bug bounty triage platform — RBAC, dedupe engine, CVSS scoring, report export (zero-dependency Node.js). | 61 tests |
+| [vulndesk](https://github.com/gravion-ux/vulndesk) | Multi-tenant vulnerability-management and triage platform: tenant-isolated workspaces, RBAC, a real CVSS 3.1 scoring engine, hash-based dedupe and exportable reports. | 61 tests |
 | [localshare](https://github.com/gravion-ux/localshare) | Shares a local development server through Cloudflare tunnels, with loopback-only origins. | 51 tests |
 | [privacyflow](https://github.com/gravion-ux/privacyflow) | Validates authorized WireGuard profiles and plans safe VPN rotation workflows. | 50 tests |
 | [rasgulla-ai](https://github.com/gravion-ux/rasgulla-ai) | A local-first AI-assisted security research workbench for code understanding and safe test generation. | 50 tests |
@@ -176,7 +174,6 @@ The tools stay free and free of telemetry whether or not anyone sponsors them.
 | --- | --- |
 | `site/` | The static website served by GitHub Pages |
 | `site/assets/projects.json` | Generated project inventory, built from the live GitHub API |
-| `site/support.html` | The sponsorship page: the tier ladder, what each tier includes, and where a name gets placed |
 | `site/support.html` | The sponsorship page: the tier ladder, what each tier includes, and where a name gets placed |
 | `tools/refresh_projects.py` | Regenerates the inventory. Run it whenever stars or descriptions change. |
 | `tools/sync_project_tables.py` | Regenerates the project tables in this README from the inventory. |

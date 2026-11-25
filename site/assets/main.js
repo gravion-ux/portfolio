@@ -591,11 +591,29 @@
 (function () {
   var pass = document.getElementById("builderPass");
   if (!pass) return;
-  var dx = 0, dy = 0, sx = 0, sy = 0, dragging = false;
+  var dx = 0, dy = 0, sx = 0, sy = 0, dragging = false, spring = null;
   function apply() {
     pass.style.transform = "translate(" + dx + "px," + dy + "px) rotate(" + (dragging ? -2 : 0) + "deg) scale(" + (dragging ? 1.03 : 1) + ")";
   }
+  function easeOutElastic(t) {
+    var c4 = (2 * Math.PI) / 3;
+    return t === 0 ? 0 : t === 1 ? 1 : Math.pow(2, -10 * t) * Math.sin((t * 10 - 0.75) * c4) + 1;
+  }
+  function springBack() {
+    if (spring) cancelAnimationFrame(spring);
+    var fromX = dx, fromY = dy, start = null, dur = 750;
+    function step(ts) {
+      if (!start) start = ts;
+      var t = Math.min((ts - start) / dur, 1), e = easeOutElastic(t);
+      dx = fromX * (1 - e); dy = fromY * (1 - e);
+      apply();
+      if (t < 1) { spring = requestAnimationFrame(step); }
+      else { dx = 0; dy = 0; spring = null; apply(); }
+    }
+    spring = requestAnimationFrame(step);
+  }
   pass.addEventListener("pointerdown", function (e) {
+    if (spring) { cancelAnimationFrame(spring); spring = null; }
     dragging = true; sx = e.clientX - dx; sy = e.clientY - dy;
     pass.classList.add("dragging");
     try { pass.setPointerCapture(e.pointerId); } catch (err) {}
@@ -606,9 +624,9 @@
     dx = e.clientX - sx; dy = e.clientY - sy;
     apply();
   });
-  function end() { dragging = false; pass.classList.remove("dragging"); apply(); }
+  function end() { dragging = false; pass.classList.remove("dragging"); springBack(); }
   pass.addEventListener("pointerup", end);
   pass.addEventListener("pointercancel", end);
-  pass.addEventListener("dblclick", function () { dx = 0; dy = 0; apply(); });
+  pass.addEventListener("dblclick", function () { springBack(); });
   pass.addEventListener("dragstart", function (e) { e.preventDefault(); });
 })();
