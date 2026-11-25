@@ -473,7 +473,8 @@
     "USDT — BEP20 / ERC20": ["Transaction hash (TxID) — check it on BscScan / Etherscan", "Paste the transaction hash here"],
     "Litecoin (LTC) — BEP20": ["Transaction hash (TxID) — check it on BscScan", "Paste the transaction hash here"],
     "PayPal": ["PayPal transaction ID — in the payment email / activity", "Paste the transaction ID here"],
-    "GitHub Sponsors": ["Your GitHub username — sponsorships show on your profile", "Paste your GitHub username here"]
+    "GitHub Sponsors": ["Your GitHub username — sponsorships show on your profile", "Paste your GitHub username here"],
+      "NOWPayments": ["NOWPayments payment ID / transaction hash — in your NOWPayments payment confirmation", "Paste the payment ID or transaction hash here"]
   };
 
   function syncProof() {
@@ -531,7 +532,8 @@
     paypal: { cur: "$", vals: [5, 10, 25, 50] },
     sponsors: { cur: "$", vals: [5, 10, 25, 50] },
     binance: { cur: "$", vals: [5, 10, 25, 50] },
-    crypto: { cur: "$", vals: [5, 10, 25, 50] }
+    crypto: { cur: "$", vals: [5, 10, 25, 50] },
+      nowpayments: { cur: "$", vals: [5, 10, 25, 50] }
   };
   function fmt(cur, n) { return cur + Number(n).toLocaleString("en-IN"); }
   function renderAmounts() {
@@ -541,7 +543,7 @@
       chip.textContent = fmt(p.cur, p.vals[i]);
       chip.classList.toggle("is-active", Number(state.amount) === p.vals[i] && !custom.value);
     });
-    amountRow.style.display = state.method === "sponsors" ? "none" : "";
+    amountRow.style.display = (state.method === "sponsors" || state.method === "nowpayments") ? "none" : "";
   }
   function renderPanes() {
     document.querySelectorAll(".so-pane").forEach(function (pane) {
