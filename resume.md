@@ -120,7 +120,7 @@ of them MIT licensed — and contributes fixes upstream to the projects I use.
 them maintained: issue triage, test runs, dependency review, and the next
 release. It buys time on the parts nobody sees, not features for one company.
 
-- **Monthly** — Supporter $5, Backer $10, Sponsor $25, Pro Sponsor $50, Security Partner $100, Anchor $500, Executive $1,000
+- **Monthly** — Supporter $5, Backer $10, Advocate $15, Sponsor $25, Pro Sponsor $50, Security Partner $100, Anchor $500, Executive $1,000
 - **One time** — One-time Backer $25, One-time Sponsor $50, Fix a bug $50, Fund a feature $250, Fund a release $1,000, Fund a roadmap quarter $2,500
 - **Custom amounts** — from $5
 

@@ -23,23 +23,22 @@ Security engineer building open-source tools for AppSec, detection engineering a
 ## 2. Introduction
 
 ```
-Security researcher and open-source builder from Delhi, India. I build free, MIT-licensed security tools the community can actually use — 46 open-source projects and counting, 4,010 automated tests, 45 MIT licensed, 44 CI-gated. My flagships: wp-cve-hunter — WordPress CVE detection; llm-redteam-kit — OWASP-mapped LLM red-teaming cases; mcp-shield — MCP configuration security auditor; jwt-auditor — JWT attack-surface checks; gravion-hunter — a scope-locked, dedupe-first bug bounty agent framework; GRAVION AI — a modular AI platform, built in public, piece by piece.
+I build open-source security tools — LLM red-teaming, MCP security, JWT auditing, WordPress CVE hunting and more. Sponsorship keeps these tools free, maintained and tested, and funds new research.
 
-Alongside the tools, I hunt on Patchstack, HackerOne and Bugcrowd (IDOR/BOLA, broken auth, business logic) and publish methodology writeups so other researchers can reuse the workflow.
+Security researcher and open-source builder from Delhi, India. I build free security tools the community can actually use — 46 open-source projects and counting, 4,010 automated tests, 45 of them MIT licensed, 44 CI-gated. My flagships: wp-cve-hunter — WordPress CVE detection; llm-redteam-kit — OWASP-mapped LLM red-teaming cases; mcp-shield — MCP configuration security auditor; jwt-auditor — JWT attack-surface checks; gravion-ai — modular AI platform, built in public, piece by piece; aegis — multi-agent AI system core.
 
-Sponsorship keeps the tools free and maintained: it funds development time, test infrastructure, and the lab I use to verify vulnerabilities safely before reporting them. Every sponsor is credited — your support keeps new tools shipping.
+Alongside the tools, I hunt on Patchstack, HackerOne and Bugcrowd (IDOR/BOLA, broken auth, business logic) and publish methodology writeups so other researchers can reuse the workflow. Sponsorship keeps the tools free and maintained: it funds development time, test infrastructure, and the lab I use to verify vulnerabilities safely before reporting them. Every sponsor is credited — your support is literally what keeps new tools shipping.
 ```
 
 ---
 
-## 3. Featured repositories — six
+## 3. Featured repositories — five
 
-GitHub allows up to six. Each one below is MIT licensed, has a CI workflow, and has a
-measured test count.
+GitHub allows up to six. Five are published live. Each one below is MIT licensed, has a CI
+workflow, and has a measured test count.
 
 | Repository | Stars | Test cases | How the count was obtained |
 | --- | --- | --- | --- |
-| `iamosiac` | 13 | 61 | `pytest` on a fresh clone: 61 passed, 0 skipped |
 | `wp-cve-hunter` | 4 | 82 | `pytest` on a fresh clone: 82 passed, 0 skipped |
 | `llm-redteam-kit` | 4 | 46 | `pytest` on a fresh clone: 46 passed, 0 skipped |
 | `mcp-shield` | 4 | 58 | `pytest` on a fresh clone: 58 passed, 0 skipped |
@@ -49,18 +48,19 @@ measured test count.
 Star counts move. The live values are in `site/assets/projects.json`, which
 `tools/refresh_projects.py` regenerates from the GitHub API.
 
-**`TRISHUL` is deliberately not featured.** GitHub allows six featured repositories and
-all six slots are used. `TRISHUL` is MIT licensed, CI-backed and has 335
-measured tests, so it qualifies on the same terms as the six above.
+**The sixth featured slot is free.** `TRISHUL` (MIT licensed, CI-backed, 335 measured
+tests) and `iamosiac` (MIT licensed, CI-backed, 61 measured tests) qualify on the same
+terms as the five above, so either can take it.
 
 ---
 
-## 4. Monthly tiers — seven
+## 4. Monthly tiers — eight
 
 | Tier | Price | What it includes |
 | --- | --- | --- |
 | Supporter | $5 / month | Your name in the Supporters section of my profile README, and my thanks in release notes |
 | Backer | $10 / month | Everything in Supporter, plus early access to new tools before public release announcements |
+| Advocate | $15 / month | Everything in Backer, plus your name in the Supporters section of my profile README, and a monthly progress update on what your sponsorship funded |
 | Sponsor | $25 / month | Everything in Backer, plus your name or logo in the flagship repos' README sponsor sections |
 | Pro Sponsor | $50 / month | Everything in Sponsor, plus priority on your feature requests and issue reports across my repos |
 | Security Partner | $100 / month | Everything in Pro Sponsor, plus first look at new flagship tools and a monthly community Q&A post answering sponsor questions |
@@ -127,7 +127,7 @@ Thanks for sponsoring. Sponsorship pays for maintenance, triage and the next rel
    1 and 2.
 9. Under **Featured work**, select the six repositories from section 3.
 10. Optionally tick **Opt-in to get featured on github.com/sponsors**.
-11. Create the thirteen tiers from sections 4 and 5, and paste the welcome message from
+11. Create the fourteen tiers from sections 4 and 5, and paste the welcome message from
     section 7 into each one. **Prices cannot be changed after publishing.**
 12. Submit bank details and tax information. The tax step is the W-8BEN form, and a
     Permanent Account Number is the correct foreign tax identification number for

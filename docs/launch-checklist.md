@@ -13,7 +13,7 @@ happens to you.
 - [x] The site deployed to `https://gravion-ux.github.io/portfolio` and loading over
       HTTPS.
 - [x] GitHub profile metadata updated: bio, website, location, company.
-- [x] GitHub Sponsors profile published with all thirteen tiers.
+- [x] GitHub Sponsors profile published with all fourteen tiers.
 - [x] The sponsor link checked from a logged-out browser — it should reach the
       published Sponsors page.
 

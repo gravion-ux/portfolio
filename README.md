@@ -148,8 +148,8 @@ permission review, and post-quantum migration-readiness inventory.
 ## Support the open-source work
 
 Sponsorship pays for the parts nobody sees: issue triage, CI maintenance, dependency
-review of my own tools, and the next release. Thirteen tiers are published on GitHub
-Sponsors — seven monthly from $5, and six one-time from $25.
+review of my own tools, and the next release. Fourteen tiers are published on GitHub
+Sponsors — eight monthly from $5, and six one-time from $25.
 
 🔗 [Sponsor on GitHub](https://github.com/sponsors/gravion-ux)
 
