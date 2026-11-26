@@ -19,7 +19,7 @@ and **OWASP API Top 10**: finding authorization flaws (BOLA and IDOR),
 authentication and session-handling weaknesses, injection, and unsafe business logic,
 then writing reports that engineers can act on.
 
-Alongside that, I build and maintain **open-source tooling** — 46 published
+Alongside that, I build and maintain **open-source tooling** — 49 published
 projects, 45 of them MIT licensed — covering vulnerability triage, detection-ruleconformance, engagement evidence, and auditing for the AI systems that ship beside
 modern applications. I contribute bug fixes upstream to the projects I use.
 
@@ -29,11 +29,11 @@ modern applications. I contribute bug fixes upstream to the projects I use.
 
 | Claim | Value | Source |
 | --- | --- | --- |
-| Authored open-source projects | 46 | The 50 public repositories minus this profile repository, this website repository, and two forks of other maintainers' projects |
-| Test cases across 46 projects | 4,010 collected, 3,998 passing, 12 skipped, 0 failing | Each repository's own suite, run on a fresh clone on 2026-11-25; 44 of the 46 repositories have a suite |
+| Authored open-source projects | 49 | The 53 public repositories minus this profile repository, this website repository, and two forks of other maintainers' projects |
+| Test cases across 49 projects | 4,010 collected, 3,998 passing, 12 skipped, 0 failing | Each repository's own suite, run on a fresh clone on 2026-11-25; 44 of the 49 repositories have a suite |
 | The five flagship builds | 385 + 82 + 46 + 58 + 38 = 609 tests | `gravion-ai`, `wp-cve-hunter`, `llm-redteam-kit`, `mcp-shield`, `jwt-auditor` |
-| MIT licensed | 45 of 46 | Every `LICENSE` file fetched and compared against the canonical MIT text; `security-research` holds written research and carries no licence file |
-| Repositories with a CI workflow | 44 of 46 | The `.github/workflows` directory of each repository |
+| MIT licensed | 45 of 49 | Every `LICENSE` file fetched and compared against the canonical MIT text; `security-research` holds written research and carries no licence file |
+| Repositories with a CI workflow | 44 of 49 | The `.github/workflows` directory of each repository |
 | Node tools with zero runtime dependencies | 17 of 19 | `package.json` of each repository |
 | Python tools with zero runtime dependencies | 18 of 23 | `pyproject.toml` and `requirements.txt` of each repository |
 Nothing on this site is estimated. The inventory is regenerated from the live GitHub
@@ -154,7 +154,7 @@ Sponsors — eight monthly from $5, and six one-time from $25.
 🔗 [Sponsor on GitHub](https://github.com/sponsors/gravion-ux)
 
 The tools stay free and free of telemetry whether or not anyone sponsors them.
-45 of the 46 published projects carry the MIT licence; `security-research` holds written research and carries no licence file.
+45 of the 49 published projects carry the MIT licence; `security-research` holds written research and carries no licence file.
 
 ---
 
