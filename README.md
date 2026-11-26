@@ -203,3 +203,8 @@ The tools stay free and free of telemetry whether or not anyone sponsors them.
 ## Licence
 
 MIT. See [LICENSE](LICENSE).
+
+## Games
+
+Free HTML5 games on itch.io: [Neon Reflex Arena](https://gravion-ux.itch.io/neon-reflex-arena) · [Mind Maze](https://gravion-ux.itch.io/mind-maze) · [Gravity Orbit](https://gravion-ux.itch.io/gravity-orbit) · [Color Cascade](https://gravion-ux.itch.io/color-cascade) · [Shield Breaker](https://gravion-ux.itch.io/shield-breaker) · [Rhythm Runes](https://gravion-ux.itch.io/rhythm-runes)
+
