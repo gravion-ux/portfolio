@@ -92,6 +92,7 @@ CATEGORY = {
     "memsafety-lab": "red-team",
     "osint-footprint-checker": "platform",
     "winapi-surface-auditor": "red-team",
+    "redteamlabs": "red-team",
 }
 
 CATEGORY_LABEL = {

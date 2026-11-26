@@ -1,6 +1,6 @@
 {
-  "_comment": "Test counts measured by running each repository's own suite on a fresh clone of its live remote. The per-entry measured field records the date that suite was run: 2026-11-25 for the full sweep of 46 authored repositories, 2026-11-26 for the repositories created that day (gravion-hacker, pe-import-lens, winapi-sentinel, cookie-audit, gravion-bot, openapi-diff, sri-guard, subdangler, vocals, ai-model-fingerprint, memsafety-lab, osint-footprint-checker and winapi-surface-auditor) and for gravion-pets after its source changed, and 2026-11-22 for xerj-ipv6-rate-limit-fix, which is measured against the upstream corpus-hub tip it contributes to. The source string records the exact command used. These are the only test counts allowed to be published.",
-  "measured": "2026-11-26",
+  "_comment": "Test counts measured by running each repository's own suite on a fresh clone of its live remote. The per-entry measured field records the date that suite was run: 2026-11-25 for the full sweep of 46 authored repositories, 2026-11-26 for the repositories created that day (gravion-hacker, pe-import-lens, winapi-sentinel, cookie-audit, gravion-bot, openapi-diff, sri-guard, subdangler, vocals, ai-model-fingerprint, memsafety-lab, osint-footprint-checker and winapi-surface-auditor) and for gravion-pets after its source changed, 2026-11-27 for redteamlabs, and 2026-11-22 for xerj-ipv6-rate-limit-fix, which is measured against the upstream corpus-hub tip it contributes to. The source string records the exact command used. These are the only test counts allowed to be published.",
+  "measured": "2026-11-27",
   "Her--Him": {
     "tests": 438,
     "passed": 438,
@@ -328,6 +328,14 @@
     "failed": 0,
     "source": "pytest --junitxml on a fresh clone: 49 passed, 1 skipped",
     "measured": "2026-11-25"
+  },
+  "redteamlabs": {
+    "tests": 10,
+    "passed": 10,
+    "skipped": 0,
+    "failed": 0,
+    "source": "bash tests/test_cli.sh on a fresh clone: 8 passed, 0 skipped, 0 failed; pytest --junitxml on a fresh clone: 2 passed, 0 skipped, 0 failed (live tip 24bf9d92)",
+    "measured": "2026-11-27"
   },
   "rulebench": {
     "tests": 198,

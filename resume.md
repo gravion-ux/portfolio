@@ -15,7 +15,7 @@ assessment, and authorized penetration testing. Experienced in identifying real-
 OWASP Top 10 issues including IDOR, XSS, and authentication flaws. Strong
 security-first mindset with the ability to collaborate with developers and provide
 actionable remediation guidance. Also builds and maintains dependency-light
-open-source tooling in Node.js and Python — 59 published projects, 57
+open-source tooling in Node.js and Python — 60 published projects, 58
 of them MIT licensed — and contributes fixes upstream to the projects I use.
 
 ---
@@ -50,8 +50,8 @@ of them MIT licensed — and contributes fixes upstream to the projects I use.
 - Tested real-world web applications and APIs
 - Identified and responsibly disclosed vulnerabilities
 - Provided detailed reports with impact and remediation
-- Built and published 59 security and developer tools — 57 MIT licensed —
-  with 4,246 measured tests across 56 repositories
+- Built and published 60 security and developer tools — 58 MIT licensed —
+  with 4,256 measured tests across 57 repositories
 - Fixed the Corpus Hub IPv6 rate limiter upstream in xerj-org/xerj
 
 ---
@@ -116,7 +116,7 @@ of them MIT licensed — and contributes fixes upstream to the projects I use.
 
 ## Support my open-source work
 
-57 of the 59 published projects are MIT licensed and free to use. Sponsorship keeps
+58 of the 60 published projects are MIT licensed and free to use. Sponsorship keeps
 them maintained: issue triage, test runs, dependency review, and the next
 release. It buys time on the parts nobody sees, not features for one company.
 

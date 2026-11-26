@@ -58,5 +58,6 @@
   "ai-model-fingerprint": "Defensive checker for AI model files: detects the container format, computes SHA-256 fingerprints, lists the URLs embedded in the file header and verifies model files against a hash manifest. It never executes model code.",
   "memsafety-lab": "Educational memory-safety lab: scans C source for the unsafe functions behind classic buffer overflows and prints the safe replacement for every hit as a fix checklist.",
   "osint-footprint-checker": "Scores the public footprint of an asset you own from a JSON snapshot: security.txt, security headers, SPF and DMARC, dangling CNAMEs and TLS posture, with the fix for every finding. Offline and snapshot-based.",
-  "winapi-surface-auditor": "Defensive code review for C and C++ source: scans Windows API usage patterns tied to cross-process injection, input interception and legacy process creation, and explains the safer alternative for each hit. It ships no exploit code."
+  "winapi-surface-auditor": "Defensive code review for C and C++ source: scans Windows API usage patterns tied to cross-process injection, input interception and legacy process creation, and explains the safer alternative for each hit. It ships no exploit code.",
+  "redteamlabs": "Three local WordPress labs for authorised plugin testing: a CLI and a web dashboard that start, stop and health-check three lab instances on fixed ports, with setup scripts and systemd units for a repeatable rig. Binds to localhost only and ships no credentials."
 }

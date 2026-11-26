@@ -23,8 +23,8 @@ and **OWASP API Top 10**: finding authorization flaws (BOLA and IDOR),
 authentication and session-handling weaknesses, injection, and unsafe business logic,
 then writing reports that engineers can act on.
 
-Alongside that, I build and maintain **open-source tooling** — 59 published
-projects, 57 of them MIT licensed — covering vulnerability triage, detection-rule
+Alongside that, I build and maintain **open-source tooling** — 60 published
+projects, 58 of them MIT licensed — covering vulnerability triage, detection-rule
 conformance, engagement evidence, and auditing for the AI systems that ship beside
 modern applications. I contribute bug fixes upstream to the projects I use.
 
@@ -35,10 +35,10 @@ modern applications. I contribute bug fixes upstream to the projects I use.
 | Claim | Value | Source |
 | --- | --- | --- |
 | Authored open-source projects | 60 | The 64 public repositories minus this profile repository, this website repository, and two forks of other maintainers' projects |
-| Test cases across 59 projects | 4,246 collected, 4,234 passing, 12 skipped, 0 failing | Each repository's own suite, run on a fresh clone between 2026-11-22 and 2026-11-26; 56 of the 59 repositories have a suite |
+| Test cases across 60 projects | 4,256 collected, 4,244 passing, 12 skipped, 0 failing | Each repository's own suite, run on a fresh clone between 2026-11-22 and 2026-11-27; 57 of the 60 repositories have a suite |
 | The five flagship builds | 385 + 82 + 46 + 58 + 38 = 609 tests | `gravion-ai`, `wp-cve-hunter`, `llm-redteam-kit`, `mcp-shield`, `jwt-auditor` |
-| MIT licensed | 57 of 59 | Every `LICENSE` file fetched and compared against the canonical MIT text; `security-research` holds written research and `gravion-bot` ships no licence file, so neither counts |
-| Repositories with a CI workflow | 57 of 59 | The `.github/workflows` directory of each repository |
+| MIT licensed | 58 of 60 | Every `LICENSE` file fetched and compared against the canonical MIT text; `security-research` holds written research and `gravion-bot` ships no licence file, so neither counts |
+| Repositories with a CI workflow | 58 of 60 | The `.github/workflows` directory of each repository |
 | Node tools with zero runtime dependencies | 19 of 21 | `package.json` of each repository |
 | Python tools with zero runtime dependencies | 29 of 33 | `pyproject.toml` and `requirements.txt` of each repository |
 Nothing on this site is estimated. The inventory is regenerated from the live GitHub
@@ -70,6 +70,7 @@ API by `tools/refresh_projects.py`, and the test counts come from
 | [gravion-hunter](https://github.com/gravion-ux/gravion-hunter) | Autonomous bug bounty agent framework — scope-locked hunting, a hard 7-question validation gate, dedupe-in-the-loop, and a validity brake on autopilot submission. | 26 tests |
 | [quanta-sentry](https://github.com/gravion-ux/quanta-sentry) | Cryptographic inventory and post-quantum migration-readiness reporting from source and configuration evidence. | 26 tests |
 | [fuzzharbor](https://github.com/gravion-ux/fuzzharbor) | A reproducible local fuzzing campaign manager and crash triage toolkit. | 21 tests |
+| [redteamlabs](https://github.com/gravion-ux/redteamlabs) | Three local WordPress labs for authorised plugin testing: a CLI and a web dashboard that start, stop and health-check three lab instances on fixed ports, with setup scripts and systemd units for a repeatable rig. Binds to localhost only and ships no credentials. | 10 tests |
 | [pe-import-lens](https://github.com/gravion-ux/pe-import-lens) | Dependency-free Windows PE import-table triage: lists every imported function and flags the imports tied to process injection, process hollowing, keylogging and anti-analysis checks. The target file is only parsed, never executed. | 7 tests |
 | [memsafety-lab](https://github.com/gravion-ux/memsafety-lab) | Educational memory-safety lab: scans C source for the unsafe functions behind classic buffer overflows and prints the safe replacement for every hit as a fix checklist. | 5 tests |
 | [winapi-surface-auditor](https://github.com/gravion-ux/winapi-surface-auditor) | Defensive code review for C and C++ source: scans Windows API usage patterns tied to cross-process injection, input interception and legacy process creation, and explains the safer alternative for each hit. It ships no exploit code. | 5 tests |
@@ -172,7 +173,7 @@ Sponsors — eight monthly from $5, and six one-time from $25.
 🔗 [Sponsor on GitHub](https://github.com/sponsors/gravion-ux)
 
 The tools stay free and free of telemetry whether or not anyone sponsors them.
-57 of the 59 published projects carry the MIT licence; `security-research` holds written research and `gravion-bot` ships no licence file, so neither counts.
+58 of the 60 published projects carry the MIT licence; `security-research` holds written research and `gravion-bot` ships no licence file, so neither counts.
 
 ---
 

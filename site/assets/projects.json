@@ -1095,6 +1095,19 @@
       "featured": false
     },
     {
+      "name": "redteamlabs",
+      "description": "Three local WordPress labs for authorised plugin testing: a CLI and a web dashboard that start, stop and health-check three lab instances on fixed ports, with setup scripts and systemd units for a repeatable rig. Binds to localhost only and ships no credentials.",
+      "language": "Shell",
+      "stars": 0,
+      "category": "red-team",
+      "categoryLabel": "Red-team and detection engineering",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/redteamlabs",
+      "testCount": 10,
+      "testSource": "bash tests/test_cli.sh on a fresh clone: 8 passed, 0 skipped, 0 failed; pytest --junitxml on a fresh clone: 2 passed, 0 skipped, 0 failed (live tip 24bf9d92)",
+      "featured": false
+    },
+    {
       "name": "rulebench",
       "description": "Sigma rule conformance harness: run rules against events, lint them, and measure coverage against the MITRE knowledge base.",
       "language": "Python",
