@@ -33,7 +33,7 @@ modern applications. I contribute bug fixes upstream to the projects I use.
 
 | Claim | Value | Source |
 | --- | --- | --- |
-| Authored open-source projects | 55 | The 59 public repositories minus this profile repository, this website repository, and two forks of other maintainers' projects |
+| Authored open-source projects | 59 | The 63 public repositories minus this profile repository, this website repository, and two forks of other maintainers' projects |
 | Test cases across 49 projects | 4,010 collected, 3,998 passing, 12 skipped, 0 failing | Each repository's own suite, run on a fresh clone on 2026-11-25; 44 of the 49 repositories have a suite |
 | The five flagship builds | 385 + 82 + 46 + 58 + 38 = 609 tests | `gravion-ai`, `wp-cve-hunter`, `llm-redteam-kit`, `mcp-shield`, `jwt-auditor` |
 | MIT licensed | 45 of 49 | Every `LICENSE` file fetched and compared against the canonical MIT text; `security-research` holds written research and carries no licence file |
