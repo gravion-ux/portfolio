@@ -24,7 +24,7 @@ authentication and session-handling weaknesses, injection, and unsafe business l
 then writing reports that engineers can act on.
 
 Alongside that, I build and maintain **open-source tooling** — 60 published
-projects, 58 of them MIT licensed — covering vulnerability triage, detection-rule
+projects, all of them MIT licensed — covering vulnerability triage, detection-rule
 conformance, engagement evidence, and auditing for the AI systems that ship beside
 modern applications. I contribute bug fixes upstream to the projects I use.
 
@@ -35,10 +35,10 @@ modern applications. I contribute bug fixes upstream to the projects I use.
 | Claim | Value | Source |
 | --- | --- | --- |
 | Authored open-source projects | 60 | The 64 public repositories minus this profile repository, this website repository, and two forks of other maintainers' projects |
-| Test cases across 60 projects | 4,256 collected, 4,244 passing, 12 skipped, 0 failing | Each repository's own suite, run on a fresh clone between 2026-11-22 and 2026-11-27; 57 of the 60 repositories have a suite |
-| The five flagship builds | 385 + 82 + 46 + 58 + 38 = 609 tests | `gravion-ai`, `wp-cve-hunter`, `llm-redteam-kit`, `mcp-shield`, `jwt-auditor` |
-| MIT licensed | 58 of 60 | Every `LICENSE` file fetched and compared against the canonical MIT text; `security-research` holds written research and `gravion-bot` ships no licence file, so neither counts |
-| Repositories with a CI workflow | 58 of 60 | The `.github/workflows` directory of each repository |
+| Test cases across 60 projects | 4,256 collected, 4,244 passing, 12 skipped, 0 failing (22–27 Nov sweep) | Each repository's own suite, run on a fresh clone between 2026-11-22 and 2026-11-27; all 60 repositories now ship a suite — the three added on 2026-11-27 await the next sweep |
+| The five flagship builds | 530 + 82 + 46 + 58 + 38 = 754 tests | `gravion-ai`, `wp-cve-hunter`, `llm-redteam-kit`, `mcp-shield`, `jwt-auditor` |
+| MIT licensed | 60 of 60 | GitHub license detection on every project repository, re-checked 2026-11-27; `security-research` and `gravion-bot` received MIT licences on 2026-11-27 |
+| Repositories with a CI workflow | 60 of 60 | The `.github/workflows` directory of each repository |
 | Node tools with zero runtime dependencies | 19 of 21 | `package.json` of each repository |
 | Python tools with zero runtime dependencies | 29 of 33 | `pyproject.toml` and `requirements.txt` of each repository |
 Nothing on this site is estimated. The inventory is regenerated from the live GitHub
@@ -81,7 +81,7 @@ API by `tools/refresh_projects.py`, and the test counts come from
 
 | Project | What it does | Tests |
 | --- | --- | --- |
-| [gravion-ai](https://github.com/gravion-ux/gravion-ai) | Gravion AI: a modular AI platform framework — many AI types, four tiers, one module system, with a cryptographic licensing and entitlement layer for commercial deployments. | 385 tests |
+| [gravion-ai](https://github.com/gravion-ux/gravion-ai) | Gravion AI: a modular AI platform framework — many AI types, four tiers, one module system, with a cryptographic licensing and entitlement layer for commercial deployments. | 530 tests |
 | [preference-data-doctor](https://github.com/gravion-ux/preference-data-doctor) | Diagnoses and repairs preference datasets: duplicates, contradictions, class imbalance, format drift, leaked secrets. | 147 tests |
 | [gravion-harness](https://github.com/gravion-ux/gravion-harness) | A scoped, auditable security-testing harness with a hash-chained audit log. | 142 tests |
 | [skill-supply-chain-auditor](https://github.com/gravion-ux/skill-supply-chain-auditor) | Audits agent skill packages for prompt injection, unsafe shell, obfuscated payloads, embedded secrets, unpinned dependencies. | 125 tests |
@@ -173,7 +173,7 @@ Sponsors — eight monthly from $5, and six one-time from $25.
 🔗 [Sponsor on GitHub](https://github.com/sponsors/gravion-ux)
 
 The tools stay free and free of telemetry whether or not anyone sponsors them.
-58 of the 60 published projects carry the MIT licence; `security-research` holds written research and `gravion-bot` ships no licence file, so neither counts.
+All 60 published projects carry the MIT licence.
 
 ---
 
