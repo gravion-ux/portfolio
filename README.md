@@ -20,7 +20,8 @@ authentication and session-handling weaknesses, injection, and unsafe business l
 then writing reports that engineers can act on.
 
 Alongside that, I build and maintain **open-source tooling** — 49 published
-projects, 45 of them MIT licensed — covering vulnerability triage, detection-ruleconformance, engagement evidence, and auditing for the AI systems that ship beside
+projects, 48 of them MIT licensed — covering vulnerability triage, detection-rule
+conformance, engagement evidence, and auditing for the AI systems that ship beside
 modern applications. I contribute bug fixes upstream to the projects I use.
 
 ---
@@ -30,12 +31,12 @@ modern applications. I contribute bug fixes upstream to the projects I use.
 | Claim | Value | Source |
 | --- | --- | --- |
 | Authored open-source projects | 49 | The 53 public repositories minus this profile repository, this website repository, and two forks of other maintainers' projects |
-| Test cases across 49 projects | 4,010 collected, 3,998 passing, 12 skipped, 0 failing | Each repository's own suite, run on a fresh clone on 2026-11-25; 44 of the 49 repositories have a suite |
+| Test cases across 49 projects | 4,066 collected, 4,054 passing, 12 skipped, 0 failing | Each repository's own suite, run on a fresh clone between 2026-11-22 and 2026-11-26; 47 of the 49 repositories have a suite |
 | The five flagship builds | 385 + 82 + 46 + 58 + 38 = 609 tests | `gravion-ai`, `wp-cve-hunter`, `llm-redteam-kit`, `mcp-shield`, `jwt-auditor` |
-| MIT licensed | 45 of 49 | Every `LICENSE` file fetched and compared against the canonical MIT text; `security-research` holds written research and carries no licence file |
-| Repositories with a CI workflow | 44 of 49 | The `.github/workflows` directory of each repository |
+| MIT licensed | 48 of 49 | Every `LICENSE` file fetched and compared against the canonical MIT text; `security-research` holds written research and carries no licence file |
+| Repositories with a CI workflow | 47 of 49 | The `.github/workflows` directory of each repository |
 | Node tools with zero runtime dependencies | 17 of 19 | `package.json` of each repository |
-| Python tools with zero runtime dependencies | 18 of 23 | `pyproject.toml` and `requirements.txt` of each repository |
+| Python tools with zero runtime dependencies | 21 of 25 | `pyproject.toml` and `requirements.txt` of each repository |
 Nothing on this site is estimated. The inventory is regenerated from the live GitHub
 API by `tools/refresh_projects.py`, and the test counts come from
 `tools/verified-tests.json`, which records the exact command used for each count.
@@ -64,6 +65,8 @@ API by `tools/refresh_projects.py`, and the test counts come from
 | [gravion-hunter](https://github.com/gravion-ux/gravion-hunter) | Autonomous bug bounty agent framework — scope-locked hunting, a hard 7-question validation gate, dedupe-in-the-loop, and a validity brake on autopilot submission. | 26 tests |
 | [quanta-sentry](https://github.com/gravion-ux/quanta-sentry) | Cryptographic inventory and post-quantum migration-readiness reporting from source and configuration evidence. | 26 tests |
 | [fuzzharbor](https://github.com/gravion-ux/fuzzharbor) | A reproducible local fuzzing campaign manager and crash triage toolkit. | 21 tests |
+| [pe-import-lens](https://github.com/gravion-ux/pe-import-lens) | Dependency-free Windows PE import-table triage: lists every imported function and flags the imports tied to process injection, process hollowing, keylogging and anti-analysis checks. The target file is only parsed, never executed. | 7 tests |
+| [winapi-sentinel](https://github.com/gravion-ux/winapi-sentinel) | Static source-code triage for risky Windows API usage patterns, flagging single sensitive calls and multi-call injection chains with file and line evidence for every finding. | 4 tests |
 | [universal-hacker-kit](https://github.com/gravion-ux/universal-hacker-kit) | A Claude Code command kit for bug bounty hunting: write, triage, gotchas and dedupe commands for drafting and validating reports before submission (free edition). | 0 tests |
 
 ### AI and agent security
@@ -77,7 +80,7 @@ API by `tools/refresh_projects.py`, and the test counts come from
 | [memorytrust](https://github.com/gravion-ux/memorytrust) | Audits an agent memory store for unverified, stale, contradictory and sensitive content and scores how much can be trusted. | 112 tests |
 | [local-slm-eval-kit](https://github.com/gravion-ux/local-slm-eval-kit) | Evaluates a local model against a fixed task suite with redaction, timeouts and diffable reports. | 108 tests |
 | [context-bridge](https://github.com/gravion-ux/context-bridge) | A VS Code extension that writes privacy-conscious Markdown handoffs, with secret redaction built in. | 66 tests |
-| [petforge](https://github.com/gravion-ux/petforge) | AI pet companion framework — 46 original pets across 10 categories (gods and devils included), personalities, moods, bonds and an actions and movements system. | 50 tests |
+| [gravion-pets](https://github.com/gravion-ux/gravion-pets) | AI pet companion framework — 46 original pets across 10 categories (gods and devils included), personalities, moods, bonds and an actions and movements system. | 50 tests |
 | [agent-skills](https://github.com/gravion-ux/agent-skills) | A 1200-skill agent skill library with a deterministic master router that selects the right skill for any task. | 48 tests |
 | [gravion-trainner](https://github.com/gravion-ux/gravion-trainner) | Model quality evaluation starter for OpenAI-compatible chat-completions endpoints. | 45 tests |
 | [llm-security-bot](https://github.com/gravion-ux/llm-security-bot) | Pattern-based static analysis for code, configs, log lines and LLM input — deterministic, so the output is a triage list, not proof of exploitability. | 20 tests |
@@ -93,6 +96,7 @@ API by `tools/refresh_projects.py`, and the test counts come from
 | [localshare](https://github.com/gravion-ux/localshare) | Shares a local development server through Cloudflare tunnels, with loopback-only origins. | 51 tests |
 | [privacyflow](https://github.com/gravion-ux/privacyflow) | Validates authorized WireGuard profiles and plans safe VPN rotation workflows. | 50 tests |
 | [rasgulla-ai](https://github.com/gravion-ux/rasgulla-ai) | A local-first AI-assisted security research workbench for code understanding and safe test generation. | 50 tests |
+| [gravion-hacker](https://github.com/gravion-ux/gravion-hacker) | Offline-first authorized security assessment suite: scope-gated, read-only checks over headers, cookies, CORS policy, TLS and DNS snapshots, JWT structure, dependency manifests and local source, with a CLI, a web UI and report-ready evidence. | 45 tests |
 | [webapp-security-toolkit](https://github.com/gravion-ux/webapp-security-toolkit) | Authorized-only web and API security assessment toolkit: header analysis, TLS posture, scope enforcement, structured findings. | 44 tests |
 | [agent-browser](https://github.com/gravion-ux/agent-browser) | Visible Playwright browser starter with an explicit domain allow-list and explicit stop conditions. | 43 tests |
 | [security-automation-scripts](https://github.com/gravion-ux/security-automation-scripts) | Small Node.js and Bash utilities: header analysis, TLS configuration check, log parsing helpers. | 22 tests |
@@ -154,7 +158,7 @@ Sponsors — eight monthly from $5, and six one-time from $25.
 🔗 [Sponsor on GitHub](https://github.com/sponsors/gravion-ux)
 
 The tools stay free and free of telemetry whether or not anyone sponsors them.
-45 of the 49 published projects carry the MIT licence; `security-research` holds written research and carries no licence file.
+48 of the 49 published projects carry the MIT licence; `security-research` holds written research and carries no licence file.
 
 ---
 

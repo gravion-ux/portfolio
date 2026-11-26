@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-25",
+  "generated": "2026-11-26",
   "owner": "gravion-ux",
   "featured": [
     "iamosiac",
@@ -101,7 +101,7 @@
       ],
       "url": "https://github.com/gravion-ux/gravion-ai",
       "testCount": 385,
-      "testSource": "pytest --junitxml on the repaired branch (percent-escaped CLI help, POSIX export paths, dataset hash bytes): 380 passed, 5 skipped, 0 failed, 385 collected",
+      "testSource": "pytest --junitxml on a fresh clone of main at 0643e616 (percent-escaped CLI help, POSIX export paths, dataset hash bytes): 380 passed, 5 skipped, 0 failed, 385 collected",
       "featured": true
     },
     {
@@ -126,6 +126,30 @@
       "url": "https://github.com/gravion-ux/gravion-harness",
       "testCount": 142,
       "testSource": "node --test : 142 passed, 0 skipped",
+      "featured": false
+    },
+    {
+      "name": "gravion-pets",
+      "description": "AI pet companion framework — 46 original pets across 10 categories (gods and devils included), personalities, moods, bonds and an actions and movements system.",
+      "language": "Python",
+      "stars": 1,
+      "category": "ai-security",
+      "categoryLabel": "AI and agent security",
+      "topics": [
+        "ai-agents",
+        "ai-companion",
+        "cli",
+        "json",
+        "llm",
+        "multi-agent",
+        "open-source",
+        "pytest",
+        "python",
+        "virtual-pet"
+      ],
+      "url": "https://github.com/gravion-ux/gravion-pets",
+      "testCount": 50,
+      "testSource": "pytest --junitxml on a fresh clone: 50 passed, 0 skipped, 0 failed",
       "featured": false
     },
     {
@@ -222,30 +246,6 @@
       "url": "https://github.com/gravion-ux/memorytrust",
       "testCount": 112,
       "testSource": "node --test test/cli.test.js test/findings.test.js test/loader.test.js test/redact.test.js test/report.test.js test/rules.test.js test/scanner.test.js test/schema.test.js: 112 passed, 0 skipped",
-      "featured": false
-    },
-    {
-      "name": "petforge",
-      "description": "AI pet companion framework — 46 original pets across 10 categories (gods and devils included), personalities, moods, bonds and an actions and movements system.",
-      "language": "Python",
-      "stars": 0,
-      "category": "ai-security",
-      "categoryLabel": "AI and agent security",
-      "topics": [
-        "ai-agents",
-        "ai-companion",
-        "cli",
-        "json",
-        "llm",
-        "multi-agent",
-        "open-source",
-        "pytest",
-        "python",
-        "virtual-pet"
-      ],
-      "url": "https://github.com/gravion-ux/petforge",
-      "testCount": 50,
-      "testSource": "pytest --junitxml on a fresh clone: 50 passed, 0 skipped",
       "featured": false
     },
     {
@@ -348,7 +348,7 @@
       "name": "chatsphere",
       "description": "ChatSphere — real-time chat app (direct and group) with Socket.io and MongoDB: JWT-authenticated sockets, presence, typing indicators, unread counts; React frontend.",
       "language": "JavaScript",
-      "stars": 0,
+      "stars": 1,
       "category": "other",
       "categoryLabel": "Other",
       "topics": [],
@@ -514,6 +514,19 @@
       "url": "https://github.com/gravion-ux/api-security-testing",
       "testCount": 18,
       "testSource": "node --test test/bola.test.js test/rate-limit.test.js test/cli.test.js test/server.test.js: 18 passed, 0 skipped",
+      "featured": false
+    },
+    {
+      "name": "gravion-hacker",
+      "description": "Offline-first authorized security assessment suite: scope-gated, read-only checks over headers, cookies, CORS policy, TLS and DNS snapshots, JWT structure, dependency manifests and local source, with a CLI, a web UI and report-ready evidence.",
+      "language": "Python",
+      "stars": 0,
+      "category": "platform",
+      "categoryLabel": "Assessment, automation and platform",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/gravion-hacker",
+      "testCount": 45,
+      "testSource": "pytest --junitxml on a fresh clone: 35 passed, 0 skipped, 0 failed; node --test web/tests/web.test.mjs: 10 passed, 0 skipped, 0 failed",
       "featured": false
     },
     {
@@ -941,6 +954,19 @@
       "featured": false
     },
     {
+      "name": "pe-import-lens",
+      "description": "Dependency-free Windows PE import-table triage: lists every imported function and flags the imports tied to process injection, process hollowing, keylogging and anti-analysis checks. The target file is only parsed, never executed.",
+      "language": "JavaScript",
+      "stars": 0,
+      "category": "red-team",
+      "categoryLabel": "Red-team and detection engineering",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/pe-import-lens",
+      "testCount": 7,
+      "testSource": "pytest --junitxml on a fresh clone: 3 passed, 0 skipped, 0 failed; node --test web/tests/web.test.mjs: 4 passed, 0 skipped, 0 failed",
+      "featured": false
+    },
+    {
       "name": "quanta-sentry",
       "description": "Cryptographic inventory and post-quantum migration-readiness reporting from source and configuration evidence.",
       "language": "Python",
@@ -1058,6 +1084,19 @@
       "url": "https://github.com/gravion-ux/violet-trace",
       "testCount": 34,
       "testSource": "pytest --junitxml on a fresh clone: 34 passed, 0 skipped",
+      "featured": false
+    },
+    {
+      "name": "winapi-sentinel",
+      "description": "Static source-code triage for risky Windows API usage patterns, flagging single sensitive calls and multi-call injection chains with file and line evidence for every finding.",
+      "language": "Python",
+      "stars": 0,
+      "category": "red-team",
+      "categoryLabel": "Red-team and detection engineering",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/winapi-sentinel",
+      "testCount": 4,
+      "testSource": "pytest --junitxml on a fresh clone: 4 passed, 0 skipped, 0 failed",
       "featured": false
     },
     {

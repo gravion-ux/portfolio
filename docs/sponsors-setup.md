@@ -1,7 +1,7 @@
 # GitHub Sponsors setup — content pack
 
 Everything needed to publish the GitHub Sponsors profile, copied here so it can be
-pasted in one sitting. Every test count below was measured on 2026-11-25 by running
+pasted in one sitting. Every test count below was measured between 2026-11-22 and 2026-11-26 by running
 the relevant suite on a fresh clone. The star counts and tier prices are the live
 values published on GitHub Sponsors, read on 2026-11-23.
 
@@ -25,7 +25,7 @@ Security engineer building open-source tools for AppSec, detection engineering a
 ```
 I build open-source security tools — LLM red-teaming, MCP security, JWT auditing, WordPress CVE hunting and more. Sponsorship keeps these tools free, maintained and tested, and funds new research.
 
-Security researcher and open-source builder from Delhi, India. I build free security tools the community can actually use — 46 open-source projects and counting, 4,010 automated tests, 45 of them MIT licensed, 44 CI-gated. My flagships: wp-cve-hunter — WordPress CVE detection; llm-redteam-kit — OWASP-mapped LLM red-teaming cases; mcp-shield — MCP configuration security auditor; jwt-auditor — JWT attack-surface checks; gravion-ai — modular AI platform, built in public, piece by piece; aegis — multi-agent AI system core.
+Security researcher and open-source builder from Delhi, India. I build free security tools the community can actually use — 49 open-source projects and counting, 4,066 automated tests, 48 of them MIT licensed, 47 CI-gated. My flagships: wp-cve-hunter — WordPress CVE detection; llm-redteam-kit — OWASP-mapped LLM red-teaming cases; mcp-shield — MCP configuration security auditor; jwt-auditor — JWT attack-surface checks; gravion-ai — modular AI platform, built in public, piece by piece; aegis — multi-agent AI system core.
 
 Alongside the tools, I hunt on Patchstack, HackerOne and Bugcrowd (IDOR/BOLA, broken auth, business logic) and publish methodology writeups so other researchers can reuse the workflow. Sponsorship keeps the tools free and maintained: it funds development time, test infrastructure, and the lab I use to verify vulnerabilities safely before reporting them. Every sponsor is credited — your support is literally what keeps new tools shipping.
 ```

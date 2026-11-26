@@ -1,6 +1,6 @@
 {
-  "_comment": "Test counts measured by running each repository's own suite on a fresh clone of its live remote. The per-entry measured field records the date that suite was run: 2026-11-25 for the full sweep of all 46 authored repositories, and 2026-11-22 for xerj-ipv6-rate-limit-fix, which is measured against the upstream corpus-hub tip it contributes to. The source string records the exact command used. These are the only test counts allowed to be published.",
-  "measured": "2026-11-25",
+  "_comment": "Test counts measured by running each repository's own suite on a fresh clone of its live remote. The per-entry measured field records the date that suite was run: 2026-11-25 for the full sweep of 46 authored repositories, 2026-11-26 for the three repositories created that day (gravion-hacker, pe-import-lens and winapi-sentinel), and 2026-11-22 for xerj-ipv6-rate-limit-fix, which is measured against the upstream corpus-hub tip it contributes to. The source string records the exact command used. These are the only test counts allowed to be published.",
+  "measured": "2026-11-26",
   "Her--Him": {
     "tests": 438,
     "passed": 438,
@@ -126,8 +126,16 @@
     "passed": 380,
     "skipped": 5,
     "failed": 0,
-    "source": "pytest --junitxml on the repaired branch (percent-escaped CLI help, POSIX export paths, dataset hash bytes): 380 passed, 5 skipped, 0 failed, 385 collected",
-    "measured": "2026-11-25"
+    "source": "pytest --junitxml on a fresh clone of main at 0643e616 (percent-escaped CLI help, POSIX export paths, dataset hash bytes): 380 passed, 5 skipped, 0 failed, 385 collected",
+    "measured": "2026-11-26"
+  },
+  "gravion-hacker": {
+    "tests": 45,
+    "passed": 45,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 35 passed, 0 skipped, 0 failed; node --test web/tests/web.test.mjs: 10 passed, 0 skipped, 0 failed",
+    "measured": "2026-11-26"
   },
   "gravion-harness": {
     "tests": 142,
@@ -144,6 +152,14 @@
     "failed": 0,
     "source": "pytest --junitxml on a fresh clone: 26 passed, 0 skipped",
     "measured": "2026-11-25"
+  },
+  "gravion-pets": {
+    "tests": 50,
+    "passed": 50,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 50 passed, 0 skipped, 0 failed",
+    "measured": "2026-11-26"
   },
   "gravion-trainner": {
     "tests": 45,
@@ -225,13 +241,13 @@
     "source": "node --test test/hash.test.js test/ledger.test.js test/artifacts.test.js test/verify.test.js test/report.test.js test/cli.test.js: 137 passed, 0 skipped",
     "measured": "2026-11-25"
   },
-  "petforge": {
-    "tests": 50,
-    "passed": 50,
+  "pe-import-lens": {
+    "tests": 7,
+    "passed": 7,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 50 passed, 0 skipped",
-    "measured": "2026-11-25"
+    "source": "pytest --junitxml on a fresh clone: 3 passed, 0 skipped, 0 failed; node --test web/tests/web.test.mjs: 4 passed, 0 skipped, 0 failed",
+    "measured": "2026-11-26"
   },
   "preference-data-doctor": {
     "tests": 147,
@@ -352,6 +368,14 @@
     "failed": 0,
     "source": "node --test test/scope.test.js test/headers.test.js test/tls.test.js test/findings.test.js test/cli.test.js: 44 passed, 0 skipped",
     "measured": "2026-11-25"
+  },
+  "winapi-sentinel": {
+    "tests": 4,
+    "passed": 4,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 4 passed, 0 skipped, 0 failed",
+    "measured": "2026-11-26"
   },
   "wp-cve-hunter": {
     "tests": 82,

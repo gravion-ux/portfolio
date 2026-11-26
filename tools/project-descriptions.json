@@ -38,12 +38,15 @@
   "webapp-security-toolkit": "Authorized-only web and API security assessment toolkit: header analysis, TLS posture, scope enforcement, structured findings.",
   "wp-cve-hunter": "Match WordPress plugin and theme versions against known CVEs — a defensive, authorised-testing CLI for site owners and bug bounty researchers.",
   "xerj-ipv6-rate-limit-fix": "A contribution to xerj-org/xerj fixing the Corpus Hub rate limiter to bucket compressed IPv6 addresses by their /64. Merged upstream as xerj-org/xerj#2872 on 2026-11-17.",
-  "petforge": "AI pet companion framework — 46 original pets across 10 categories (gods and devils included), personalities, moods, bonds and an actions and movements system.",
   "universal-hacker-kit": "A Claude Code command kit for bug bounty hunting: write, triage, gotchas and dedupe commands for drafting and validating reports before submission (free edition).",
   "apishield": "Zero-dependency API security gateway: a monitor and enforce reverse proxy that catches BOLA/IDOR ownership flaws, JWT weaknesses and response data exposure before they ship.",
   "vulndesk": "Multi-tenant vulnerability-management and triage platform: tenant-isolated workspaces, RBAC, a real CVSS 3.1 scoring engine, hash-based dedupe and exportable reports.",
   "taskforge": "TaskForge — full-stack team task manager (MERN): JWT auth, role-based access, projects, kanban boards with drag-and-drop, tasks, comments.",
   "chatsphere": "ChatSphere — real-time chat app (direct and group) with Socket.io and MongoDB: JWT-authenticated sockets, presence, typing indicators, unread counts; React frontend.",
   "expensemate": "ExpenseMate — React Native (Expo) expense tracker in TypeScript: categories, monthly summaries, breakdown charts, AsyncStorage persistence, multi-currency, dark theme.",
-  "security-research": "Responsible-disclosure write-ups from my WordPress plugin security research — concept-level, sanitised, no exploit payloads."
+  "security-research": "Responsible-disclosure write-ups from my WordPress plugin security research — concept-level, sanitised, no exploit payloads.",
+  "gravion-hacker": "Offline-first authorized security assessment suite: scope-gated, read-only checks over headers, cookies, CORS policy, TLS and DNS snapshots, JWT structure, dependency manifests and local source, with a CLI, a web UI and report-ready evidence.",
+  "pe-import-lens": "Dependency-free Windows PE import-table triage: lists every imported function and flags the imports tied to process injection, process hollowing, keylogging and anti-analysis checks. The target file is only parsed, never executed.",
+  "winapi-sentinel": "Static source-code triage for risky Windows API usage patterns, flagging single sensitive calls and multi-call injection chains with file and line evidence for every finding.",
+  "gravion-pets": "AI pet companion framework — 46 original pets across 10 categories (gods and devils included), personalities, moods, bonds and an actions and movements system."
 }

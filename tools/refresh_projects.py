@@ -71,7 +71,7 @@ CATEGORY = {
     "llm-redteam-kit": "red-team",
     "mcp-shield": "red-team",
     "wp-cve-hunter": "red-team",
-    "petforge": "ai-security",
+    "gravion-pets": "ai-security",
     "universal-hacker-kit": "red-team",
     "apishield": "red-team",
     "vulndesk": "platform",
@@ -79,6 +79,9 @@ CATEGORY = {
     "chatsphere": "other",
     "expensemate": "other",
     "security-research": "other",
+    "gravion-hacker": "platform",
+    "pe-import-lens": "red-team",
+    "winapi-sentinel": "red-team",
 }
 
 CATEGORY_LABEL = {
