@@ -81,7 +81,7 @@ API by `tools/refresh_projects.py`, and the test counts come from
 | [memorytrust](https://github.com/gravion-ux/memorytrust) | Audits an agent memory store for unverified, stale, contradictory and sensitive content and scores how much can be trusted. | 112 tests |
 | [local-slm-eval-kit](https://github.com/gravion-ux/local-slm-eval-kit) | Evaluates a local model against a fixed task suite with redaction, timeouts and diffable reports. | 108 tests |
 | [context-bridge](https://github.com/gravion-ux/context-bridge) | A VS Code extension that writes privacy-conscious Markdown handoffs, with secret redaction built in. | 66 tests |
-| [petforge](https://github.com/gravion-ux/petforge) | AI pet companion framework — 46 original pets across 10 categories (gods and devils included), personalities, moods, bonds and an actions and movements system. | 50 tests |
+| [Gravion Pets](https://github.com/gravion-ux/gravion-pets) | AI pet companion framework — 46 original pets across 10 categories (gods and devils included), personalities, moods, bonds and an actions and movements system. | 50 tests |
 | [agent-skills](https://github.com/gravion-ux/agent-skills) | A 1200-skill agent skill library with a deterministic master router that selects the right skill for any task. | 48 tests |
 | [gravion-trainner](https://github.com/gravion-ux/gravion-trainner) | Model quality evaluation starter for OpenAI-compatible chat-completions endpoints. | 45 tests |
 | [llm-security-bot](https://github.com/gravion-ux/llm-security-bot) | Pattern-based static analysis for code, configs, log lines and LLM input — deterministic, so the output is a triage list, not proof of exploitability. | 20 tests |
