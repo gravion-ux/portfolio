@@ -34,7 +34,7 @@ modern applications. I contribute bug fixes upstream to the projects I use.
 
 | Claim | Value | Source |
 | --- | --- | --- |
-| Authored open-source projects | 59 | The 63 public repositories minus this profile repository, this website repository, and two forks of other maintainers' projects |
+| Authored open-source projects | 60 | The 64 public repositories minus this profile repository, this website repository, and two forks of other maintainers' projects |
 | Test cases across 59 projects | 4,246 collected, 4,234 passing, 12 skipped, 0 failing | Each repository's own suite, run on a fresh clone between 2026-11-22 and 2026-11-26; 56 of the 59 repositories have a suite |
 | The five flagship builds | 385 + 82 + 46 + 58 + 38 = 609 tests | `gravion-ai`, `wp-cve-hunter`, `llm-redteam-kit`, `mcp-shield`, `jwt-auditor` |
 | MIT licensed | 57 of 59 | Every `LICENSE` file fetched and compared against the canonical MIT text; `security-research` holds written research and `gravion-bot` ships no licence file, so neither counts |
@@ -203,3 +203,8 @@ The tools stay free and free of telemetry whether or not anyone sponsors them.
 ## Licence
 
 MIT. See [LICENSE](LICENSE).
+
+## Games
+
+Free HTML5 games on itch.io: [Neon Reflex Arena](https://gravion-ux.itch.io/neon-reflex-arena) · [Mind Maze](https://gravion-ux.itch.io/mind-maze) · [Gravity Orbit](https://gravion-ux.itch.io/gravity-orbit) · [Color Cascade](https://gravion-ux.itch.io/color-cascade) · [Shield Breaker](https://gravion-ux.itch.io/shield-breaker) · [Rhythm Runes](https://gravion-ux.itch.io/rhythm-runes)
+
