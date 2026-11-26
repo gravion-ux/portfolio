@@ -1,6 +1,10 @@
+<p align="center"><img src="assets/banner.svg" alt="portfolio banner" width="100%"/></p>
+
 # Portfolio — Priyanshu Kumar Thakur
 
-🔐 Security engineer | Application security | Security automation
+[![CI](https://github.com/gravion-ux/portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/gravion-ux/portfolio/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+**🔐 Security engineer | Application security | Security automation.**
 
 **Live site:** https://gravion-ux.github.io/portfolio
 
