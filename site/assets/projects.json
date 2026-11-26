@@ -57,6 +57,19 @@
       "featured": false
     },
     {
+      "name": "ai-model-fingerprint",
+      "description": "Defensive checker for AI model files: detects the container format, computes SHA-256 fingerprints, lists the URLs embedded in the file header and verifies model files against a hash manifest. It never executes model code.",
+      "language": "Python",
+      "stars": 0,
+      "category": "ai-security",
+      "categoryLabel": "AI and agent security",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/ai-model-fingerprint",
+      "testCount": 5,
+      "testSource": "pytest --junitxml on a fresh clone: 5 passed, 0 skipped, 0 failed (live tip fcae7be9)",
+      "featured": false
+    },
+    {
       "name": "context-bridge",
       "description": "A VS Code extension that writes privacy-conscious Markdown handoffs, with secret redaction built in.",
       "language": "JavaScript",
@@ -148,8 +161,8 @@
         "virtual-pet"
       ],
       "url": "https://github.com/gravion-ux/gravion-pets",
-      "testCount": 50,
-      "testSource": "pytest --junitxml on a fresh clone: 50 passed, 0 skipped, 0 failed",
+      "testCount": 76,
+      "testSource": "pytest --junitxml on a fresh clone: 69 passed, 0 skipped, 0 failed; node --test web/tests/web.test.mjs: 7 passed, 0 skipped, 0 failed (live tip d19da9e5)",
       "featured": false
     },
     {
@@ -371,6 +384,19 @@
       "featured": false
     },
     {
+      "name": "gravion-bot",
+      "description": "Terminal-first bot project with a separate web command deck: a TypeScript API server for bot sessions, commands and files, plus a small Python web shell that exposes help, status and pet commands in the browser.",
+      "language": "TypeScript",
+      "stars": 0,
+      "category": "other",
+      "categoryLabel": "Other",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/gravion-bot",
+      "testCount": 0,
+      "testSource": "no test suite in the repository: its CI workflow compiles the web server and runs a health-endpoint smoke test only",
+      "featured": false
+    },
+    {
       "name": "security-research",
       "description": "Responsible-disclosure write-ups from my WordPress plugin security research — concept-level, sanitised, no exploit payloads.",
       "language": "Other",
@@ -394,6 +420,19 @@
       "url": "https://github.com/gravion-ux/taskforge",
       "testCount": 17,
       "testSource": "npm test in each workspace package (client vitest 3, server jest 14): 17 passed, 0 skipped",
+      "featured": false
+    },
+    {
+      "name": "vocals",
+      "description": "Browser voice and song studio: record or clone a voice, generate a procedural beat and mix and master a WAV export, with an optional bring-your-own AI voice endpoint that keeps the key in the browser.",
+      "language": "JavaScript",
+      "stars": 0,
+      "category": "other",
+      "categoryLabel": "Other",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/vocals",
+      "testCount": 7,
+      "testSource": "node --test tests/vocals.test.mjs: 7 passed, 0 skipped, 0 failed (live tip 9dc8aedd)",
       "featured": false
     },
     {
@@ -517,6 +556,19 @@
       "featured": false
     },
     {
+      "name": "cookie-audit",
+      "description": "Pure Python cookie security analyzer: audits Set-Cookie headers for missing or weak security attributes, taking input from a file, a URL or standard input, with text or JSON reports and a severity threshold for CI.",
+      "language": "Python",
+      "stars": 0,
+      "category": "platform",
+      "categoryLabel": "Assessment, automation and platform",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/cookie-audit",
+      "testCount": 33,
+      "testSource": "pytest --junitxml on a fresh clone: 33 passed, 0 skipped, 0 failed (live tip 1e9c1cea)",
+      "featured": false
+    },
+    {
       "name": "gravion-hacker",
       "description": "Offline-first authorized security assessment suite: scope-gated, read-only checks over headers, cookies, CORS policy, TLS and DNS snapshots, JWT structure, dependency manifests and local source, with a CLI, a web UI and report-ready evidence.",
       "language": "Python",
@@ -526,7 +578,7 @@
       "topics": [],
       "url": "https://github.com/gravion-ux/gravion-hacker",
       "testCount": 45,
-      "testSource": "pytest --junitxml on a fresh clone: 35 passed, 0 skipped, 0 failed; node --test web/tests/web.test.mjs: 10 passed, 0 skipped, 0 failed",
+      "testSource": "pytest --junitxml on a fresh clone: 35 passed, 0 skipped, 0 failed; node --test web/tests/web.test.mjs: 10 passed, 0 skipped, 0 failed (live tip 3823c3d0)",
       "featured": false
     },
     {
@@ -551,6 +603,32 @@
       "url": "https://github.com/gravion-ux/localshare",
       "testCount": 51,
       "testSource": "node --test ./test/*.test.js: 49 passed, 2 skipped",
+      "featured": false
+    },
+    {
+      "name": "openapi-diff",
+      "description": "OpenAPI 3.x breaking-change differ with CI-friendly exit codes: resolves local references so schemas are compared by effective shape, then classifies every change as breaking, non-breaking or informational with a location and a reason.",
+      "language": "Python",
+      "stars": 0,
+      "category": "platform",
+      "categoryLabel": "Assessment, automation and platform",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/openapi-diff",
+      "testCount": 36,
+      "testSource": "pytest --junitxml on a fresh clone: 36 passed, 0 skipped, 0 failed (live tip 9062eb8c)",
+      "featured": false
+    },
+    {
+      "name": "osint-footprint-checker",
+      "description": "Scores the public footprint of an asset you own from a JSON snapshot: security.txt, security headers, SPF and DMARC, dangling CNAMEs and TLS posture, with the fix for every finding. Offline and snapshot-based.",
+      "language": "Python",
+      "stars": 0,
+      "category": "platform",
+      "categoryLabel": "Assessment, automation and platform",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/osint-footprint-checker",
+      "testCount": 5,
+      "testSource": "pytest --junitxml on a fresh clone: 5 passed, 0 skipped, 0 failed (live tip 32a29741)",
       "featured": false
     },
     {
@@ -623,6 +701,19 @@
       "url": "https://github.com/gravion-ux/security-automation-scripts",
       "testCount": 22,
       "testSource": "node --test test/headers.test.js test/tls.test.js test/log-normalizer.test.js test/cli.test.js: 22 passed, 0 skipped",
+      "featured": false
+    },
+    {
+      "name": "sri-guard",
+      "description": "Subresource Integrity checker for HTML pages: finds external scripts and stylesheets whose integrity metadata is missing, malformed or does not match the served content, and reports the missing crossorigin attribute that stops the browser enforcing it.",
+      "language": "Python",
+      "stars": 0,
+      "category": "platform",
+      "categoryLabel": "Assessment, automation and platform",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/sri-guard",
+      "testCount": 30,
+      "testSource": "pytest --junitxml on a fresh clone: 30 passed, 0 skipped, 0 failed (live tip 4942df15)",
       "featured": false
     },
     {
@@ -930,6 +1021,19 @@
       "featured": true
     },
     {
+      "name": "memsafety-lab",
+      "description": "Educational memory-safety lab: scans C source for the unsafe functions behind classic buffer overflows and prints the safe replacement for every hit as a fix checklist.",
+      "language": "Python",
+      "stars": 0,
+      "category": "red-team",
+      "categoryLabel": "Red-team and detection engineering",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/memsafety-lab",
+      "testCount": 5,
+      "testSource": "pytest --junitxml on a fresh clone: 5 passed, 0 skipped, 0 failed (live tip f9c2f799)",
+      "featured": false
+    },
+    {
       "name": "opsledger",
       "description": "Tamper-evident evidence ledger for red-team engagements: hash-chained events and a signed manifest.",
       "language": "JavaScript",
@@ -963,7 +1067,7 @@
       "topics": [],
       "url": "https://github.com/gravion-ux/pe-import-lens",
       "testCount": 7,
-      "testSource": "pytest --junitxml on a fresh clone: 3 passed, 0 skipped, 0 failed; node --test web/tests/web.test.mjs: 4 passed, 0 skipped, 0 failed",
+      "testSource": "pytest --junitxml on a fresh clone: 3 passed, 0 skipped, 0 failed; node --test web/tests/web.test.mjs: 4 passed, 0 skipped, 0 failed (live tip cbc9030d)",
       "featured": false
     },
     {
@@ -1039,6 +1143,19 @@
       "featured": false
     },
     {
+      "name": "subdangler",
+      "description": "Dangling DNS and subdomain takeover risk checker: resolves CNAME records over DNS-over-HTTPS, matches them against takeover-prone services and reports the ones that look unclaimed. Authorised use only.",
+      "language": "Python",
+      "stars": 0,
+      "category": "red-team",
+      "categoryLabel": "Red-team and detection engineering",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/subdangler",
+      "testCount": 28,
+      "testSource": "pytest --junitxml on a fresh clone: 28 passed, 0 skipped, 0 failed (live tip 49673a58)",
+      "featured": false
+    },
+    {
       "name": "universal-hacker-kit",
       "description": "A Claude Code command kit for bug bounty hunting: write, triage, gotchas and dedupe commands for drafting and validating reports before submission (free edition).",
       "language": "Python",
@@ -1096,7 +1213,20 @@
       "topics": [],
       "url": "https://github.com/gravion-ux/winapi-sentinel",
       "testCount": 4,
-      "testSource": "pytest --junitxml on a fresh clone: 4 passed, 0 skipped, 0 failed",
+      "testSource": "pytest --junitxml on a fresh clone: 4 passed, 0 skipped, 0 failed (live tip e3bc88b9)",
+      "featured": false
+    },
+    {
+      "name": "winapi-surface-auditor",
+      "description": "Defensive code review for C and C++ source: scans Windows API usage patterns tied to cross-process injection, input interception and legacy process creation, and explains the safer alternative for each hit. It ships no exploit code.",
+      "language": "Python",
+      "stars": 0,
+      "category": "red-team",
+      "categoryLabel": "Red-team and detection engineering",
+      "topics": [],
+      "url": "https://github.com/gravion-ux/winapi-surface-auditor",
+      "testCount": 5,
+      "testSource": "pytest --junitxml on a fresh clone: 5 passed, 0 skipped, 0 failed (live tip 9544d87c)",
       "featured": false
     },
     {

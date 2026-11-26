@@ -82,6 +82,16 @@ CATEGORY = {
     "gravion-hacker": "platform",
     "pe-import-lens": "red-team",
     "winapi-sentinel": "red-team",
+    "cookie-audit": "platform",
+    "gravion-bot": "other",
+    "openapi-diff": "platform",
+    "sri-guard": "platform",
+    "subdangler": "red-team",
+    "vocals": "other",
+    "ai-model-fingerprint": "ai-security",
+    "memsafety-lab": "red-team",
+    "osint-footprint-checker": "platform",
+    "winapi-surface-auditor": "red-team",
 }
 
 CATEGORY_LABEL = {

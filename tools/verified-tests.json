@@ -1,5 +1,5 @@
 {
-  "_comment": "Test counts measured by running each repository's own suite on a fresh clone of its live remote. The per-entry measured field records the date that suite was run: 2026-11-25 for the full sweep of 46 authored repositories, 2026-11-26 for the three repositories created that day (gravion-hacker, pe-import-lens and winapi-sentinel), and 2026-11-22 for xerj-ipv6-rate-limit-fix, which is measured against the upstream corpus-hub tip it contributes to. The source string records the exact command used. These are the only test counts allowed to be published.",
+  "_comment": "Test counts measured by running each repository's own suite on a fresh clone of its live remote. The per-entry measured field records the date that suite was run: 2026-11-25 for the full sweep of 46 authored repositories, 2026-11-26 for the repositories created that day (gravion-hacker, pe-import-lens, winapi-sentinel, cookie-audit, gravion-bot, openapi-diff, sri-guard, subdangler, vocals, ai-model-fingerprint, memsafety-lab, osint-footprint-checker and winapi-surface-auditor) and for gravion-pets after its source changed, and 2026-11-22 for xerj-ipv6-rate-limit-fix, which is measured against the upstream corpus-hub tip it contributes to. The source string records the exact command used. These are the only test counts allowed to be published.",
   "measured": "2026-11-26",
   "Her--Him": {
     "tests": 438,
@@ -49,6 +49,14 @@
     "source": "pytest --junitxml on a fresh clone: 48 passed, 0 skipped",
     "measured": "2026-11-25"
   },
+  "ai-model-fingerprint": {
+    "tests": 5,
+    "passed": 5,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 5 passed, 0 skipped, 0 failed (live tip fcae7be9)",
+    "measured": "2026-11-26"
+  },
   "api-security-testing": {
     "tests": 18,
     "passed": 18,
@@ -97,6 +105,14 @@
     "source": "node --test : 66 passed, 0 skipped",
     "measured": "2026-11-25"
   },
+  "cookie-audit": {
+    "tests": 33,
+    "passed": 33,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 33 passed, 0 skipped, 0 failed (live tip 1e9c1cea)",
+    "measured": "2026-11-26"
+  },
   "expensemate": {
     "tests": 32,
     "passed": 32,
@@ -129,12 +145,20 @@
     "source": "pytest --junitxml on a fresh clone of main at 0643e616 (percent-escaped CLI help, POSIX export paths, dataset hash bytes): 380 passed, 5 skipped, 0 failed, 385 collected",
     "measured": "2026-11-26"
   },
+  "gravion-bot": {
+    "tests": 0,
+    "passed": 0,
+    "skipped": 0,
+    "failed": 0,
+    "source": "no test suite in the repository: its CI workflow compiles the web server and runs a health-endpoint smoke test only",
+    "measured": "2026-11-26"
+  },
   "gravion-hacker": {
     "tests": 45,
     "passed": 45,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 35 passed, 0 skipped, 0 failed; node --test web/tests/web.test.mjs: 10 passed, 0 skipped, 0 failed",
+    "source": "pytest --junitxml on a fresh clone: 35 passed, 0 skipped, 0 failed; node --test web/tests/web.test.mjs: 10 passed, 0 skipped, 0 failed (live tip 3823c3d0)",
     "measured": "2026-11-26"
   },
   "gravion-harness": {
@@ -154,11 +178,11 @@
     "measured": "2026-11-25"
   },
   "gravion-pets": {
-    "tests": 50,
-    "passed": 50,
+    "tests": 76,
+    "passed": 76,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 50 passed, 0 skipped, 0 failed",
+    "source": "pytest --junitxml on a fresh clone: 69 passed, 0 skipped, 0 failed; node --test web/tests/web.test.mjs: 7 passed, 0 skipped, 0 failed (live tip d19da9e5)",
     "measured": "2026-11-26"
   },
   "gravion-trainner": {
@@ -233,6 +257,22 @@
     "source": "node --test test/cli.test.js test/findings.test.js test/loader.test.js test/redact.test.js test/report.test.js test/rules.test.js test/scanner.test.js test/schema.test.js: 112 passed, 0 skipped",
     "measured": "2026-11-25"
   },
+  "memsafety-lab": {
+    "tests": 5,
+    "passed": 5,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 5 passed, 0 skipped, 0 failed (live tip f9c2f799)",
+    "measured": "2026-11-26"
+  },
+  "openapi-diff": {
+    "tests": 36,
+    "passed": 36,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 36 passed, 0 skipped, 0 failed (live tip 9062eb8c)",
+    "measured": "2026-11-26"
+  },
   "opsledger": {
     "tests": 137,
     "passed": 137,
@@ -241,12 +281,20 @@
     "source": "node --test test/hash.test.js test/ledger.test.js test/artifacts.test.js test/verify.test.js test/report.test.js test/cli.test.js: 137 passed, 0 skipped",
     "measured": "2026-11-25"
   },
+  "osint-footprint-checker": {
+    "tests": 5,
+    "passed": 5,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 5 passed, 0 skipped, 0 failed (live tip 32a29741)",
+    "measured": "2026-11-26"
+  },
   "pe-import-lens": {
     "tests": 7,
     "passed": 7,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 3 passed, 0 skipped, 0 failed; node --test web/tests/web.test.mjs: 4 passed, 0 skipped, 0 failed",
+    "source": "pytest --junitxml on a fresh clone: 3 passed, 0 skipped, 0 failed; node --test web/tests/web.test.mjs: 4 passed, 0 skipped, 0 failed (live tip cbc9030d)",
     "measured": "2026-11-26"
   },
   "preference-data-doctor": {
@@ -321,6 +369,22 @@
     "source": "node --test test/cli.test.js test/findings.test.js test/loader.test.js test/redact.test.js test/report.test.js test/rules.test.js test/scanner.test.js: 125 passed, 0 skipped",
     "measured": "2026-11-25"
   },
+  "sri-guard": {
+    "tests": 30,
+    "passed": 30,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 30 passed, 0 skipped, 0 failed (live tip 4942df15)",
+    "measured": "2026-11-26"
+  },
+  "subdangler": {
+    "tests": 28,
+    "passed": 28,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 28 passed, 0 skipped, 0 failed (live tip 49673a58)",
+    "measured": "2026-11-26"
+  },
   "taskforge": {
     "tests": 17,
     "passed": 17,
@@ -344,6 +408,14 @@
     "failed": 0,
     "source": "pytest --junitxml on a fresh clone: 34 passed, 0 skipped",
     "measured": "2026-11-25"
+  },
+  "vocals": {
+    "tests": 7,
+    "passed": 7,
+    "skipped": 0,
+    "failed": 0,
+    "source": "node --test tests/vocals.test.mjs: 7 passed, 0 skipped, 0 failed (live tip 9dc8aedd)",
+    "measured": "2026-11-26"
   },
   "vulndesk": {
     "tests": 61,
@@ -374,7 +446,15 @@
     "passed": 4,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 4 passed, 0 skipped, 0 failed",
+    "source": "pytest --junitxml on a fresh clone: 4 passed, 0 skipped, 0 failed (live tip e3bc88b9)",
+    "measured": "2026-11-26"
+  },
+  "winapi-surface-auditor": {
+    "tests": 5,
+    "passed": 5,
+    "skipped": 0,
+    "failed": 0,
+    "source": "pytest --junitxml on a fresh clone: 5 passed, 0 skipped, 0 failed (live tip 9544d87c)",
     "measured": "2026-11-26"
   },
   "wp-cve-hunter": {
