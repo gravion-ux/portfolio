@@ -36,7 +36,7 @@
       "name": "agent-skills",
       "description": "A 1200-skill agent skill library with a deterministic master router that selects the right skill for any task.",
       "language": "Python",
-      "stars": 2,
+      "stars": 3,
       "category": "ai-security",
       "categoryLabel": "AI and agent security",
       "topics": [
@@ -60,7 +60,7 @@
       "name": "ai-model-fingerprint",
       "description": "Defensive checker for AI model files: detects the container format, computes SHA-256 fingerprints, lists the URLs embedded in the file header and verifies model files against a hash manifest. It never executes model code.",
       "language": "Python",
-      "stars": 0,
+      "stars": 1,
       "category": "ai-security",
       "categoryLabel": "AI and agent security",
       "topics": [
@@ -392,7 +392,7 @@
       "name": "expensemate",
       "description": "ExpenseMate — React Native (Expo) expense tracker in TypeScript: categories, monthly summaries, breakdown charts, AsyncStorage persistence, multi-currency, dark theme.",
       "language": "TypeScript",
-      "stars": 0,
+      "stars": 1,
       "category": "other",
       "categoryLabel": "Other",
       "topics": [
@@ -412,7 +412,7 @@
       "name": "gravion-bot",
       "description": "Terminal-first bot project with a separate web command deck: a TypeScript API server for bot sessions, commands and files, plus a small Python web shell that exposes help, status and pet commands in the browser.",
       "language": "TypeScript",
-      "stars": 0,
+      "stars": 1,
       "category": "other",
       "categoryLabel": "Other",
       "topics": [
@@ -431,7 +431,7 @@
       "name": "security-research",
       "description": "Responsible-disclosure write-ups from my WordPress plugin security research — concept-level, sanitised, no exploit payloads.",
       "language": "Python",
-      "stars": 0,
+      "stars": 1,
       "category": "other",
       "categoryLabel": "Other",
       "topics": [
@@ -450,7 +450,7 @@
       "name": "taskforge",
       "description": "TaskForge — full-stack team task manager (MERN): JWT auth, role-based access, projects, kanban boards with drag-and-drop, tasks, comments.",
       "language": "JavaScript",
-      "stars": 0,
+      "stars": 1,
       "category": "other",
       "categoryLabel": "Other",
       "topics": [
@@ -471,7 +471,7 @@
       "name": "vocals",
       "description": "Browser voice and song studio: record or clone a voice, generate a procedural beat and mix and master a WAV export, with an optional bring-your-own AI voice endpoint that keeps the key in the browser.",
       "language": "JavaScript",
-      "stars": 0,
+      "stars": 1,
       "category": "other",
       "categoryLabel": "Other",
       "topics": [
@@ -611,7 +611,7 @@
       "name": "cookie-audit",
       "description": "Pure Python cookie security analyzer: audits Set-Cookie headers for missing or weak security attributes, taking input from a file, a URL or standard input, with text or JSON reports and a severity threshold for CI.",
       "language": "Python",
-      "stars": 0,
+      "stars": 1,
       "category": "platform",
       "categoryLabel": "Assessment, automation and platform",
       "topics": [
@@ -631,7 +631,7 @@
       "name": "gravion-hacker",
       "description": "Offline-first authorized security assessment suite: scope-gated, read-only checks over headers, cookies, CORS policy, TLS and DNS snapshots, JWT structure, dependency manifests and local source, with a CLI, a web UI and report-ready evidence.",
       "language": "Python",
-      "stars": 0,
+      "stars": 1,
       "category": "platform",
       "categoryLabel": "Assessment, automation and platform",
       "topics": [
@@ -675,7 +675,7 @@
       "name": "openapi-diff",
       "description": "OpenAPI 3.x breaking-change differ with CI-friendly exit codes: resolves local references so schemas are compared by effective shape, then classifies every change as breaking, non-breaking or informational with a location and a reason.",
       "language": "Python",
-      "stars": 0,
+      "stars": 1,
       "category": "platform",
       "categoryLabel": "Assessment, automation and platform",
       "topics": [
@@ -695,7 +695,7 @@
       "name": "osint-footprint-checker",
       "description": "Scores the public footprint of an asset you own from a JSON snapshot: security.txt, security headers, SPF and DMARC, dangling CNAMEs and TLS posture, with the fix for every finding. Offline and snapshot-based.",
       "language": "Python",
-      "stars": 0,
+      "stars": 1,
       "category": "platform",
       "categoryLabel": "Assessment, automation and platform",
       "topics": [
@@ -788,7 +788,7 @@
       "name": "sri-guard",
       "description": "Subresource Integrity checker for HTML pages: finds external scripts and stylesheets whose integrity metadata is missing, malformed or does not match the served content, and reports the missing crossorigin attribute that stops the browser enforcing it.",
       "language": "Python",
-      "stars": 0,
+      "stars": 1,
       "category": "platform",
       "categoryLabel": "Assessment, automation and platform",
       "topics": [
@@ -807,7 +807,7 @@
       "name": "vulndesk",
       "description": "Multi-tenant vulnerability-management and triage platform: tenant-isolated workspaces, RBAC, a real CVSS 3.1 scoring engine, hash-based dedupe and exportable reports.",
       "language": "JavaScript",
-      "stars": 0,
+      "stars": 1,
       "category": "platform",
       "categoryLabel": "Assessment, automation and platform",
       "topics": [
@@ -1111,7 +1111,7 @@
       "name": "memsafety-lab",
       "description": "Educational memory-safety lab: scans C source for the unsafe functions behind classic buffer overflows and prints the safe replacement for every hit as a fix checklist.",
       "language": "Python",
-      "stars": 0,
+      "stars": 1,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
       "topics": [
@@ -1155,7 +1155,7 @@
       "name": "pe-import-lens",
       "description": "Dependency-free Windows PE import-table triage: lists every imported function and flags the imports tied to process injection, process hollowing, keylogging and anti-analysis checks. The target file is only parsed, never executed.",
       "language": "JavaScript",
-      "stars": 0,
+      "stars": 1,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
       "topics": [
@@ -1199,7 +1199,7 @@
       "name": "redteamlabs",
       "description": "Three local WordPress labs for authorised plugin testing: a CLI and a web dashboard that start, stop and health-check three lab instances on fixed ports, with setup scripts and systemd units for a repeatable rig. Binds to localhost only and ships no credentials.",
       "language": "Shell",
-      "stars": 0,
+      "stars": 1,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
       "topics": [
@@ -1267,7 +1267,7 @@
       "name": "subdangler",
       "description": "Dangling DNS and subdomain takeover risk checker: resolves CNAME records over DNS-over-HTTPS, matches them against takeover-prone services and reports the ones that look unclaimed. Authorised use only.",
       "language": "Python",
-      "stars": 0,
+      "stars": 1,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
       "topics": [
@@ -1286,7 +1286,7 @@
       "name": "universal-hacker-kit",
       "description": "A Claude Code command kit for bug bounty hunting: write, triage, gotchas and dedupe commands for drafting and validating reports before submission (free edition).",
       "language": "Python",
-      "stars": 0,
+      "stars": 1,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
       "topics": [
@@ -1334,7 +1334,7 @@
       "name": "winapi-sentinel",
       "description": "Static source-code triage for risky Windows API usage patterns, flagging single sensitive calls and multi-call injection chains with file and line evidence for every finding.",
       "language": "Python",
-      "stars": 0,
+      "stars": 1,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
       "topics": [
@@ -1353,7 +1353,7 @@
       "name": "winapi-surface-auditor",
       "description": "Defensive code review for C and C++ source: scans Windows API usage patterns tied to cross-process injection, input interception and legacy process creation, and explains the safer alternative for each hit. It ships no exploit code.",
       "language": "Python",
-      "stars": 0,
+      "stars": 1,
       "category": "red-team",
       "categoryLabel": "Red-team and detection engineering",
       "topics": [

@@ -25,7 +25,7 @@ Security engineer building open-source tools for AppSec, detection engineering a
 ```
 I build open-source tools — LLM red-teaming, MCP security, JWT auditing, WordPress CVE hunting and more. Sponsorship keeps these tools free, maintained and tested, and funds new research.
 
-Security researcher and open-source builder from Delhi, India. I build free tools the community can actually use — 60 open-source projects and counting, 5,219 automated tests, 60 of them MIT licensed, every one with a CI workflow that runs its own test suite. My flagships: wp-cve-hunter — WordPress CVE detection; llm-redteam-kit — OWASP-mapped LLM red-teaming cases; mcp-shield — MCP configuration security auditor; jwt-auditor — JWT attack-surface checks; gravion-ai — modular AI platform, built in public, piece by piece; aegis — multi-agent AI system core.
+Security researcher and open-source builder from Delhi, India. I build free tools the community can actually use — 60 open-source projects and counting, 5,219 automated tests, 60 of them MIT licensed, every one with a CI workflow that runs its own test suite. My flagships: wp-cve-hunter — WordPress CVE detection; llm-redteam-kit — OWASP-mapped LLM red-teaming cases; mcp-shield — MCP configuration security auditor; jwt-auditor — JWT attack-surface checks; gravion-ai — modular AI platform, built in public, piece by piece.
 
 Alongside the tools, I hunt on Patchstack, HackerOne and Bugcrowd (IDOR/BOLA, broken auth, business logic) and publish methodology writeups so other researchers can reuse the workflow. Sponsorship keeps the tools free and maintained: it funds development time, test infrastructure, and the lab I use to verify vulnerabilities safely before reporting them. Every sponsor is credited — your support is literally what keeps new tools shipping.
 ```
@@ -43,7 +43,7 @@ workflow that runs its own test suite, and has a measured test count.
 | `llm-redteam-kit` | 4 | 46 | `pytest` on a fresh clone: 46 passed, 0 skipped |
 | `mcp-shield` | 4 | 58 | `pytest` on a fresh clone: 58 passed, 0 skipped |
 | `jwt-auditor` | 4 | 38 | `pytest` on a fresh clone: 38 passed, 0 skipped |
-| `gravion-ai` | 4 | 945 | `pytest` on a fresh clone: 940 passed, 5 skipped, 0 failed, 945 collected |
+| `gravion-ai` | 4 | 1,173 | `pytest` on a fresh clone: 1,168 passed, 5 skipped, 0 failed, 1,173 collected |
 
 Star counts move. The live values are in `site/assets/projects.json`, which
 `tools/refresh_projects.py` regenerates from the GitHub API.
