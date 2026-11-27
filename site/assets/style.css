@@ -303,6 +303,9 @@ html{scrollbar-width:thin;scrollbar-color:#26262b var(--bg)}
 .flag-card h3 a:hover{color:var(--accent-bright);text-decoration:none}
 .flag-card p{color:var(--muted);margin:0 0 18px;position:relative;z-index:1}
 .flag-link{font-family:var(--font-mono);font-size:.85rem;word-break:break-all;position:relative;z-index:1}
+.profile-links{list-style:none;display:flex;flex-wrap:wrap;gap:16px;margin:0;padding:0}
+.profile-links a{display:inline-block;font-family:var(--font-display);font-size:1.35rem;color:var(--text);border:1px solid var(--border);border-radius:14px;padding:18px 28px;background:var(--panel)}
+.profile-links a:hover{color:var(--accent-bright);border-color:var(--accent);text-decoration:none}
 .mini-grid{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0;padding:0}
 .mini-card{padding:22px 24px}
 .mini-card h4{font-family:var(--font-display);font-size:1.12rem;margin:0 0 8px}
