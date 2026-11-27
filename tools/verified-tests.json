@@ -1,5 +1,5 @@
 {
-  "_comment": "Test counts measured by running each repository's own suite on a fresh clone of its live remote. The per-entry measured field records the date that suite was run: 2026-11-25 for the full sweep of 46 authored repositories, 2026-11-26 for the repositories created that day (gravion-hacker, pe-import-lens, winapi-sentinel, cookie-audit, gravion-bot, openapi-diff, sri-guard, subdangler, vocals, ai-model-fingerprint, memsafety-lab, osint-footprint-checker and winapi-surface-auditor) and for gravion-pets after its source changed, 2026-11-27 for redteamlabs and for the twelve repositories whose source or tests changed after the earlier sweep, and 2026-11-22 for xerj-ipv6-rate-limit-fix, which is measured against the upstream xerj-org/xerj corpus-hub tree it contributes to. The source string records the exact command used. These are the only test counts allowed to be published.",
+  "_comment": "Test counts measured by running each repository's own suite on a fresh clone of its live remote. The per-entry measured field records the date that suite was run: 2026-11-25 for the full sweep of 46 authored repositories, 2026-11-26 for the repositories created that day (gravion-hacker, pe-import-lens, winapi-sentinel, cookie-audit, gravion-bot, openapi-diff, sri-guard, subdangler, vocals, ai-model-fingerprint, memsafety-lab, osint-footprint-checker and winapi-surface-auditor) and for gravion-pets after its source changed, 2026-11-27 for redteamlabs, for the twelve repositories whose source or tests changed after the earlier sweep, and for the six repositories whose code changed after that pass (gravion-ai, rasgulla-ai, localshare, universal-hacker-kit, llm-redteam-kit and redteamlabs), and 2026-11-22 for xerj-ipv6-rate-limit-fix, which is measured against the upstream xerj-org/xerj corpus-hub tree it contributes to. Every clone is checked out with core.autocrlf=false so the bytes match CI's Linux checkout. The source string records the exact command used. These are the only test counts allowed to be published.",
   "measured": "2026-11-27",
   "Her--Him": {
     "tests": 438,
@@ -138,11 +138,11 @@
     "measured": "2026-11-25"
   },
   "gravion-ai": {
-    "tests": 945,
-    "passed": 940,
+    "tests": 1173,
+    "passed": 1168,
     "skipped": 5,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 940 passed, 5 skipped, 0 failed (live tip 2c3e0e6f)",
+    "source": "pytest --junitxml on a fresh clone: 1168 passed, 5 skipped, 0 failed (live tip e3435644)",
     "measured": "2026-11-27"
   },
   "gravion-bot": {
@@ -214,8 +214,8 @@
     "passed": 46,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 46 passed, 0 skipped",
-    "measured": "2026-11-25"
+    "source": "pytest --junitxml on a fresh clone: 46 passed, 0 skipped, 0 failed (live tip 8f669860)",
+    "measured": "2026-11-27"
   },
   "llm-security-bot": {
     "tests": 20,
@@ -234,12 +234,12 @@
     "measured": "2026-11-25"
   },
   "localshare": {
-    "tests": 51,
-    "passed": 49,
+    "tests": 60,
+    "passed": 58,
     "skipped": 2,
     "failed": 0,
-    "source": "node --test ./test/*.test.js: 49 passed, 2 skipped",
-    "measured": "2026-11-25"
+    "source": "node --test demo-web/test-server.test.js: 5 passed, 0 skipped, 0 failed; node --test test/args.test.js: 25 passed, 0 skipped, 0 failed; node --test test/cli.integration.test.js: 0 passed, 2 skipped, 0 failed; node --test test/cli.test.js: 13 passed, 0 skipped, 0 failed; node --test test/health.test.js: 5 passed, 0 skipped, 0 failed; node --test test/reconnect.test.js: 10 passed, 0 skipped, 0 failed (live tip 3d6f8a57)",
+    "measured": "2026-11-27"
   },
   "mcp-shield": {
     "tests": 58,
@@ -322,19 +322,19 @@
     "measured": "2026-11-25"
   },
   "rasgulla-ai": {
-    "tests": 50,
-    "passed": 49,
+    "tests": 161,
+    "passed": 160,
     "skipped": 1,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 49 passed, 1 skipped",
-    "measured": "2026-11-25"
+    "source": "pytest --junitxml on a fresh clone: 160 passed, 1 skipped, 0 failed (live tip a8220ddf)",
+    "measured": "2026-11-27"
   },
   "redteamlabs": {
     "tests": 10,
     "passed": 10,
     "skipped": 0,
     "failed": 0,
-    "source": "bash tests/test_cli.sh on a fresh clone: 8 passed, 0 skipped, 0 failed; pytest --junitxml on a fresh clone: 2 passed, 0 skipped, 0 failed (live tip 24bf9d92)",
+    "source": "pytest --junitxml on a fresh clone: 2 passed, 0 skipped, 0 failed; bash tests/test_cli.sh on a fresh clone: 8 passed, 0 skipped, 0 failed (live tip c9f0a485)",
     "measured": "2026-11-27"
   },
   "rulebench": {
@@ -402,11 +402,11 @@
     "measured": "2026-11-25"
   },
   "universal-hacker-kit": {
-    "tests": 13,
-    "passed": 13,
+    "tests": 18,
+    "passed": 18,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 13 passed, 0 skipped, 0 failed (live tip a4f7ef02)",
+    "source": "pytest --junitxml on a fresh clone: 18 passed, 0 skipped, 0 failed (live tip e9499a41)",
     "measured": "2026-11-27"
   },
   "violet-trace": {

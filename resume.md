@@ -51,7 +51,7 @@ of them MIT licensed — and contributes fixes upstream to the projects I use.
 - Identified and responsibly disclosed vulnerabilities
 - Provided detailed reports with impact and remediation
 - Built and published 60 security and developer tools — 60 MIT licensed —
-  with 4,866 measured tests across 60 repositories
+  with 5,219 measured tests across 60 repositories
 - Fixed the Corpus Hub IPv6 rate limiter upstream in xerj-org/xerj
 
 ---
