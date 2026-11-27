@@ -144,8 +144,9 @@ something new:
 - [ ] Run `python tools/sync_project_tables.py` so the README project tables match
       the inventory.
 - [ ] Check that any new "MIT licensed" or "CI" sentence still matches reality.
-      The CI count is the number of authored repositories with a workflow in
-      `.github/workflows`; read it from the live inventory, never from memory.
+      The CI count is the number of authored repositories whose own test suite runs
+      in a workflow under `.github/workflows`; audit the workflow files themselves,
+      never the count from memory.
 
 A sponsor who catches one inflated number assumes the rest are inflated too. That
 is the single thing most likely to destroy this profile, and it is entirely

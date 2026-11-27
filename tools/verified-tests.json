@@ -1,5 +1,5 @@
 {
-  "_comment": "Test counts measured by running each repository's own suite on a fresh clone of its live remote. The per-entry measured field records the date that suite was run: 2026-11-25 for the full sweep of 46 authored repositories, 2026-11-26 for the repositories created that day (gravion-hacker, pe-import-lens, winapi-sentinel, cookie-audit, gravion-bot, openapi-diff, sri-guard, subdangler, vocals, ai-model-fingerprint, memsafety-lab, osint-footprint-checker and winapi-surface-auditor) and for gravion-pets after its source changed, 2026-11-27 for redteamlabs, and 2026-11-22 for xerj-ipv6-rate-limit-fix, which is measured against the upstream corpus-hub tip it contributes to. The source string records the exact command used. These are the only test counts allowed to be published.",
+  "_comment": "Test counts measured by running each repository's own suite on a fresh clone of its live remote. The per-entry measured field records the date that suite was run: 2026-11-25 for the full sweep of 46 authored repositories, 2026-11-26 for the repositories created that day (gravion-hacker, pe-import-lens, winapi-sentinel, cookie-audit, gravion-bot, openapi-diff, sri-guard, subdangler, vocals, ai-model-fingerprint, memsafety-lab, osint-footprint-checker and winapi-surface-auditor) and for gravion-pets after its source changed, 2026-11-27 for redteamlabs and for the twelve repositories whose source or tests changed after the earlier sweep, and 2026-11-22 for xerj-ipv6-rate-limit-fix, which is measured against the upstream xerj-org/xerj corpus-hub tree it contributes to. The source string records the exact command used. These are the only test counts allowed to be published.",
   "measured": "2026-11-27",
   "Her--Him": {
     "tests": 438,
@@ -58,12 +58,12 @@
     "measured": "2026-11-26"
   },
   "api-security-testing": {
-    "tests": 18,
-    "passed": 18,
+    "tests": 19,
+    "passed": 19,
     "skipped": 0,
     "failed": 0,
-    "source": "node --test test/bola.test.js test/rate-limit.test.js test/cli.test.js test/server.test.js: 18 passed, 0 skipped",
-    "measured": "2026-11-25"
+    "source": "node --test test/bola.test.js: 4 passed, 0 skipped, 0 failed; node --test test/cli.test.js: 6 passed, 0 skipped, 0 failed; node --test test/rate-limit.test.js: 3 passed, 0 skipped, 0 failed; node --test test/server.test.js: 6 passed, 0 skipped, 0 failed (live tip 61405228)",
+    "measured": "2026-11-27"
   },
   "apishield": {
     "tests": 59,
@@ -82,12 +82,12 @@
     "measured": "2026-11-25"
   },
   "chatsphere": {
-    "tests": 30,
-    "passed": 30,
+    "tests": 31,
+    "passed": 31,
     "skipped": 0,
     "failed": 0,
-    "source": "npm test in each workspace package (client vitest 7, server jest 23): 30 passed, 0 skipped",
-    "measured": "2026-11-25"
+    "source": "npm --prefix server test: 24 passed, 0 skipped, 0 failed; npm --prefix client test: 7 passed, 0 skipped, 0 failed (live tip 1c9fca81)",
+    "measured": "2026-11-27"
   },
   "cipherbench": {
     "tests": 29,
@@ -106,12 +106,12 @@
     "measured": "2026-11-25"
   },
   "cookie-audit": {
-    "tests": 33,
-    "passed": 33,
+    "tests": 34,
+    "passed": 34,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 33 passed, 0 skipped, 0 failed (live tip 1e9c1cea)",
-    "measured": "2026-11-26"
+    "source": "pytest --junitxml on a fresh clone: 34 passed, 0 skipped, 0 failed (live tip b9980489)",
+    "measured": "2026-11-27"
   },
   "expensemate": {
     "tests": 32,
@@ -138,20 +138,20 @@
     "measured": "2026-11-25"
   },
   "gravion-ai": {
-    "tests": 385,
-    "passed": 380,
+    "tests": 945,
+    "passed": 940,
     "skipped": 5,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone of main at 0643e616 (percent-escaped CLI help, POSIX export paths, dataset hash bytes): 380 passed, 5 skipped, 0 failed, 385 collected",
-    "measured": "2026-11-26"
+    "source": "pytest --junitxml on a fresh clone: 940 passed, 5 skipped, 0 failed (live tip 2c3e0e6f)",
+    "measured": "2026-11-27"
   },
   "gravion-bot": {
-    "tests": 0,
-    "passed": 0,
+    "tests": 8,
+    "passed": 8,
     "skipped": 0,
     "failed": 0,
-    "source": "no test suite in the repository: its CI workflow compiles the web server and runs a health-endpoint smoke test only",
-    "measured": "2026-11-26"
+    "source": "pytest --junitxml on a fresh clone: 8 passed, 0 skipped, 0 failed (live tip a20c0a6b)",
+    "measured": "2026-11-27"
   },
   "gravion-hacker": {
     "tests": 45,
@@ -266,12 +266,12 @@
     "measured": "2026-11-26"
   },
   "openapi-diff": {
-    "tests": 36,
-    "passed": 36,
+    "tests": 38,
+    "passed": 38,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 36 passed, 0 skipped, 0 failed (live tip 9062eb8c)",
-    "measured": "2026-11-26"
+    "source": "pytest --junitxml on a fresh clone: 38 passed, 0 skipped, 0 failed (live tip badafcda)",
+    "measured": "2026-11-27"
   },
   "opsledger": {
     "tests": 137,
@@ -362,12 +362,12 @@
     "measured": "2026-11-25"
   },
   "security-research": {
-    "tests": 0,
-    "passed": 0,
+    "tests": 14,
+    "passed": 14,
     "skipped": 0,
     "failed": 0,
-    "source": "no test suite in the repository: it holds written research, not code",
-    "measured": "2026-11-25"
+    "source": "pytest --junitxml on a fresh clone: 14 passed, 0 skipped, 0 failed (live tip 417c8749)",
+    "measured": "2026-11-27"
   },
   "skill-supply-chain-auditor": {
     "tests": 125,
@@ -378,12 +378,12 @@
     "measured": "2026-11-25"
   },
   "sri-guard": {
-    "tests": 30,
-    "passed": 30,
+    "tests": 32,
+    "passed": 32,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 30 passed, 0 skipped, 0 failed (live tip 4942df15)",
-    "measured": "2026-11-26"
+    "source": "pytest --junitxml on a fresh clone: 32 passed, 0 skipped, 0 failed (live tip 6fe05817)",
+    "measured": "2026-11-27"
   },
   "subdangler": {
     "tests": 28,
@@ -402,12 +402,12 @@
     "measured": "2026-11-25"
   },
   "universal-hacker-kit": {
-    "tests": 0,
-    "passed": 0,
+    "tests": 13,
+    "passed": 13,
     "skipped": 0,
     "failed": 0,
-    "source": "no test suite in the repository: it ships command definitions and documentation only",
-    "measured": "2026-11-25"
+    "source": "pytest --junitxml on a fresh clone: 13 passed, 0 skipped, 0 failed (live tip a4f7ef02)",
+    "measured": "2026-11-27"
   },
   "violet-trace": {
     "tests": 34,
@@ -446,8 +446,8 @@
     "passed": 44,
     "skipped": 0,
     "failed": 0,
-    "source": "node --test test/scope.test.js test/headers.test.js test/tls.test.js test/findings.test.js test/cli.test.js: 44 passed, 0 skipped",
-    "measured": "2026-11-25"
+    "source": "node --test test/cli.test.js: 5 passed, 0 skipped, 0 failed; node --test test/findings.test.js: 8 passed, 0 skipped, 0 failed; node --test test/headers.test.js: 8 passed, 0 skipped, 0 failed; node --test test/scope.test.js: 15 passed, 0 skipped, 0 failed; node --test test/tls.test.js: 8 passed, 0 skipped, 0 failed (live tip b105a628)",
+    "measured": "2026-11-27"
   },
   "winapi-sentinel": {
     "tests": 4,
@@ -466,19 +466,19 @@
     "measured": "2026-11-26"
   },
   "wp-cve-hunter": {
-    "tests": 82,
-    "passed": 82,
+    "tests": 90,
+    "passed": 90,
     "skipped": 0,
     "failed": 0,
-    "source": "pytest --junitxml on a fresh clone: 82 passed, 0 skipped",
-    "measured": "2026-11-25"
+    "source": "pytest --junitxml on a fresh clone: 90 passed, 0 skipped, 0 failed (live tip c6cf0efc)",
+    "measured": "2026-11-27"
   },
   "xerj-ipv6-rate-limit-fix": {
     "tests": 4,
     "passed": 4,
     "skipped": 0,
     "failed": 0,
-    "source": "node tools/corpus-hub-site/test_hub_usage_rate.mjs against xerj-org/xerj corpus-hub tip 31721e6: 4 passed, 0 skipped",
-    "measured": "2026-11-22"
+    "source": "node --test tools/corpus-hub-site/test_hub_usage_rate.mjs against xerj-org/xerj corpus-hub tip 5fdddc2: 4 passed, 0 skipped, 0 failed (live tip 5fdddc2f)",
+    "measured": "2026-11-27"
   }
 }

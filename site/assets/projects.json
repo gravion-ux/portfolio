@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-26",
+  "generated": "2026-11-27",
   "owner": "gravion-ux",
   "featured": [
     "iamosiac",
@@ -122,8 +122,8 @@
         "sdk"
       ],
       "url": "https://github.com/gravion-ux/gravion-ai",
-      "testCount": 385,
-      "testSource": "pytest --junitxml on a fresh clone of main at 0643e616 (percent-escaped CLI help, POSIX export paths, dataset hash bytes): 380 passed, 5 skipped, 0 failed, 385 collected",
+      "testCount": 945,
+      "testSource": "pytest --junitxml on a fresh clone: 940 passed, 5 skipped, 0 failed (live tip 2c3e0e6f)",
       "featured": true
     },
     {
@@ -339,7 +339,7 @@
       ],
       "url": "https://github.com/gravion-ux/xerj-ipv6-rate-limit-fix",
       "testCount": 4,
-      "testSource": "node tools/corpus-hub-site/test_hub_usage_rate.mjs against xerj-org/xerj corpus-hub tip 31721e6: 4 passed, 0 skipped",
+      "testSource": "node --test tools/corpus-hub-site/test_hub_usage_rate.mjs against xerj-org/xerj corpus-hub tip 5fdddc2: 4 passed, 0 skipped, 0 failed (live tip 5fdddc2f)",
       "featured": false
     },
     {
@@ -384,8 +384,8 @@
         "websockets"
       ],
       "url": "https://github.com/gravion-ux/chatsphere",
-      "testCount": 30,
-      "testSource": "npm test in each workspace package (client vitest 7, server jest 23): 30 passed, 0 skipped",
+      "testCount": 31,
+      "testSource": "npm --prefix server test: 24 passed, 0 skipped, 0 failed; npm --prefix client test: 7 passed, 0 skipped, 0 failed (live tip 1c9fca81)",
       "featured": false
     },
     {
@@ -423,8 +423,8 @@
         "web-app"
       ],
       "url": "https://github.com/gravion-ux/gravion-bot",
-      "testCount": 0,
-      "testSource": "no test suite in the repository: its CI workflow compiles the web server and runs a health-endpoint smoke test only",
+      "testCount": 8,
+      "testSource": "pytest --junitxml on a fresh clone: 8 passed, 0 skipped, 0 failed (live tip a20c0a6b)",
       "featured": false
     },
     {
@@ -442,8 +442,8 @@
         "writeups"
       ],
       "url": "https://github.com/gravion-ux/security-research",
-      "testCount": 0,
-      "testSource": "no test suite in the repository: it holds written research, not code",
+      "testCount": 14,
+      "testSource": "pytest --junitxml on a fresh clone: 14 passed, 0 skipped, 0 failed (live tip 417c8749)",
       "featured": false
     },
     {
@@ -603,8 +603,8 @@
         "vulnerability-assessment"
       ],
       "url": "https://github.com/gravion-ux/api-security-testing",
-      "testCount": 18,
-      "testSource": "node --test test/bola.test.js test/rate-limit.test.js test/cli.test.js test/server.test.js: 18 passed, 0 skipped",
+      "testCount": 19,
+      "testSource": "node --test test/bola.test.js: 4 passed, 0 skipped, 0 failed; node --test test/cli.test.js: 6 passed, 0 skipped, 0 failed; node --test test/rate-limit.test.js: 3 passed, 0 skipped, 0 failed; node --test test/server.test.js: 6 passed, 0 skipped, 0 failed (live tip 61405228)",
       "featured": false
     },
     {
@@ -623,8 +623,8 @@
         "web-security"
       ],
       "url": "https://github.com/gravion-ux/cookie-audit",
-      "testCount": 33,
-      "testSource": "pytest --junitxml on a fresh clone: 33 passed, 0 skipped, 0 failed (live tip 1e9c1cea)",
+      "testCount": 34,
+      "testSource": "pytest --junitxml on a fresh clone: 34 passed, 0 skipped, 0 failed (live tip b9980489)",
       "featured": false
     },
     {
@@ -687,8 +687,8 @@
         "python"
       ],
       "url": "https://github.com/gravion-ux/openapi-diff",
-      "testCount": 36,
-      "testSource": "pytest --junitxml on a fresh clone: 36 passed, 0 skipped, 0 failed (live tip 9062eb8c)",
+      "testCount": 38,
+      "testSource": "pytest --junitxml on a fresh clone: 38 passed, 0 skipped, 0 failed (live tip badafcda)",
       "featured": false
     },
     {
@@ -799,8 +799,8 @@
         "web-security"
       ],
       "url": "https://github.com/gravion-ux/sri-guard",
-      "testCount": 30,
-      "testSource": "pytest --junitxml on a fresh clone: 30 passed, 0 skipped, 0 failed (live tip 4942df15)",
+      "testCount": 32,
+      "testSource": "pytest --junitxml on a fresh clone: 32 passed, 0 skipped, 0 failed (live tip 6fe05817)",
       "featured": false
     },
     {
@@ -869,7 +869,7 @@
       ],
       "url": "https://github.com/gravion-ux/webapp-security-toolkit",
       "testCount": 44,
-      "testSource": "node --test test/scope.test.js test/headers.test.js test/tls.test.js test/findings.test.js test/cli.test.js: 44 passed, 0 skipped",
+      "testSource": "node --test test/cli.test.js: 5 passed, 0 skipped, 0 failed; node --test test/findings.test.js: 8 passed, 0 skipped, 0 failed; node --test test/headers.test.js: 8 passed, 0 skipped, 0 failed; node --test test/scope.test.js: 15 passed, 0 skipped, 0 failed; node --test test/tls.test.js: 8 passed, 0 skipped, 0 failed (live tip b105a628)",
       "featured": false
     },
     {
@@ -1302,8 +1302,8 @@
         "yeswehack"
       ],
       "url": "https://github.com/gravion-ux/universal-hacker-kit",
-      "testCount": 0,
-      "testSource": "no test suite in the repository: it ships command definitions and documentation only",
+      "testCount": 13,
+      "testSource": "pytest --junitxml on a fresh clone: 13 passed, 0 skipped, 0 failed (live tip a4f7ef02)",
       "featured": false
     },
     {
@@ -1387,8 +1387,8 @@
         "wordpress"
       ],
       "url": "https://github.com/gravion-ux/wp-cve-hunter",
-      "testCount": 82,
-      "testSource": "pytest --junitxml on a fresh clone: 82 passed, 0 skipped",
+      "testCount": 90,
+      "testSource": "pytest --junitxml on a fresh clone: 90 passed, 0 skipped, 0 failed (live tip c6cf0efc)",
       "featured": true
     }
   ]

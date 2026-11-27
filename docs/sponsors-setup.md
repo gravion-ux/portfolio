@@ -23,9 +23,9 @@ Security engineer building open-source tools for AppSec, detection engineering a
 ## 2. Introduction
 
 ```
-I build open-source security tools — LLM red-teaming, MCP security, JWT auditing, WordPress CVE hunting and more. Sponsorship keeps these tools free, maintained and tested, and funds new research.
+I build open-source tools — LLM red-teaming, MCP security, JWT auditing, WordPress CVE hunting and more. Sponsorship keeps these tools free, maintained and tested, and funds new research.
 
-Security researcher and open-source builder from Delhi, India. I build free tools the community can actually use — 60 open-source projects and counting, 4,256 automated tests, 58 of them MIT licensed, 58 CI-gated. My flagships: wp-cve-hunter — WordPress CVE detection; llm-redteam-kit — OWASP-mapped LLM red-teaming cases; mcp-shield — MCP configuration security auditor; jwt-auditor — JWT attack-surface checks; gravion-ai — modular AI platform, built in public, piece by piece; aegis — multi-agent AI system core.
+Security researcher and open-source builder from Delhi, India. I build free tools the community can actually use — 60 open-source projects and counting, 4,866 automated tests, 60 of them MIT licensed, every one with a CI workflow that runs its own test suite. My flagships: wp-cve-hunter — WordPress CVE detection; llm-redteam-kit — OWASP-mapped LLM red-teaming cases; mcp-shield — MCP configuration security auditor; jwt-auditor — JWT attack-surface checks; gravion-ai — modular AI platform, built in public, piece by piece; aegis — multi-agent AI system core.
 
 Alongside the tools, I hunt on Patchstack, HackerOne and Bugcrowd (IDOR/BOLA, broken auth, business logic) and publish methodology writeups so other researchers can reuse the workflow. Sponsorship keeps the tools free and maintained: it funds development time, test infrastructure, and the lab I use to verify vulnerabilities safely before reporting them. Every sponsor is credited — your support is literally what keeps new tools shipping.
 ```
@@ -35,15 +35,15 @@ Alongside the tools, I hunt on Patchstack, HackerOne and Bugcrowd (IDOR/BOLA, br
 ## 3. Featured repositories — five
 
 GitHub allows up to six. Five are published live. Each one below is MIT licensed, has a CI
-workflow, and has a measured test count.
+workflow that runs its own test suite, and has a measured test count.
 
 | Repository | Stars | Test cases | How the count was obtained |
 | --- | --- | --- | --- |
-| `wp-cve-hunter` | 4 | 82 | `pytest` on a fresh clone: 82 passed, 0 skipped |
+| `wp-cve-hunter` | 4 | 90 | `pytest` on a fresh clone: 90 passed, 0 skipped, 0 failed |
 | `llm-redteam-kit` | 4 | 46 | `pytest` on a fresh clone: 46 passed, 0 skipped |
 | `mcp-shield` | 4 | 58 | `pytest` on a fresh clone: 58 passed, 0 skipped |
 | `jwt-auditor` | 4 | 38 | `pytest` on a fresh clone: 38 passed, 0 skipped |
-| `gravion-ai` | 4 | 385 | `pytest` on a fresh clone: 380 passed, 5 skipped, 0 failed, 385 collected |
+| `gravion-ai` | 4 | 945 | `pytest` on a fresh clone: 940 passed, 5 skipped, 0 failed, 945 collected |
 
 Star counts move. The live values are in `site/assets/projects.json`, which
 `tools/refresh_projects.py` regenerates from the GitHub API.
