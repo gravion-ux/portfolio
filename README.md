@@ -23,7 +23,7 @@ and **OWASP API Top 10**: finding authorization flaws (BOLA and IDOR),
 authentication and session-handling weaknesses, injection, and unsafe business logic,
 then writing reports that engineers can act on.
 
-Alongside that, I build and maintain **open-source tooling** — 60 published
+Alongside that, I build and maintain **open-source tooling** — 61 published
 projects, all of them MIT licensed — covering vulnerability triage, detection-rule
 conformance, engagement evidence, and auditing for the AI systems that ship beside
 modern applications. I contribute bug fixes upstream to the projects I use.
@@ -34,12 +34,12 @@ modern applications. I contribute bug fixes upstream to the projects I use.
 
 | Claim | Value | Source |
 | --- | --- | --- |
-| Authored open-source projects | 60 | The 64 public repositories minus this profile repository, this website repository, and two forks of other maintainers' projects |
-| Test cases across 60 projects | 5,219 collected, 5,207 passing, 12 skipped, 0 failing (22–27 Nov sweep) | Each repository's own suite, run on a fresh clone between 2026-11-22 and 2026-11-27; all 60 repositories ship a suite |
+| Authored open-source projects | 61 | The 65 public repositories minus this profile repository, this website repository, and two forks of other maintainers' projects |
+| Test cases across 61 projects | 5,232 collected, 5,220 passing, 12 skipped, 0 failing (22–28 Nov sweep) | Each repository's own suite, run on a fresh clone between 2026-11-22 and 2026-11-28; all 61 repositories ship a suite |
 | The five flagship builds | 1,173 + 90 + 46 + 58 + 38 = 1,405 tests | `gravion-ai`, `wp-cve-hunter`, `llm-redteam-kit`, `mcp-shield`, `jwt-auditor` |
-| MIT licensed | 60 of 60 | GitHub license detection on every project repository, re-checked 2026-11-27; `security-research` and `gravion-bot` received MIT licences on 2026-11-27 |
-| Repositories with a CI workflow | 60 of 60 | The `.github/workflows` directory of each repository |
-| Repositories whose own test suite runs in CI | 60 of 60 | Every workflow file audited on 2026-11-27 — each runs that repository's own suite on `push` and `pull_request` |
+| MIT licensed | 61 of 61 | GitHub license detection on every project repository, re-checked 2026-11-27; `security-research` and `gravion-bot` received MIT licences on 2026-11-27 |
+| Repositories with a CI workflow | 61 of 61 | The `.github/workflows` directory of each repository |
+| Repositories whose own test suite runs in CI | 61 of 61 | Every workflow file audited on 2026-11-28 — each runs that repository's own suite on `push` and `pull_request` |
 | Node tools with zero runtime dependencies | 19 of 21 | `package.json` of each repository |
 | Python tools with zero runtime dependencies | 29 of 33 | `pyproject.toml` and `requirements.txt` of each repository |
 Nothing on this site is estimated. The inventory is regenerated from the live GitHub
@@ -174,7 +174,7 @@ Sponsors — eight monthly from $5, and six one-time from $25.
 🔗 [Sponsor on GitHub](https://github.com/sponsors/gravion-ux)
 
 The tools stay free and free of telemetry whether or not anyone sponsors them.
-All 60 published projects carry the MIT licence.
+All 61 published projects carry the MIT licence.
 
 ---
 
