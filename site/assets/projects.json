@@ -104,7 +104,7 @@
     },
     {
       "name": "gravion-ai",
-      "description": "Gravion AI: a modular AI platform framework — many AI types, four tiers, one module system, with a cryptographic licensing and entitlement layer for commercial deployments.",
+      "description": "Gravion AI: a modular AI platform framework \u2014 many AI types, four tiers, one module system, with a cryptographic licensing and entitlement layer for commercial deployments.",
       "language": "Python",
       "stars": 4,
       "category": "ai-security",
@@ -152,7 +152,7 @@
     },
     {
       "name": "gravion-pets",
-      "description": "AI pet companion framework — 46 original pets across 10 categories (gods and devils included), personalities, moods, bonds and an actions and movements system.",
+      "description": "AI pet companion framework \u2014 46 original pets across 10 categories (gods and devils included), personalities, moods, bonds and an actions and movements system.",
       "language": "Python",
       "stars": 1,
       "category": "ai-security",
@@ -200,7 +200,7 @@
     },
     {
       "name": "llm-security-bot",
-      "description": "Pattern-based static analysis for code, configs, log lines and LLM input — deterministic, so the output is a triage list, not proof of exploitability.",
+      "description": "Pattern-based static analysis for code, configs, log lines and LLM input \u2014 deterministic, so the output is a triage list, not proof of exploitability.",
       "language": "JavaScript",
       "stars": 5,
       "category": "ai-security",
@@ -368,7 +368,7 @@
     },
     {
       "name": "chatsphere",
-      "description": "ChatSphere — real-time chat app (direct and group) with Socket.io and MongoDB: JWT-authenticated sockets, presence, typing indicators, unread counts; React frontend.",
+      "description": "ChatSphere \u2014 real-time chat app (direct and group) with Socket.io and MongoDB: JWT-authenticated sockets, presence, typing indicators, unread counts; React frontend.",
       "language": "JavaScript",
       "stars": 1,
       "category": "other",
@@ -390,7 +390,7 @@
     },
     {
       "name": "expensemate",
-      "description": "ExpenseMate — React Native (Expo) expense tracker in TypeScript: categories, monthly summaries, breakdown charts, AsyncStorage persistence, multi-currency, dark theme.",
+      "description": "ExpenseMate \u2014 React Native (Expo) expense tracker in TypeScript: categories, monthly summaries, breakdown charts, AsyncStorage persistence, multi-currency, dark theme.",
       "language": "TypeScript",
       "stars": 1,
       "category": "other",
@@ -429,7 +429,7 @@
     },
     {
       "name": "security-research",
-      "description": "Responsible-disclosure write-ups from my WordPress plugin security research — concept-level, sanitised, no exploit payloads.",
+      "description": "Responsible-disclosure write-ups from my WordPress plugin security research \u2014 concept-level, sanitised, no exploit payloads.",
       "language": "Python",
       "stars": 1,
       "category": "other",
@@ -448,7 +448,7 @@
     },
     {
       "name": "taskforge",
-      "description": "TaskForge — full-stack team task manager (MERN): JWT auth, role-based access, projects, kanban boards with drag-and-drop, tasks, comments.",
+      "description": "TaskForge \u2014 full-stack team task manager (MERN): JWT auth, role-based access, projects, kanban boards with drag-and-drop, tasks, comments.",
       "language": "JavaScript",
       "stars": 1,
       "category": "other",
@@ -991,7 +991,7 @@
     },
     {
       "name": "gravion-hunter",
-      "description": "Autonomous bug bounty agent framework — scope-locked hunting, a hard 7-question validation gate, dedupe-in-the-loop, and a validity brake on autopilot submission.",
+      "description": "Autonomous bug bounty agent framework \u2014 scope-locked hunting, a hard 7-question validation gate, dedupe-in-the-loop, and a validity brake on autopilot submission.",
       "language": "Python",
       "stars": 4,
       "category": "red-team",
@@ -1371,7 +1371,7 @@
     },
     {
       "name": "wp-cve-hunter",
-      "description": "Match WordPress plugin and theme versions against known CVEs — a defensive, authorised-testing CLI for site owners and bug bounty researchers.",
+      "description": "Match WordPress plugin and theme versions against known CVEs \u2014 a defensive, authorised-testing CLI for site owners and bug bounty researchers.",
       "language": "Python",
       "stars": 4,
       "category": "red-team",
@@ -1390,6 +1390,25 @@
       "testCount": 90,
       "testSource": "pytest --junitxml on a fresh clone: 90 passed, 0 skipped, 0 failed (live tip c6cf0efc)",
       "featured": true
+    },
+    {
+      "name": "android-emulator-lab",
+      "description": "Reproducible Android emulator lab: pinned SDK/AVD setup, Frida + mitmproxy deep testing, GitHub Actions emulator workflow",
+      "language": "Shell",
+      "stars": 0,
+      "category": "mobile-security",
+      "categoryLabel": "Mobile security",
+      "topics": [
+        "android",
+        "emulator",
+        "frida",
+        "mitmproxy",
+        "mobile-security"
+      ],
+      "url": "https://github.com/gravion-ux/android-emulator-lab",
+      "featured": 0,
+      "testCount": 0,
+      "testSource": "pytest --junitxml on a fresh clone: 48 passed, 0 skipped"
     }
   ]
 }
